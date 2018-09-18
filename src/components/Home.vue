@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <h1>{{ msg }}</h1>
-    <h2>Kohta kirjoitettu...</h2>
+    <div class="button-wrapper">
+      <router-link to="/Books" tag="button" class="button">Kirjat</router-link>
+    </div>
   </div>
 </template>
 
@@ -22,16 +24,8 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-}
-h1, h2 {
-  font-size: 3rem;
-  font-weight: normal;
-  color: #fff;
-}
-h2 {
-  font-size: 2rem;
 }
 ul {
   list-style-type: none;
@@ -43,5 +37,9 @@ li {
 }
 a {
   color: #42b983;
+}
+.button-wrapper {
+  display: fled;
+  justify-content: center;
 }
 </style>
