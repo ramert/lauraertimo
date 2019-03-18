@@ -1,21 +1,35 @@
 <template>
   <div class="home">
-    <h1>{{ msg }}</h1>
-    <div class="button-wrapper">
-      <router-link to="/Books" tag="button" class="button">Kirjat</router-link>
-    </div>
+    <ul class="center-wrapper">
+      <book
+        link="vesi"
+        alt-text="Vesi-kirja"
+        text="Vesi-kirja"
+        :image="VesiImage"
+        :mobileImage="VesiImage"
+      ></book>
+      <book link="yo" alt-text="Yo-kirja" text="Yö-kirja" :image="YoImage" :mobileImage="YoImage"></book>
+    </ul>
   </div>
 </template>
 
 <script>
+import Vue from "vue";
+import Book from "@/components/Book";
+import YoImage from "@/assets/yo/kansi.png";
+import VesiImage from "@/assets/vesi/kansi.png";
+
 export default {
-  name: 'Home',
+  name: "Home",
   data() {
     return {
-      msg: 'Laura Ertimo.fi',
+      VesiImage,
+      YoImage
     };
-  },
+  }
 };
+
+Vue.component("book", Book);
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -23,23 +37,22 @@ export default {
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100vw;
+  align-self: center;
+  margin: 0 auto;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 .button-wrapper {
-  display: fled;
+  display: flex;
   justify-content: center;
+}
+.center-wrapper {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 640px) {
+  .center-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 </style>

@@ -1,50 +1,90 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div id="app" class="app">
+    <vHeader :title="title"></vHeader>
+    <section class="main">
+      <transition name="re-fade">
+        <router-view class="router-animation"></router-view>
+      </transition>
+    </section>
+    <vFooter></vFooter>
   </div>
 </template>
 
 <script>
+import Vue from "vue";
+import Vuetify from "vuetify";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { EventBus } from "@/common/event-bus.js";
+
+Vue.component("vHeader", Header);
+Vue.component("vFooter", Footer);
+
 export default {
-  name: 'App',
+  name: "App",
+  mounted() {
+    EventBus.$on("route-changed", to => {
+      this.route = to;
+    });
+  },
+  data() {
+    // Set initial route to set stage
+    if (!this.route) {
+      this.route = EventBus.initial;
+      this.title = this.route.meta || "Laura Ertimo";
+    }
+    return {
+      route: this.route,
+      transition: this.transition
+    };
+  },
+  watch: {
+    immediate: true,
+    $route(to, from) {
+      this.title = to.meta || "Laura Ertimo";
+    }
+  }
 };
 </script>
 
 <style>
+@import "./assets/styles/variables.css";
+@import "./assets/styles/base.css";
+@import "./assets/styles/typography.css";
+
 #app {
-  font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+  font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  background: var(--v-primary);
 }
-h1, h2 {
-  font: 400 36/1.2 'Merienda One', Helvetica, sans-serif;
-  font-size: 3rem;
-  font-weight: normal;
-  color: #fff;
-}
-h2 {
-  font: 400 24x/1.2 'Merienda One', Helvetica, sans-serif;
-  font-size: 2rem;
-}
-h3 {
-  font: 400 20px/1.2 'Merienda One', Helvetica, sans-serif;
-  font-weight: normal;
-  color: #fff;
-}
-p {
-  font-family: Helvetica, sans-serif;
-  font-size: 1rem;
-  color: #fff;
-}
-button {
-  font: 400 18px/1.2, Helvetica, sans-serif;
-  min-width: 100px;
-  padding: 12px 20px;
-  background: white;
-  color: black;
-  border: none;
+.app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 58px 1fr 110px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 
+@media screen and (min-width: 640px) {
+  .app {
+    grid-template-rows: 80px 1fr 110px;
+  }
+}
+
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+  display: flex;
+  background: var(--color-background2);
+}
+.footer {
+  grid-area: footer;
+}
 </style>

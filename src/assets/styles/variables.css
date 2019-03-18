@@ -1,0 +1,9 @@
+:root {
+  --font-family: "Ubuntu Mono", monospace;
+  --color-background1: #1c1c1c;
+  --color-background2: #fff;
+  --color-foreground1: #1c1c1c;
+  --color-foreground2: #fff;
+  --color-green: #42b983;
+  --spacing-unit: 4px;
+}
