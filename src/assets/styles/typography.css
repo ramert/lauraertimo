@@ -1,5 +1,5 @@
 h1, h2, h3, p {
-  font-family: var(--font-family);
+  font-family: var(--font-family-header);
   color: var(--color-foreground1); 
   font-weight: normal;
 }
@@ -27,4 +27,10 @@ h2 {
 p {
   font-family: var(--font-family);
   font-size: 1rem;
+  text-align: left;
+}
+
+.ingress {
+  font-size: 1.25rem;
+  text-align: center;
 }

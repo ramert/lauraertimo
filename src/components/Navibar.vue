@@ -1,6 +1,6 @@
 <template>
   <div class="button-wrapper">
-    <router-link to="/Books" tag="button" class="button">Kirjat</router-link>
+    <router-link to="/Books" tag="button" class="button">Kaikki kirjat</router-link>
     <!--<router-link to="/Blog" tag="button" class="button">Blogi</router-link>-->
     <router-link to="/Me" tag="button" class="button">Laura</router-link>
   </div>
@@ -15,6 +15,7 @@ export default {
 <style scoped>
 .button-wrapper {
   display: flex;
+  background: var(--color-background2);
 }
 
 .button {
@@ -27,6 +28,7 @@ export default {
   border: none;
   font-weight: 600;
   font-size: 1.2em;
+  border-radius: 1em 1em 0 0;
 }
 
 .button:focus {

@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <nav class="main-nav">
+    <nav class="main-nav" :style="{'background':background, 'transition-duration': duration}">
       <!-- TODO: make this as component -->
       <router-link class="main-nav__nav" to="/">
         <logo></logo>
@@ -18,7 +18,7 @@ import Logo from "@/components/Logo";
 
 export default {
   name: "vHeader",
-  props: ["currentRoute", "title"],
+  props: ["currentRoute", "routeData"],
   data: function () {
     return { 
       pageTitle: '',
@@ -26,22 +26,25 @@ export default {
     }
   },
   watch: {
-    title: {
+    routeData: {
       handler: function(newVal, oldVal) {
         console.log(oldVal, newVal);
         if (!oldVal) {
-          this.pageTitle = newVal;
-          this.timing = 'steps('+newVal.length+', end)';
-          this.duration = 0.06*newVal.length +'s';
+          this.pageTitle = newVal.title;
+          this.timing = 'steps('+this.pageTitle.length+', end)';
+          this.duration = 0.06*this.pageTitle.length +'s';
+          this.background = newVal.background;
         }
         else {
           this.changing = true;
           setTimeout(() => {
-            this.timing = 'steps('+newVal.length+', end)';
-            this.duration = 0.06*newVal.length +'s';
+            const title = newVal.title;
+            this.timing = 'steps('+title.length+', end)';
+            this.duration = 0.06*title.length +'s';
+            this.background = newVal.background;
             this.changing = false;
-            this.pageTitle = newVal;
-          }, 0.06*oldVal.length*1000-50);
+            this.pageTitle = title;
+          }, 0.06*oldVal.title.length*1000-50);
         }
       },
       immediate: true,
@@ -54,7 +57,10 @@ Vue.component("logo", Logo);
 
 <style scoped>
 .header {
-  position: relative;
+  position: fixed;
+  width: 100vw;
+  background: var(--color-background2);
+  z-index: 1;
 }
 .typewriter {
   display: inline-block;
@@ -78,6 +84,8 @@ h1 {
   align-items: center;
   justify-content: center;
   background: var(--color-background1);
+  transition: all 0.75s ease;
+  border-radius: 0 0 1em 1em;
 }
 
 .main-nav__nav {

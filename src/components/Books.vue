@@ -1,8 +1,5 @@
 <template>
   <div class="home">
-    <div class="button-wrapper">
-      <router-link to="/" tag="button" class="button">Takaisin</router-link>
-    </div>
     <div class="book">
       <h2>Vesi - kirja maailman tärkeimmästä aineesta</h2>
       <p>Kuvitus: Satu Kontinen

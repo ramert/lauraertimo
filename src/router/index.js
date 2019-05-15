@@ -13,37 +13,55 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-    meta: 'Laura Ertimo',
+    meta: {
+      title: 'Laura Ertimo',
+      background: '#1c1c1c',
+    },
   },
   {
     path: '/Me',
     name: 'Me',
     component: Vesi,
-    meta: 'Laura',
+    meta: {
+      title: 'Laura',
+      background: 'purple',
+    },
   },
   {
     path: '/yo',
     name: 'Yo',
     component: Yo,
-    meta: 'Yo-kirja',
+    meta: {
+      title: 'Yö',
+      background: 'black',
+    },
   },
   {
     path: '/vesi',
     name: 'Vesi',
     component: Vesi,
-    meta: 'Vesi-kirja',
+    meta: {
+      title: 'Vesi',
+      background: '#244f7d',
+    },
   },
   {
     path: '/books',
     name: 'Books',
     component: Books,
-    meta: 'Kirjat',
+    meta: {
+      title: 'Kaikki kirjat',
+      background: 'green',
+    },
   },
 ];
 
 const router = new Router({
   mode: 'history',
   routes,
+  scrollBehavior() {
+    return window.scrollTo({ top: 0 });
+  },
 });
 
 export default router;

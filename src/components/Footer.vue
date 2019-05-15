@@ -10,7 +10,7 @@
           <a href="https://www.instagram.com/lauraertimo/" target="_blank">Instagram</a>
         </li>
         <li class="footer-link">
-          <a href="mailto:laura.ertimo@gmail.com">Email</a>
+          <a href="mailto:laura.ertimo@gmail.com" target="_blank">Email</a>
         </li>
       </ul>
     </div>
@@ -31,7 +31,8 @@ export default {
 <style scoped>
 .footer-links {
   display: flex;
-  margin: calc(4 * var(--spacing-unit));
+  background: var(--color-background1);
+  padding: calc(4 * var(--spacing-unit));
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;

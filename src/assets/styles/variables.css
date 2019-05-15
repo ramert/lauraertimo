@@ -1,9 +1,11 @@
 :root {
-  --font-family: "Ubuntu Mono", monospace;
+  --font-family-header: "Ubuntu Mono", monospace;
+  --font-family: 'Open Sans', sans-serif;
   --color-background1: #1c1c1c;
   --color-background2: #fff;
   --color-foreground1: #1c1c1c;
   --color-foreground2: #fff;
   --color-green: #42b983;
+  --color-blue:#244f7d;
   --spacing-unit: 4px;
 }
