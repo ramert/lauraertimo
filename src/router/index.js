@@ -2,8 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/components/Home';
 import Books from '@/components/Books';
-import Yo from '@/components/Yo';
-import Vesi from '@/components/Vesi';
+import Yo from '@/views/Yo';
+import Vesi from '@/views/Vesi';
 
 Vue.use(Router);
 

@@ -58,6 +58,7 @@ Vue.component("logo", Logo);
 <style scoped>
 .header {
   position: fixed;
+  opacity: 0.95;
   width: 100vw;
   background: var(--color-background2);
   z-index: 1;

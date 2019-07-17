@@ -16,8 +16,8 @@
 <script>
 import Vue from "vue";
 import Book from "@/components/Book";
-import YoImage from "@/assets/yo/kansi.png";
-import VesiImage from "@/assets/vesi/kansi.png";
+import YoImage from "@/assets/yo/kansi-embedded.png";
+import VesiImage from "@/assets/vesi/kansi-embedded.png";
 
 export default {
   name: "Home",
@@ -36,6 +36,7 @@ Vue.component("book", Book);
 <style scoped>
 .home {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-self: center;
   margin: 0 auto;

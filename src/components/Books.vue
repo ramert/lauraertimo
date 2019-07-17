@@ -1,7 +1,9 @@
 <template>
-  <div class="home">
+  <div class="re-page home">
     <div class="book">
-      <h2>Vesi - kirja maailman tärkeimmästä aineesta</h2>
+      <h2>
+        <router-link to="/vesi">Vesi - kirja maailman tärkeimmästä aineesta</router-link>
+      </h2>
       <p>Kuvitus: Satu Kontinen
         <br>Myllylahti 2017
         <br>sidottu, 152 sivua
@@ -12,7 +14,9 @@
       </p>
     </div>
     <div class="book">
-      <h2>Yö - kirja unesta ja pimeän salaisuuksista</h2>
+      <h2>
+        <router-link to="/yo">Yö - kirja unesta ja pimeän salaisuuksista</router-link>
+      </h2>
       <p>Kuvitus: Satu Kontinen
         <br>Myllylahti 2016
         <br>sidottu, 120 sivua
@@ -95,7 +99,6 @@ export default {
 .home {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 .book {

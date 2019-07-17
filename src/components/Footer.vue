@@ -29,6 +29,9 @@ export default {
 </script>
 
 <style scoped>
+.footer {
+  position: relative;
+}
 .footer-links {
   display: flex;
   background: var(--color-background1);

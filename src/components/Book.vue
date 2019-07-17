@@ -1,5 +1,5 @@
 <template>
-  <li>
+  <li class="book">
     <a @click="routeTransition">
       <picture>
         <source media="(max-width: 640px)" :srcset="mobileImage">
@@ -26,5 +26,8 @@ export default {
 <style scoped>
 .image {
   max-width: 100%;
+}
+.book {
+  cursor: pointer;
 }
 </style>
