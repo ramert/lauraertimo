@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="app">
     <vHeader :routeData="routeData"></vHeader>
+    <div class="background"></div>
     <section class="main">
-      <div class="background"></div>
       <transition name="re-fade" mode="out-in">
         <router-view class="router-animation"></router-view>
       </transition>
@@ -78,9 +78,9 @@ export default {
   width: 100%;
   top: 0;
   left: 0;
-  height:100%; 
-  opacity: 0.06;
-  position: absolute;
+  height:100vh; 
+  opacity: 0.04;
+  position: fixed;
   background-repeat: repeat;
   padding: 0;
   margin: 0;

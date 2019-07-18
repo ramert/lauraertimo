@@ -4,7 +4,7 @@
   position: relative;
 }
 
-.row-8-4, .row-4-8 {
+.row-8-4, .row-4-8, .row-6-6 {
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -36,5 +36,8 @@
   }
   .row-4-8 {
     grid-template-columns: 1fr 2fr;
+  }
+  .row-6-6 {
+    grid-template-columns: 1fr 1fr;
   }
 }

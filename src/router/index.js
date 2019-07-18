@@ -4,6 +4,7 @@ import Home from '@/components/Home';
 import Books from '@/components/Books';
 import Yo from '@/views/Yo';
 import Vesi from '@/views/Vesi';
+import Author from '@/views/Author';
 
 Vue.use(Router);
 
@@ -19,12 +20,12 @@ const routes = [
     },
   },
   {
-    path: '/me',
-    name: 'Me',
-    component: Vesi,
+    path: '/author',
+    name: 'Author',
+    component: Author,
     meta: {
-      title: 'Laura',
-      background: 'purple',
+      title: 'Tietokirjailija',
+      background: '#cf1945',
     },
   },
   {
@@ -50,8 +51,8 @@ const routes = [
     name: 'Books',
     component: Books,
     meta: {
-      title: 'Kaikki kirjat',
-      background: 'green',
+      title: 'Kirjat',
+      background: '#339900',
     },
   },
 ];

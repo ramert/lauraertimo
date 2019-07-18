@@ -1,8 +1,8 @@
 <template>
   <div class="button-wrapper">
-    <router-link to="/books" tag="button" class="button">Kaikki kirjat</router-link>
+    <router-link to="/books" tag="button" class="button">Kirjat</router-link>
     <!--<router-link to="/Blog" tag="button" class="button">Blogi</router-link>-->
-    <router-link to="/me" tag="button" class="button">Laura</router-link>
+    <router-link to="/author" tag="button" class="button">Tietokirjailija</router-link>
   </div>
 </template>
 
@@ -20,6 +20,7 @@ export default {
 
 .button {
   flex: 1 0 auto;
+  margin: 0;
   cursor: pointer;
   font-family: var(--font-family);
   min-width: 100px;

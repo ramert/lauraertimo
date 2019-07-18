@@ -1,5 +1,5 @@
 <template>
-    <div class="re-page re-page--blue re-content-block">
+    <div class="re-page re-content-block">
         <h2 class="center">Kirja maailman tärkeimmästä aineesta</h2>
         <vIngress :image="Kansi">
           Vesi on koko perheen tietokirja maailman tärkeimmästä aineesta. Läpinäkyvä ja mauton neste saattaa huljahtaa viemäriin huomaamatta, mutta ilman sitä ei maapallolla olisi elämää. Arkipäiväisyydestään huolimatta vedellä on todella outoja ominaisuuksia, joiden tunteminen auttaa ymmärtämään muun muassa ilmastonmuutosta. Vesi - kirja maailman tärkeimmästä aineesta on koko perheen tietokirja, jonka luettuaan ympäristön näkee uusin silmin.
@@ -8,8 +8,7 @@
         <!-- TODO: this could be done with ::before -->
         <div class="re-content-block__separator re-blue"></div>
 
-        <section>
-          <vImage :image="Sisallys" />
+        <section class="row-8-4">
           <vParagraph>
             Vesi koostuu neljästä pääluvusta, joissa elämän eliksiiriin
             sukelletaan eri näkökulmista. Fysiikan, kemian, maantieteen,
@@ -27,6 +26,7 @@
             Kuvituksessa on runsaasti sisäisiä viitteitä -
             seuraamalla vesijohtoa käy ilmi, kuka kuvitusta pyörittää.</p>
           </vParagraph>
+          <vImage :image="Sisallys" />
         </section>
 
         <!-- TODO: this could be done with ::before -->

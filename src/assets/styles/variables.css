@@ -8,6 +8,7 @@
   --color-green: #339900;
   --color-blue:#244f7d;
   --color-black:#000;
+  --color-red: #cf1945;
   --spacing-unit: 4px;
   --typo-spacing-unit: 0.6rem;
   --typo-spacing-large: 1rem;
@@ -27,4 +28,8 @@
 
 .re-black {
   background: var(--color-black);
+}
+
+.re-red {
+  background: var(--color-red);
 }

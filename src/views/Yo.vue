@@ -1,5 +1,5 @@
 <template>
-  <div class="re-page re-page--black re-content-block">
+  <div class="re-page re-content-block">
     <h2 class="center">Kirja unesta ja pimeän salaisuuksista</h2>
     <vIngress :image="Kansi">Yö on iltasatukirja, joka on totta. Se kirjoitettiin lasten ja aikuisten yhteisiä lukuhetkiä varten, mutta on
       sittemmin valloittanut sekä itse lukevan alakoululaisyleisön että aikuisia esteetikkoja ainakin 80-
