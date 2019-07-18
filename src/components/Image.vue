@@ -1,13 +1,25 @@
 <template>
   <div class="image">
-    <img :src="image"/>
+    <transition>
+      <img :src="image" v-show="isLoaded" @load="loaded"/>
+    </transition>
   </div>
 </template>
 
 <script>
 export default {
   name: "vImage",
-  props: ["image"]
+  props: ["image", "loadingColor"],
+  data: function () {
+    return {
+      isLoaded: false,
+    }
+  },
+  methods: {
+    loaded() {
+      this.isLoaded = true;
+    }
+  }
 };
 </script>
 
@@ -18,7 +30,15 @@ export default {
   align-items: flex-start;
   justify-content: center;
 }
-.image img{
+
+img {
   max-width: 100%;
+  transition: all .3s ease;
+  opacity: 1;
+}
+
+img.v-enter, img.v-leave {
+  height: 0;
+  opacity: 0;
 }
 </style>

@@ -1,10 +1,7 @@
 <template>
   <li class="book">
     <a @click="routeTransition">
-      <picture>
-        <source media="(max-width: 640px)" :srcset="mobileImage">
-        <img class="image" :src="image" :alt="altText">
-      </picture>
+      <vImage :image="image" :loadingColor="loadingColor"/>
     </a>
   </li>
 </template>
@@ -12,12 +9,10 @@
 <script>
 export default {
   name: "book",
-  props: ["link", "image", "mobileImage", "altText", "text"],
+  props: ["link", "image", "altText", "text", "loadingColor"],
   methods: {
     routeTransition() {
-      setTimeout(() => {
-        this.$router.push(this.link);
-      }, 350);
+      this.$router.push(this.link);
     }
   }
 };

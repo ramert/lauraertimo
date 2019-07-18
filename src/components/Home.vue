@@ -1,14 +1,8 @@
 <template>
   <div class="home">
     <ul class="center-wrapper">
-      <book
-        link="vesi"
-        alt-text="Vesi-kirja"
-        text="Vesi-kirja"
-        :image="VesiImage"
-        :mobileImage="VesiImage"
-      ></book>
-      <book link="yo" alt-text="Yo-kirja" text="Yö-kirja" :image="YoImage" :mobileImage="YoImage"></book>
+      <book link="vesi" alt-text="Vesi-kirja" text="Vesi-kirja" :image="VesiImage" loadingColor="blue"></book>
+      <book link="yo" alt-text="Yo-kirja" text="Yö-kirja" :image="YoImage" loadingColor="black"></book>
     </ul>
   </div>
 </template>

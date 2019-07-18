@@ -19,7 +19,7 @@ const routes = [
     },
   },
   {
-    path: '/Me',
+    path: '/me',
     name: 'Me',
     component: Vesi,
     meta: {
