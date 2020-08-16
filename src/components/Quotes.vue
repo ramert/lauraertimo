@@ -1,6 +1,6 @@
 <template>
    <ul class="margin-l-top-bottom">
-    <li v-for="quote in quotes" class="quote-list">
+    <li v-for="quote in quotes" class="quote-list" :key="quote.urlText">
       <vQuote :link="quote.url" :linkText="quote.urlText" :color="color">
         {{ quote.text }}
       </vQuote>

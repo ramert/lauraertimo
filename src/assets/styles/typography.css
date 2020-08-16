@@ -1,7 +1,11 @@
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   font-family: var(--font-family-header);
   color: var(--color-foreground1); 
   font-weight: normal;
+}
+
+p, span {
+  font-family: var(--font-family);
 }
 
 .right {
@@ -13,20 +17,34 @@ h1, h2, h3, p {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+h2, .bold-quote {
+  font-size: 1.1rem;
+}
+h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.bold-quote {
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  padding: calc(var(--spacing-unit) * 3);
 }
 
 @media screen and (min-width: 640px) {
   h1 {
     font-size: 3rem;
   }
-  h2 {
+  h2, .bold-quote {
     font-size: 1.5rem;
   }
-}
-
-h2 {
-  font-size: 2rem;
+  h3 {
+    font-size: 1.3rem;
+  }
 }
 p {
   font-family: var(--font-family);
@@ -35,6 +53,11 @@ p {
 }
 
 .ingress {
-  font-size: 1.25rem;
+  max-width: var(--paragraph-max-width);
+  margin: auto;
+}
+
+.ingress--center {
   text-align: center;
 }
+

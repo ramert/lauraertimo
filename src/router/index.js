@@ -1,23 +1,23 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from '@/components/Home';
-import Books from '@/components/Books';
-import Yo from '@/views/Yo';
-import Vesi from '@/views/Vesi';
+import Home from '@/views/Home';
+import Books from '@/views/Books';
 import Author from '@/views/Author';
+import Foreign from '@/views/Foreign';
+
+// Books
+import Yo from '@/books/Yo';
+import Vesi from '@/books/Vesi';
+import IhmeIlmat from '@/books/IhmeIlmat';
+import Lumotun from '@/books/LumotunMaanKartasto';
 
 Vue.use(Router);
 
 const routes = [
-  //
   {
     path: '/',
     name: 'Home',
     component: Home,
-    meta: {
-      title: 'Laura Ertimo',
-      background: '#1c1c1c',
-    },
   },
   {
     path: '/author',
@@ -25,25 +25,7 @@ const routes = [
     component: Author,
     meta: {
       title: 'Tietokirjailija',
-      background: '#cf1945',
-    },
-  },
-  {
-    path: '/yo',
-    name: 'Yo',
-    component: Yo,
-    meta: {
-      title: 'Yö',
-      background: 'black',
-    },
-  },
-  {
-    path: '/vesi',
-    name: 'Vesi',
-    component: Vesi,
-    meta: {
-      title: 'Vesi',
-      background: '#244f7d',
+      background: '#111e6c',
     },
   },
   {
@@ -52,17 +34,65 @@ const routes = [
     component: Books,
     meta: {
       title: 'Kirjat',
-      background: '#339900',
+      background: '#111e6c',
     },
   },
+  {
+    path: '/foreign',
+    name: 'Foreign rights',
+    component: Foreign,
+    meta: {
+      title: 'Foreign rights',
+      background: '#111e6c',
+    },
+  },
+  // Books
+  {
+    path: '/yo',
+    name: 'Yo',
+    component: Yo,
+    meta: {
+      title: 'Yö',
+      background: '#111e6c',
+    },
+  },
+  {
+    path: '/vesi',
+    name: 'Vesi',
+    component: Vesi,
+    meta: {
+      title: 'Vesi',
+      background: '#111e6c',
+    },
+  },
+  {
+    path: '/ihmeIlmat',
+    name: 'Ihme ilmat',
+    component: IhmeIlmat,
+    meta: {
+      title: 'Ihme ilmat!',
+      background: '#111e6c',
+    },
+  },
+  {
+    path: '/lumotunMaanKartasto',
+    name: 'Lumotun maan kartasto',
+    component: Lumotun,
+    meta: {
+      title: 'Lumotun maan kartasto',
+      background: '#111e6c',
+    },
+  },
+
 ];
 
 const router = new Router({
   mode: 'history',
   routes,
-  scrollBehavior() {
-    return window.scrollTo({ top: 0 });
-  },
+});
+
+router.afterEach((to, from, next) => {
+  window.scrollTo(0, 0);
 });
 
 export default router;

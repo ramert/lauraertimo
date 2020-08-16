@@ -21,7 +21,6 @@
   display: flex;
   flex-direction: column;
   color: white;
-  border-radius: 1em;
   padding: var(--typo-spacing-large);
   margin-bottom: var(--typo-spacing-large);
 }

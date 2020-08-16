@@ -1,6 +1,5 @@
 <template>
   <footer class="footer">
-    <naviBar></naviBar>
     <div class="col-sm-12">
       <ul class="footer-links">
         <li class="footer-link">
@@ -43,5 +42,9 @@ export default {
 
 .footer-link {
   margin: 0 calc(2 * var(--spacing-unit));
+}
+
+.footer-link a {
+  color: white;
 }
 </style>

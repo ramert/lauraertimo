@@ -1,70 +1,115 @@
 <template>
-    <div class="re-page re-content-block">
-      <section class="row-6-6" id="miksi">
-       <div class="re-content-block__paragraph">
-          <p class="ingress">Anna jokin aihe, niin kurkistan sitä kaleidoskoopin läpi ja vastaus voi yllättää. Siinä missä monien asiantuntijoiden on helppo
-syventyä yhden kokonaisuuden syövereihin, minun mieleni tekee kääntää aihetta kuin aihetta ja vähän ravistaa, jos eteen tulisi
-vielä jotain uutta. Viime aikoina olen ollut onnekas, kun olen saanut sovitella nenälleni niin yökiikareita kuin
-sukellusmaskiakin.</p>
-      </div>
+  <div>
+    <section>
+        <div class="re-content-block__paragraph re-content-block__paragraph--center">
+            <p class="ingress">Olen tietokirjaileva maantieteilijä. 
+              Kirjoitan maailmasta ja luonnon ja ihmisen ajoittain hankalasta suhteesta. 
+              Tavoitteenani on kirjoittaa kirjoja, joita koko perhe lukee yhdessä. 
+              Työskentelen tiiviisti yhteistyössä useiden suomalaisten kuvittajien kanssa. 
+              Kirjoitusprosessini kulkee käsi kädessä kuvitustyön kanssa, 
+              ja ajattelen kirjojani yhteistyön synnyttäminä kokonaisteoksina. 
+              Tutustu kirjoihini lähemmin KIRJAT-osiossa, 
+              josta löytyy myös linkkejä arvioihin ja kustantajien kirjasivuille.</p>
+        </div>
+      </section>
+
+      <div class="re-content-block__separator"></div>
+
+      <section class="row row-8-4">
+        <vParagraph>
+          Työskentelen täysiaikaisesti kirjailijana. Kirjoitustyön ohella teen kirjailijavierailuja. Vierailuni suuntautuvat kouluille ja kirja-alan tapahtumiin. Myös virtuaalivierailun ovat mahdollisia.
+        </vParagraph>
+        <vImage :image="Laura" class="first-on-mobile"/>
+      </section>
+
+      <div class="re-content-block__separator"></div>
+      
+      <section>
+        <vParagraph>
+        <h3>Yhteydenotot kustantamon tai sosiaalisen median kautta.</h3>
+            <ul>
+              <li>
+                <!--<a class="some-list-element" href="https://www.instagram.com/lauraertimo/" >
+                  <instagram /> <div>Instagram Laura Ertimo</div>
+                </a>-->
+                <a href="https://www.instagram.com/lauraertimo/" >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <!--<a class="some-list-element" href="https://www.facebook.com/lauraertimokirjailija">
+                  <facebook /> <div>Facebook Laura Ertimo</div>
+                </a>-->
+                <a href="https://www.facebook.com/lauraertimokirjailija" >
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://kauppa.intokustannus.fi/yhteystiedot/">Into Kustannus </a>
+              </li>
+              <li>
+                <a href="https://kustantamo.sets.fi/media/">Kustantamo S&S </a>
+              </li>
+              <li>
+                <a href="https://opike.fi/">Oppimateriaalikeskus Opike </a>
+              </li>
+            </ul>
+            <div>
+              Kirjailijavierailut <a href="https://kirjailijavierailut.lukukeskus.fi/kirjailijat/ertimo-laura/"> Lukukeskuksen</a> kautta
+            </div>
+          </vParagraph>
+          <vParagraph>
+          <a href="https://www.ahlbackagency.com/contact-us/">Elina Ahlbäck Literary Agency</a> edustaa kirjani kansainvälisillä markkinoilla. Agentuuri hoitaa myös esitysoikeuksiin liittyvät asiat.
           
-        <vImage :image="Laura" />
+    </vParagraph>
         </section>
-
-        <!-- TODO: this could be done with ::before -->
-        <div class="re-content-block__separator re-red"></div>
-
         <section>
           <vParagraph>
-            Olen koulutukseltani maantietelijä, vaikka karsastin koulumaantietoa (siis muiden muassa niitä tuotantokarttoja, joissa
-kerrotaan montako lammasta Uudessa-Seelannissa on). Yliopistolla valkeni, että maantiede antaa mahdollisuuden ajatella
-kaikkea, mitä ympärillämme on. Sivuaineitakin saattoi ainakin kultaisella viime vuosituhannella keräillä mistä tahansa
-tiedekunnasta.
-          </vParagraph>
-          <vParagraph>
-            Lasten tietokirjojen pariin päädyin alunperin pyynnöstä. Sittemmin olen kirjoittanut pyytämättäkin. Työskentelyn
-tietokirjallisuuden parissa ovat mahdollistaneet sekä mahtavat työtoverit - heistä erityisesti Satu Kontinen, joka löytyy jo
-toisen kirjoittamani kirjan graafisen suunnittelijan jakkaralta ja on erottamaton osa Yötä ja Vettä - että mm. Suomen
-Kulttuurirahasto, Suomen Tietokirjailijat ja Tiedonjulkistamisen neuvottelukunta sekä Taiteen edistämissäätiö.
-          </vParagraph>
-          <vParagraph>
-            Olen myös kahden lapsen äiti. Lapsille voi kirjoittaa ilman lapsiakin, mutta omien lasten kanssa saa tuntuman siihen
-riemastuttavaan avoimuuteen, jolla he ympäristöä tutkivat - ennen kuin aikuisuus kalkitsee ajattelun urat aivoissa. Lapset
-ovat kyllä opettavaisinta, mitä aikuisuus on minulle tarjonnut. Pikkuisten perspektiivi lähiympäristöön (“Hei katso tuolla on
-käpytikka / Etelä-Amerikan muotoinen pilvi / pikkukiviä / ISOJA KIVIÄ!”) ja mykistyttävä miksi-kysymysten määrä avaa
-silmät ja kannustaa selvittämään asian kuin asian ytimen. Ajatus Yöstä syntyi, kun huomasin, kuinka yö (onko nyt yö?), pimeä
-(siis se pelottava) ja nukkuminen (onko pakko? ja koska äiti saisi nukkua?) ovat jatkuvasti läsnä niin monen lapsiperheen elämässä. Minun tapani lähestyä ongelmaa on kerätä tietoa ja kirjoittaa se auki. Vahvemman ympäristönäkökulman Vesi taas
-kumpusi halusta kiinnittää lasten huomio aineeseen, joka liian usein jää meiltä aikuisiltakin huomaamatta.
-          </vParagraph>
-
-          
-        </section>
-
-        <!-- TODO: this could be done with ::before -->
-        <div class="re-content-block__separator re-red"></div>
-
-        <section>
-          <vParagraph>
-            Toivon, että maailma muuttuisi lukemalla hieman ymmärrettävämmäksi. Parhaat lukuhetket lasten kanssa avaavat uusia
-näkymiä sekä isolle että pienelle kirjan ääressä. Myös tietokirjoja - jos ne vain niin kirjoitetaan - on nautinto lukea ääneen!
-          <h3 class="right">Laura Ertimo os. Niiranen</h3>
-          </vParagraph>
-          
-        </section>
+            <h3>Kumppaneitani kuvitettujen tietokirjojen maailmassa</h3>
+            <ul>
+              <li>
+                <a href="https://mariahokoivu.com/" >Mari Ahokoivu </a>
+              </li>
+              <li>
+                <a href="http://www.satukala.com/" >Satu Kontinen</a>
+              </li>
+              <li>
+                <a href="https://www.illustratorsannapelliccioni.com/">Sanna Pelliccioni </a>
+              </li>
+              <li>
+                <a href="https://www.tiedekuvitus.fi/">Sole Lätti  </a>
+              </li>
+            </ul>
+        </vParagraph>
+      </section>
     </div>
 </template>
 
 <script>
+  import Vue from 'vue';
   import Laura from '@/assets/author/Laura-small.jpg';
+  import Facebook from '@/components/Facebook';
+  import Instrram from '@/components/Instagram';
+  Vue.component("facebook", Facebook);
+  Vue.component("instagram", Instrram);
+
 
   export default {
     name: 'Author',
     data() {
       return {
-        Laura,
+        Laura
       }
     }
   }
 </script>
+
+<style lang="scss" scoped>
+.some-list-element {
+  display: grid;
+  grid-template-columns: 50px 2fr;
+  gap: var(--spacing-unit);
+}
+</style>
 
 

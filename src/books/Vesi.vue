@@ -1,14 +1,15 @@
 <template>
-    <div class="re-page re-content-block">
-        <h2 class="center">Kirja maailman tärkeimmästä aineesta</h2>
-        <vIngress :image="Kansi">
-          Vesi on koko perheen tietokirja maailman tärkeimmästä aineesta. Läpinäkyvä ja mauton neste saattaa huljahtaa viemäriin huomaamatta, mutta ilman sitä ei maapallolla olisi elämää. Arkipäiväisyydestään huolimatta vedellä on todella outoja ominaisuuksia, joiden tunteminen auttaa ymmärtämään muun muassa ilmastonmuutosta. Vesi - kirja maailman tärkeimmästä aineesta on koko perheen tietokirja, jonka luettuaan ympäristön näkee uusin silmin.
-        </vIngress>
+    <div>
+        <vBookHeader 
+            title="Kirja maailman tärkeimmästä aineesta"
+            ingress="Koko perheen tietokirja maailman tärkeimmästä aineesta. Läpinäkyvä ja mauton neste saattaa huljahtaa viemäriin huomaamatta, mutta ilman sitä ei maapallolla olisi elämää. "
+            coAuthor="kuvittaja Satu Kontinen"
+            publisher="Myllylahti"
+            published="2017"
+            buyLink="http://www.myllylahti.fi/kirjat/lasten-ja-nuortenkirjat/vesi-kirja-maailman-taerkeimmaestae-aineesta-detail"
+        />
 
-        <!-- TODO: this could be done with ::before -->
-        <div class="re-content-block__separator re-blue"></div>
-
-        <section class="row-8-4">
+        <section class="row row-8-4">
           <vParagraph>
             Vesi koostuu neljästä pääluvusta, joissa elämän eliksiiriin
             sukelletaan eri näkökulmista. Fysiikan, kemian, maantieteen,
@@ -24,24 +25,24 @@
             edetessä..? Selvärajaisten, aukeamakohtaisten tietotekstien
             rinnalla sininen kuvitus kulkee katkeamattomana läpi kirjan.
             Kuvituksessa on runsaasti sisäisiä viitteitä -
-            seuraamalla vesijohtoa käy ilmi, kuka kuvitusta pyörittää.</p>
+            seuraamalla vesijohtoa käy ilmi, kuka kuvitusta pyörittää.
           </vParagraph>
           <vImage :image="Sisallys" />
         </section>
 
         <!-- TODO: this could be done with ::before -->
-        <div class="re-content-block__separator re-blue"></div>
+        <div class="re-content-block__separator"></div>
 
-        <section class="row-4-8">
+        <section class="row row-4-8">
           <vImage :image="Sisallys2" />
           <vParagraph>
             Ensimmäinen pääluku on nimeltään Planeetta ja se käsittelee veden ominaisuuksia, olomuotoja ja paikkaa planeetallamme. Kaikki alkaa intialaisesta kansantarinasta, jossa suuri käärme on padonnut maailman vedet ja aiheuttanut suuren kuivuuden. Kun Indra vapauttaa veden virtaamaan, kirja pääsee matkaan. Perinteisen pallo-mallin sijaan Vesi-kirjassa molekyylitason ilmiöitä käsitellään Lego-palikoin. Aluksi tutkitaan aivan perusteita eli vesimolekyyliä ominiasuuksineen. Sitten tutustutaan sankarittariimme ja olomuotopeliin, jonka säännöt löytyvät termodynamiikasta. Kolikkoa heittämällä vaihdetaan olomuotoa ja sidotaan tai vapautetaan energiaa. Olomuodon muutoksiin perustuvat myös sääilmiöt, joita valotetaan pilvioppaan ja sateen syntyä käsittelevän sääsirkuksen keinoin. Sademääriä taas hahmotellaan maitopurkkien ja eri puolilla maapalloa sijaitsevien paikkojen avulla. Hirmumyrskyt saavat oman aukemansa ja sääilmiöiden lopuksi tutustutaan vielä Indran jousipyssyyn, jolla on tutumpikin nimi eli sateenkaari. Hopikansan tarina käärmeen klaanin synnystä johdattaa veden reittejä käsittelevään osaan, jossa tutustutaan veden karttakuvaan ja suolaisen- ja makeanveden jakautumiseen maapalolla. Omat alalukunsa saavat niin vesiputoukset, suolajärvet, jäätiköt kuin niiden maastoon jättämät jäljetkin. Maanalaiset vesivarat ovat kautta aikojen herättäneet sekalaisia tunteita: pohjavesistä kannetaan huolta ja jostainhan tarina Tuonelan virrastakin on saanut alkunsa. Maailman meriä ja ilmastonmuutoksenkin kannalta keskeistä ilmiötä, merivirtoja, käsitellään viiden aukeaman kokonaisuudessa, joka päättyy vuorovetten loputtomaan liikkeeseen. Niin vesimolekyylin matka on täynnä, ja matkaa voi vielä pysähtyä miettimään 6. tutkimusasemalle. Luvun päättää kyynel, joka vierii astronautin poskelle.
           </vParagraph>
         </section>
 
-        <div class="re-content-block__separator re-blue"></div>
+        <div class="re-content-block__separator"></div>
 
-        <section class="row-8-4">
+        <section class="row row-8-4">
           <vParagraph>
               Luontoa käsittelevässä toisessa luvussa tutustutaan erilaisiin elinympäristöihin. Luku alkaa arvoituksella: "Seison maailman kuivimmalla mantereella valtavan vesivaraston päällä. Täällä maalla ei asu juuri ketään. Lempiruokaani ovat äyriäiset ja kala, muuta en syökään. Missä olen, kuka olen?" ja vastaus löytyy seuraavan aukeman kuvasta. Pakastimen kaltaisen Antarktiksen jälkeen siirrytään Saharan polttavan auringon alle. Mutta miksi maaelämä ilman nestemäistä makeaa vettä on niin vaikeaa? Tutkimusasemilla 7 ja 8 hahmotellaan Lego-palikoiden avulla, mitä kasvien yhteyttämisessä ja energian vapauttavassa soluhengityksessä tapahtuu. Sitten voidaankin loikata vetisempiin maisemiin suolle, sademetsään ja mangrovetiheikköön. Nyt ei ole vedestä pulaa, mutta tiesitkö, että kihokit napsivat hyönteisiä samasta syystä kuin me vitamiinilisiä ja että mangrovemetsiköiden olosuhteet heittelevät hypersuolaisuudesta makean veden tulviin ja päivänpaisteesta hirmumyrskyihin yhden päivän sisällä? Ääriolosuhteista on mukava pulahtaa vakaampaan meriympäristöön: ensin kelppien vedenalaiseen labyrinttiin ja sitten syvemmälle, aina syvänmerenhautojen pohjalle asti. Jossain epämääräisessä syvyydessä tapaamme myös tosiasioita jättiläiskalmareista ja tarun Krakenista. Ennen elinympäristöjen luvun päättymistä tapaamme vielä pimeydessä elävät hauraat pitsirakennelmat eli syvänmerenkorallit ja hyvin iäkkään nilviäisen. Lopulta saamelaistaruston kalakansa ja erikoinen cubbomaddu johdattavat meidät ihmisten ilmoille.
           </vParagraph>
@@ -49,10 +50,10 @@
         </section>
         
 
-        <div class="re-content-block__separator re-blue"></div>
+        <div class="re-content-block__separator"></div>
 
         <h2 class="center">Miksi vesi?</h2>
-        <section class="row-8-4" id="miksi">    
+        <section class="row row-8-4" id="miksi">    
             <vParagraph>
                 Vesi on rakas, pelottava, tylsä ja ihmeellinen aine – aina läsnä,
                   välttämätön, huomaamaton. Vesi – kirja maailman tärkeimmästä aineesta

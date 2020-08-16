@@ -1,10 +1,9 @@
 <template>
   <div id="app" class="app">
-    <vHeader :routeData="routeData"></vHeader>
-    <div class="background"></div>
     <section class="main">
+      <vHeader :routeData="routeData"></vHeader>
       <transition name="re-fade" mode="out-in">
-        <router-view class="router-animation"></router-view>
+        <router-view class="router-animation" :class="{'page': !isRoot}"></router-view>
       </transition>
     </section>
     <vFooter></vFooter>
@@ -17,6 +16,7 @@ import Vuetify from "vuetify";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Ingress from '@/components/Ingress';
+import BookHeader from '@/components/book/BookHeader';
 import Paragraph from '@/components/Paragraph';
 import Image from '@/components/Image';
 import Quote from '@/components/Quote';
@@ -31,6 +31,7 @@ Vue.component("vImage", Image);
 Vue.component("vParagraph", Paragraph);
 Vue.component("vQuote", Quote);
 Vue.component("vQuotes", Quotes);
+Vue.component("vBookHeader", BookHeader);
 
 
 export default {
@@ -45,15 +46,18 @@ export default {
     if (!this.route) {
       this.route = EventBus.initial;
       this.routeData = this.route.meta || {title: "Laura Ertimo", background: "black"};
+      this.isRoot = this.route.path === '/';
     }
     return {
       route: this.route,
-      transition: this.transition
+      transition: this.transition,
+      isRoot: this.isRoot
     };
   },
   watch: {
     $route(to, from) {
       this.routeData = to.meta || "Laura Ertimo";
+      this.isRoot = to.path === '/';
     }
   }
 };
@@ -73,35 +77,14 @@ export default {
   background: var(--color-background2);
 }
 
-.background {
-  background-image: url('~@/assets/background.png');
-  width: 100%;
-  top: 0;
-  left: 0;
-  height:100vh; 
-  opacity: 0.04;
-  position: fixed;
-  background-repeat: repeat;
-  padding: 0;
-  margin: 0;
-  z-index:0;
-}
-
 .app {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 56px 1fr 110px;
+  grid-template-rows: 1fr 52px;
   grid-template-areas:
-    "header"
     "main"
     "footer";
-}
-
-@media screen and (min-width: 640px) {
-  .app {
-    grid-template-rows: 72px 1fr 110px;
-  }
 }
 
 .header {
@@ -110,7 +93,20 @@ export default {
 .main {
   grid-area: main;
   display: flex;
+  flex-direction: column;
   max-width: 1400px;
+}
+
+.page {
+  margin:  54px 5% 0 ;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (min-width: 640px) {
+  .page {
+    margin-top: 84px;
+  }
 }
 
 .footer {
@@ -119,13 +115,13 @@ export default {
 
 .re-fade-enter-active,
 .re-fade-leave-active {
-  transition-duration: 0.75s;
+  transition-duration: 0.2s;
   transition-property: opacity;
   transition-timing-function: ease;
 }
 
 .re-fade-enter,
 .re-fade-leave-active {
-  opacity: 0
+  opacity: 0;
 }
 </style>

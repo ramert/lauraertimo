@@ -1,18 +1,16 @@
 <template>
-  <div class="re-page re-content-block">
-    <h2 class="center">Kirja unesta ja pimeän salaisuuksista</h2>
-    <vIngress :image="Kansi">Yö on iltasatukirja, joka on totta. Se kirjoitettiin lasten ja aikuisten yhteisiä lukuhetkiä varten, mutta on
+  <div>
+    <vBookHeader 
+      title="Kirja unesta ja pimeän salaisuuksista"
+      ingress="Yö on iltasatukirja, joka on totta. Se kirjoitettiin lasten ja aikuisten yhteisiä lukuhetkiä varten, mutta on
       sittemmin valloittanut sekä itse lukevan alakoululaisyleisön että aikuisia esteetikkoja ainakin 80-
-      täyttäneisiin saakka. Tummanpuhuva, salaperäinen kirja kätkee sisäänsä lempeää tietoa pimeydestä ja
-      nukkumisesta. Siinä missä fiktio usein herkuttelee painajaisilla ja pimeänpelolla, Yön kuvaamien
-      tosiasioiden avulla voi päästä peloista yli ja ymmärtää unten parhaat puolet.
-    </vIngress>
-
-    <vQuote :link="quotePromote.url" :linkText="quotePromote.urlText" color="black">
-      {{ quotePromote.text}}
-    </vQuote>
+      täyttäneisiin saakka."
+      coAuthor="kuvittaja Satu Kontinen"
+      publisher="Myllylahti"
+      published="2016"
+    />
     
-    <section class="row-4-8">
+    <section class="row row-4-8">
       <vImage :image="SisallysImage" />
       <vParagraph>
         Yö kirja unesta ja pimeän salaisuuksista jakautuu neljään osaan ja päättyy epilogin omaiseen
@@ -28,7 +26,7 @@
       </vParagraph>
     </section>
 
-    <div class="re-content-block__separator re-black"></div>
+    <div class="re-content-block__separator"></div>
 
     <section>
       <vParagraph>
@@ -53,7 +51,7 @@ miettimään 6. tutkimusasemalle. Luvun päättää kyynel, joka vierii astronau
       </vParagraph>
     </section>
     
-    <div class="re-content-block__separator re-black"></div>
+    <div class="re-content-block__separator"></div>
 
     <section>
       <vParagraph>
@@ -76,7 +74,7 @@ miettimään 6. tutkimusasemalle. Luvun päättää kyynel, joka vierii astronau
      </vParagraph>
     </section>
 
-    <div class="re-content-block__separator re-black"></div>
+    <div class="re-content-block__separator"></div>
 
     <section>
       <vParagraph>
@@ -105,9 +103,9 @@ kautta kaikkien elävien olentojen hyvinvointia.
      </vParagraph>
     </section>
 
-    <div class="re-content-block__separator re-black"></div>
+    <div class="re-content-block__separator"></div>
 
-    <section class="row-4-8">
+    <section class="row row-4-8">
       <vImage :image="MiksiYoImage" />
       <vParagraph>
       Vesi-kirjan viimeinen luku tarjoaa haasteen aikuisille, mutta uppoaa helpommin lasten plastiseen
@@ -125,20 +123,6 @@ vastaus.
     </section>
 
     <vQuotes :quotes="quotes" color="black"/>
-
-
-    <section id="osta">
-        <h2>Yö-ostoksille</h2>
-        <p>Yö on saatavilla kirjakaupoista kautta maan.</p>
-        <p>
-          Saat sen suoraan kotiin Myllylahden verkkokaupasta:
-          <a
-            class="btn btn-primary"
-            href="http://www.myllylahti.fi/kirjat/uutuusteokset-kevaet-2016/yoe-kirja-unesta-ja-pimeaen-salaisuuksista-detail"
-            target="_blank"
-          >Osta Yö</a>
-        </p>
-    </section>
 
     <vImage :image="FooterImage" />
   </div>

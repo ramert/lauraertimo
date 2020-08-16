@@ -1,9 +1,7 @@
 <template>
-  <section class="row-8-4">
-      <div class="re-content-block__paragraph">
-          <p class="ingress"><slot></slot></p>
-      </div>
-      <vImage :image="image"/>
+  <section class="row" :class="{'row-9-3': image}">
+      <p class="ingress bold-quote"><slot></slot></p>
+      <vImage v-if="image" :image="image" isBorder="true" />
   </section>
 </template>
 

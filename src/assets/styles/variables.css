@@ -1,14 +1,18 @@
 :root {
-  --font-family-header: "Ubuntu Mono", monospace;
-  --font-family: 'Open Sans', sans-serif;
+
+  --font-family-header: "Marcellus SC", serif;
+  --font-family: "EB Garamond", serif;
+  --font-family-sub-header: "Arvo", serif;
   --color-background1: #1c1c1c;
-  --color-background2: #fff;
+  --color-background2: #fbfbf8;
   --color-foreground1: #1c1c1c;
   --color-foreground2: #fff;
   --color-green: #339900;
-  --color-blue:#244f7d;
+  --color-blue:#111e6c;
   --color-black:#000;
   --color-red: #cf1945;
+  --color-gray: #666;
+  --color-lightgray: #dadada;
   --spacing-unit: 4px;
   --typo-spacing-unit: 0.6rem;
   --typo-spacing-large: 1rem;
@@ -32,4 +36,8 @@
 
 .re-red {
   background: var(--color-red);
+}
+
+.re-ligttgray {
+  background: var(--color-lightgray);
 }
