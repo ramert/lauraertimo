@@ -38,12 +38,12 @@ export default {
 .book {
   display: grid;
   padding: calc(2 * var(--spacing-unit));
-  padding-right: calc(4 * var(--spacing-unit));
   background: white;
   border: 1px solid var(--color-lightgray);
 
   @media screen and (min-width: 640px) {
     grid-template-columns: 100px 1fr;
+    padding-right: calc(4 * var(--spacing-unit));
   }
 
   margin: 0 0 calc(2 * var(--spacing-unit));
@@ -76,8 +76,14 @@ export default {
     justify-content: center;
     align-items: center;
     margin: auto 0;
-    min-height: 90px;
-    margin-right: calc(4 * var(--spacing-unit));
+    min-height: 120px;
+    margin-bottom: calc(2 * var(--spacing-unit));
+    
+    @media screen and (min-width: 640px) {
+      min-height: 90px;
+      margin-right: calc(4 * var(--spacing-unit));
+      margin-bottom: 0;
+    }
 
     &--bg {
       background: var(--color-blue);

@@ -43,6 +43,7 @@ export default {
   position: relative;
   max-height: calc(100vh - 200px);
   overflow: hidden;
+  max-width: 100vw;
   h2 {
     font-size: 1rem;
   }

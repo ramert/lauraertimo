@@ -16,15 +16,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped> 
 .button-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   background: var(--color-background2);
-}
 
-@media screen and (min-width: 640px) {
-  .button-wrapper {
+  @media screen and (min-width: 640px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -44,13 +42,18 @@ export default {
   cursor: pointer;
   font-family: var(--font-family-sub-header);
   min-width: 100px;
-  padding: calc(6 * var(--spacing-unit));
+  padding: calc(4 * var(--spacing-unit));
   color: var(--color-blue);
   background: var(--color-background2);
   border: none;
   font-weight: 600;
   font-size: 1.2em;
   transition: all 0.3s ease-out;
+
+  @media screen and (min-width: 640px) {
+      padding: calc(6 * var(--spacing-unit));
+
+  }
 }
 
 .button::before {

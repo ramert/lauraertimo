@@ -3,7 +3,7 @@
     <h2 v-if="title" class="center">{{title}}</h2>
     <div class="info">
         <div>
-            <h3 >Kirjailija Laura Ertimo</h3>
+            <h3>Kirjailija Laura Ertimo</h3>
             <h3 v-if="coAuthor">{{coAuthor}}</h3>
         </div>
         <h3>

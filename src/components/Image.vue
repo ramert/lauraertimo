@@ -35,9 +35,14 @@ export default {
 }
 
 img {
-  max-width: 100%;
   transition: all .1s ease;
   opacity: 1;
+  max-height: 34vh;
+
+  @media screen and (min-width: 640px) {
+    max-width: 100%;
+    max-height: initial;
+  }
 
   &.thumbnail {
     max-height: 120px;
