@@ -1,10 +1,10 @@
 <template>
   <ul class="button-wrapper">
-    <router-link to="/books" tag="li" class="button">
+    <router-link to="/books" tag="li" tabIndex="0" class="button">
       <span class="button-text">Kirjat</span></router-link>
     <!--<router-link to="/Blog" tag="button" class="button">Blogi</router-link>-->
-    <router-link to="/author" tag="li" class="button"><span class="button-text">Tietokirjailija</span></router-link>
-    <router-link to="/foreign" tag="li" class="button"><span class="button-text">Foreign rights</span></router-link>
+    <router-link to="/author" tag="li" tabIndex="0" class="button"><span class="button-text">Tietokirjailija</span></router-link>
+    <router-link to="/foreign" tag="li" tabIndex="0" class="button"><span class="button-text">Foreign rights</span></router-link>
   </ul>
 </template>
 
@@ -61,7 +61,7 @@ export default {
   font-size: 2em;
 }
 
-.button:hover {
+.button:hover, .button:focus {
   color: var(--color-background2);
   background-color: var(--color-blue);
 }

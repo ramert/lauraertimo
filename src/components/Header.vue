@@ -42,7 +42,7 @@ export default {
 <style lang="scss" scoped>
 .header {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   background: var(--color-blue);
   transition: all 0.3s ease-in-out;
   transform: translateY(0);
@@ -75,7 +75,6 @@ h1 {
   align-items: center;
   justify-content: center;
   background: var(--color-blue);
-  width: 100vw;
 }
 
 .main-nav__nav {
