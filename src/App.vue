@@ -98,7 +98,7 @@ export default {
 }
 
 .page {
-  margin:  54px 5% 0 ;
+  margin:  54px 5vw 0 ;
   overflow: hidden;
   position: relative;
 }

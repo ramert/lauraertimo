@@ -29,6 +29,7 @@ import LumottuImage from '@/assets/lumotunmaankartasto/lumotun-maan-kartasto.jpg
 import PikkuTietoMissa from '@/assets/missa-sina-olet.jpg';
 import IndieFood from '@/assets/indiefoodkansi.jpeg';
 import Sudenppentujen from '@/assets/sudenpentujenKansi.jpeg'
+import Maapallotieto from '@/assets/Maapallo_etukansi.jpg';
  
 const ComicBooks = [
   {
@@ -110,6 +111,7 @@ const SmallChildrenBooks = [
 const WorldClearText = [  
   {
     name:"Maapallo. Planeettamme selkokielellä",
+    image: Maapallotieto,
     illustrator:"Markus Hotakainen",
     publisher:"Oppimateriaalikeskus Opike 2020",
     publisherLink: "https://opike.fi/",
