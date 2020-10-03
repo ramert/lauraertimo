@@ -83,7 +83,7 @@ export default {
   }
 
   &__separator {
-    background-color: var(--color-lightgray);
+    background-color: var(--color-blue);
     min-width: 100%;
     height: 3px;
     border: none;
@@ -91,12 +91,17 @@ export default {
     position: relative;
     overflow: visible;
   }
+
+  &:hover, &:focus {
+    color: var(--color-background2);
+    background-color: var(--color-blue);
+    .button__separator {
+      background-color: var(--color-background2);
+    }
+  }
 }
 
-.button:hover, .button:focus {
-  color: var(--color-background2);
-  background-color: var(--color-blue);
-}
+
 
 .button:focus {
   outline: none;

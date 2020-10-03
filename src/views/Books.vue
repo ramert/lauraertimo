@@ -15,6 +15,16 @@
         />
       </ul>
     </div>
+    <div>
+      <h2>Aiempaa tuotantoa</h2>
+      <ul>
+        <li v-for="book in EarlierBooks" :key="book.name" class="link">
+          <h4>{{book.name}}</h4>
+          <div>{{book.publisher}}</div>
+          <div v-if="book.info">{{book.info}}</div>
+        </li>
+      </ul>  
+    </div>
   </div>
 </template>
 
@@ -27,8 +37,6 @@ import YoImage from '@/assets/yo/kansi.jpg';
 import IhmeIlmatImage from '@/assets/ihmeilmat/ihme-ilmat-miksi-ilmasto-muuttuu.jpg';
 import LumottuImage from '@/assets/lumotunmaankartasto/lumotun-maan-kartasto.jpg';
 import PikkuTietoMissa from '@/assets/missa-sina-olet.jpg';
-import IndieFood from '@/assets/indiefoodkansi.jpeg';
-import Sudenppentujen from '@/assets/sudenpentujenKansi.jpeg'
 import Maapallotieto from '@/assets/Maapallo_etukansi.jpg';
  
 const ComicBooks = [
@@ -126,15 +134,32 @@ const WorldClearText = [
   }
 ];
 
+const AllBooks = [
+  {
+    title: 'Sarjakuva-tietokirjat',
+    books: ComicBooks
+  },
+  {
+    title: 'Koko perheen kuvitetut tietokirjat',
+    books: FamilyBooks
+  },
+  {
+    title: 'Tietoseikkailut perheen pienimmille',
+    books: SmallChildrenBooks
+  },
+  { 
+    title: 'Maapallotieto selkokielellä',
+    books: WorldClearText
+  }
+];
+
 const EarlierBooks = [
   {
     name:"Indiefood lähiruokaopas Suomeen",
-    image: IndieFood,
     publisher:"Myllylahti 2016"
   },
   {
     name:"Sudenpentujen karttakirja",   
-    image: Sudenppentujen, 
     publisher:"Sanoma Magazines Finland 2012"
   },
   {
@@ -144,7 +169,7 @@ const EarlierBooks = [
   {
     name:"Muumit ja maailmankartasto",    
     publisher:"Egmont Kustannus 2009",
-    //TODO: tekijänä tietoteksteissä
+    info: "Tekijänä tietoteksteissä"
   },
   {
     name:"Kurvisen perheen liikennekirja",    
@@ -164,35 +189,13 @@ const EarlierBooks = [
   }
 ]
 
-const AllBooks = [
-  {
-    title: 'Sarjakuva-tietokirjat',
-    books: ComicBooks
-  },
-  {
-    title: 'Koko perheen kuvitetut tietokirjat',
-    books: FamilyBooks
-  },
-  {
-    title: 'Tietoseikkailut perheen pienimmille',
-    books: SmallChildrenBooks
-  },
-  { 
-    title: 'Maapallotieto selkokielellä',
-    books: WorldClearText
-  },
-  {
-    title: 'Aiempaa tuotantoa',
-    books: EarlierBooks
-  } 
-];
-
 Vue.component("book", Book);
 export default {
   name: "Books",
   data() {
     return {
-      AllBooks
+      AllBooks,
+      EarlierBooks
     }
   }
 };
@@ -202,5 +205,9 @@ export default {
 .root {
   display: flex;
   flex-direction: column;
+  padding-bottom: calc(6 * var(--spacing-unit));
+}
+.link {
+  padding: var(--spacing-unit);
 }
 </style>

@@ -6,6 +6,7 @@
         </div>
       </section>
       <section class="row row-8-4">
+        <div>
         <vParagraph>
             <div>
           I am a geographer and full time author specialising in children’s non fiction. <a href="http://www.ahlbackagency.com/author/laura-ertimo/">Elina Ahlbeck Literary Agency</a> represents my work outside Finland.
@@ -14,13 +15,6 @@
                 Feel free to contact the <a href="http://www.ahlbackagency.com/author/laura-ertimo/">agency</a> for more information and reading material:
             </div>
         </vParagraph>
-        <vImage :image="Laura" class="first-on-mobile"/>
-      </section>
-
-      <div class="re-content-block__separator"></div>
-
-
-      <section>
         <vParagraph>
         <h2>Sold Foreign rights</h2>
             <ul>
@@ -88,7 +82,11 @@
             </li>
           </ul>
     </vParagraph>
-        </section>
+        </div>
+        <vImage :image="Laura" class="first-on-mobile"/>
+      </section>
+
+
     </div>
 </template>
 
