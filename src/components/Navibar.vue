@@ -47,6 +47,7 @@ export default {
   font-weight: 600;;
   letter-spacing: 1px;
   padding: calc(3 * var(--spacing-unit)) 0;
+  margin: 0 auto;
 }
 .button-text::before {
   content: '\2767';
@@ -63,7 +64,7 @@ export default {
 .button {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   flex: 1 0 100%;
   width: 100%;
   margin: 0;
