@@ -74,14 +74,13 @@ export default {
   font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--color-background2);
 }
 
 .app {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 52px;
+  grid-template-rows: 1fr 60px;
   grid-template-areas:
     "main"
     "footer";
@@ -95,6 +94,9 @@ export default {
   display: flex;
   flex-direction: column;
   max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--color-background2);
 }
 
 .page {

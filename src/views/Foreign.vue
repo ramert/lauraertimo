@@ -22,7 +22,7 @@
 
       <section>
         <vParagraph>
-        <h2>Sold Foreign rights.</h2>
+        <h2>Sold Foreign rights</h2>
             <ul>
               <li>
                 <h3>Weird Weather! </h3>
@@ -94,7 +94,7 @@
 
 <script>
   import Vue from 'vue';
-  import Laura from '@/assets/author/Laura-small.jpg';
+  import Laura from '@/assets/author/LauraPortrait.jpg';
   import Facebook from '@/components/Facebook';
   import Instrram from '@/components/Instagram';
   Vue.component("facebook", Facebook);

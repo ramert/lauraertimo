@@ -3,13 +3,10 @@
     <div class="col-sm-12">
       <ul class="footer-links">
         <li class="footer-link">
-          <a href="https://fi.linkedin.com/in/laura-ertimo-033a394" target="_blank">LinkedIn</a>
+          <a href="https://www.facebook.com/lauraertimokirjailija/" target="_blank">Facebook</a>
         </li>
         <li class="footer-link">
           <a href="https://www.instagram.com/lauraertimo/" target="_blank">Instagram</a>
-        </li>
-        <li class="footer-link">
-          <a href="mailto:laura.ertimo@gmail.com" target="_blank">Email</a>
         </li>
       </ul>
     </div>
@@ -34,13 +31,14 @@ export default {
 .footer-links {
   display: flex;
   background: var(--color-background1);
-  padding: calc(4 * var(--spacing-unit));
+  padding: calc(6 * var(--spacing-unit));
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
 .footer-link {
+  font-size: 1.2rem;
   margin: 0 calc(2 * var(--spacing-unit));
 }
 

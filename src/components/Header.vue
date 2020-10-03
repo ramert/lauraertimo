@@ -2,7 +2,7 @@
   <header class="header" :class="{'hide': isRoot}">
     <nav class="main-nav" :style="{'background':background}">
       <!-- TODO: make this as component -->
-      <button v-if="!isRoot" class="main-nav__nav" @click="$router.go(-1)">
+      <button v-if="!isRoot" class="main-nav__nav" tabIndex="0" @click="$router.go(-1)">
         &lt;
       </button>
       <div class="title">
@@ -42,6 +42,8 @@ export default {
 <style lang="scss" scoped>
 .header {
   position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   background: var(--color-blue);
   transition: all 0.3s ease-in-out;
@@ -87,6 +89,7 @@ h1 {
   background: none;
   color: white;
   border: none;
+  // TODO - add focus style
   &:focus {
     outline: none;
   }

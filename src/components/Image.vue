@@ -45,7 +45,7 @@ img {
 
   &.hero {
     max-width: initial;
-    max-height: 34vh;
+    max-height: 50vh;
 
     @media screen and (min-width: 640px) {
       max-width: 100%;

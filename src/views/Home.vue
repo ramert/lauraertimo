@@ -1,14 +1,14 @@
 <template>
   <div class="re-content-block">
     <div class="hero"> 
-      <h2 class="hero__text hero__text--left">Laura  <br/>Ertimo</h2>
-      <h2 class="hero__text hero__text--right">Tietokirjailija <br/>ja <br/>Maantieteilijä</h2>
+      <h1 class="hero__text">Kirjallisia matkoja ympäröivään maailmaan ja saavuttamattomiin todellisuuksiin</h1>
       <vImage :image="Laura" isHero="true"/>
     </div>
     <section>
-      <div class="re-content-block__paragraph re-content-block__paragraph--center">
-          <h2 class="bold-quote">Kirjallisia matkoja ympäröivään maailmaan ja saavuttamattomiin todellisuuksiin.</h2>
-      </div>
+      <h2 class="hero__title">
+        <span>Laura Ertimo</span>
+        <span class="hero__subtitle">Tietokirjailija ja Maantieteilijä</span>
+      </h2>
     </section>
     <naviBar/>      
   </div>
@@ -44,47 +44,47 @@ export default {
   max-height: calc(100vh - 200px);
   overflow: hidden;
   max-width: 100vw;
-  h2 {
-    font-size: 1rem;
-  }
 
-  @media screen and (min-width: 640px) {
-    & h2 {
-      font-size: 1.5rem;
-
-      }
-  }
 
   &__text {
-    background: rgba(0,0,0,0.1);
+    font-family: var(--font-family);
+    font-size: 1.1rem;
+    font-weight: 600;
     text-align: center;
     position: absolute;
-    width: 30%;
-    top: 50%;
+    width: 40%;
     transform: translateY(-50%);
     color: white;
+    right: 5%;
+    top: 50%;
 
-    &--left {
-      left: 5%;
-    }
-
-    &--right {
-      right: 5%;
-      top: 50%;
+    @media screen and (min-width: 640px) {
+      top: 60%;
+      font-size: 2rem;
     }
   }
-}
 
+  &__title {
+    font-size: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    margin: 5vw;
 
+    @media screen and (min-width: 640px) {
+      font-size: 2.5rem;
+      margin: calc(12 * var(--spacing-unit)) calc(6 * var(--spacing-unit));
+      padding-left: calc(16.5vw - 95px);
+    }
+    @media screen and (min-width: 1400px) {
+      padding-left: 160px;
+    }
 
-.center-wrapper {
-  display: inline-grid;
-  grid-template-columns: 1fr;
-}
-
-@media screen and (min-width: 640px) {
-  .center-wrapper {
-    grid-template-columns: 1fr 1fr;
+  }
+  &__subtitle {
+    font-size: 1.5rem;
+    @media screen and (min-width: 640px) {
+      font-size: 1.75rem;
+    }
   }
 }
 </style>
