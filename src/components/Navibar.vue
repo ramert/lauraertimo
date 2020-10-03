@@ -3,7 +3,7 @@
     <router-link to="/books" tag="button" tabIndex="0" class="button">
       <div class="button__separator"></div>
       <h3 class="button-text">Kirjat</h3>
-      <div class="button__separator"></div>
+      <div class="button__separator "></div>
     </router-link>
     <!--<router-link to="/Blog" tag="button" class="button">Blogi</router-link>-->
     <router-link to="/author" tag="button" tabIndex="0" class="button">
@@ -29,11 +29,11 @@ export default {
 
 <style lang="scss" scoped> 
 .button-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: block;
   background: var(--color-background2);
 
   @media screen and (min-width: 640px) {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -64,7 +64,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1 0 auto;
+  flex: 1 0 100%;
+  width: 100%;
   margin: 0;
   cursor: pointer;
   font-family: var(--font-family-sub-header);
