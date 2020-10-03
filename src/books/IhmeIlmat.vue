@@ -2,6 +2,7 @@
     <div>
         <vBookHeader 
             title="Miksi ilmasto muuttuu"
+            :cover="IhmeIlmatImage"
             ingress="Sarjakuvaa, tarinaa ja perinteistä tietotekstiä yhdistelevä kirja kertoo ilmastonmuutoksesta, sen mekanismeista ja hillitsemisestä."
             coAuthor="kuvittaja Mari Ahokoivu"
             publisher="Into Kustannus"
@@ -21,13 +22,17 @@
             <b>Imelik ilm! Miks kliima muutub </b>
             <a href="https://www.avita.ee/32413"> Avita, Viro 2020</a>
         </vParagraph>
-
-
     </div>
 </template>
 
 <script>
+    import IhmeIlmatImage from '@/assets/ihmeilmat/ihme-ilmat-miksi-ilmasto-muuttuu.jpg';
     export default {
-        name: 'IhmeIlmat'
+        name: 'IhmeIlmat',
+        data() {
+            return {
+                IhmeIlmatImage
+            }
+        }
     };
 </script>

@@ -1,19 +1,23 @@
 <template>
-  <div>
-    <h2 v-if="title" class="center">{{title}}</h2>
-    <div class="info">
-        <div>
-            <h3>Kirjailija Laura Ertimo</h3>
-            <h3 v-if="coAuthor">{{coAuthor}}</h3>
+  <div class="header">
+    <section class="row row-4-8">
+        <vImage :image="cover"></vImage>
+            <div>
+            <h2>{{title}}</h2>
+            <h2 v-if="coTitle">{{coTitle}}</h2>
+            <div class="info">
+                <h4>Kirjailija Laura Ertimo</h4>
+                <h4 v-if="coAuthor">{{coAuthor}}</h4>
+                <h4>
+                    <a :href="buyLink" target="_blank">{{publisher}}, {{published}}</a>
+                </h4>
+            </div>
+             <div class="header__ingress">
+                 <p class="ingress">{{ingress}}</p>
+             </div>
         </div>
-        <h3>
-            <a :href="buyLink" target="_blank">{{publisher}}, {{published}}</a>
-        </h3>
-    </div>
-    <div class="header-ingress">
-        <vIngress :image="image">{{ingress}}
-        </vIngress>
-    </div>
+    </section>
+
     <hr class="separator" />
   </div>
 </template>
@@ -21,26 +25,23 @@
 <script>
 export default {
     name: "vBookHeader",
-    props: ["title", "image", "ingress", "published", "publisher", "buyLink", "coAuthor"]
+    props: ["title", "coTitle", "cover", "image", "ingress", "published", "publisher", "buyLink", "coAuthor"]
 }
 </script>
 
 <style lang="scss" scoped> 
 .info {
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
   margin: calc(4 * var(--spacing-unit)) 0;
 }
 
-@media screen and (min-width: 640px) {
-    .info {
-        flex-direction: row;
-    }
-}
+.header {
+    margin-top: calc(4 * var(--spacing-unit));
 
-.header-ingress {
-    padding: calc(2 * var(--spacing-unit)) 0;
+    .header__ingress {
+        padding: calc(2 * var(--spacing-unit)) 0;
+    }
 }
 
 .separator {

@@ -69,7 +69,6 @@ export default {
   margin: 0;
   cursor: pointer;
   font-family: var(--font-family-sub-header);
-  min-width: 100px;
   padding: 5vw;
   color: var(--color-blue);
   background: var(--color-background2);
@@ -85,7 +84,7 @@ export default {
 
   &__separator {
     background-color: var(--color-blue);
-    min-width: 100%;
+    width: 100%;
     height: 3px;
     border: none;
     margin: var(--spacing-unit) 0;
