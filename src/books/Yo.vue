@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <vPage>
     <vBookHeader 
       title="Kirja unesta ja pimeän salaisuuksista"
       ingress="Yö on iltasatukirja, joka on totta. Se kirjoitettiin lasten ja aikuisten yhteisiä lukuhetkiä varten, mutta on
@@ -125,7 +125,7 @@ vastaus.
     <vQuotes :quotes="quotes" color="black"/>
 
     <vImage :image="FooterImage" />
-  </div>
+  </vPage>
 </template>
 
 <script>

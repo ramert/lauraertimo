@@ -1,5 +1,5 @@
 <template>
-  <div class="root">
+  <vPage>
     <div v-for="bookList in AllBooks" :key="bookList.title">
       <h2>{{bookList.title}}</h2>
       <ul>
@@ -25,7 +25,7 @@
         </li>
       </ul>  
     </div>
-  </div>
+  </vPage>
 </template>
 
 <script>

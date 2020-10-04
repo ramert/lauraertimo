@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <vPage>
         <vBookHeader 
             title="Miksi ilmasto muuttuu"
             :cover="IhmeIlmatImage"
@@ -17,12 +17,12 @@
         <vParagraph noMargin="true">
             Ihme ilmat! taipuu teatteriksi. <a href="https://www.teatteri-ilmio.fi/" target="_blank" >Teatteri Ilmi Ö</a> tarttuu haasteeseen ja luo tietokirjan pohjalta <a href="https://www.teatteri-ilmio.fi/nosto/ihme-ilmat-forumteatteriesitys-2/" target="_blank">forumteatteriesityksen.</a>
         </vParagraph>
-        <h3>IHME ILMAT! VALLOITTAA MAAILMAA</h3>
+        <h3>Ihme ilmat! valloittaa maailmaa</h3>
         <vParagraph noMargin="true">
             <b>Imelik ilm! Miks kliima muutub </b>
             <a href="https://www.avita.ee/32413"> Avita, Viro 2020</a>
         </vParagraph>
-    </div>
+    </vPage>
 </template>
 
 <script>

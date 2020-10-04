@@ -24,8 +24,7 @@ const routes = [
     name: 'Author',
     component: Author,
     meta: {
-      title: 'Tietokirjailija',
-      background: '#111e6c',
+      title: 'Tietokirjailija'
     },
   },
   {
@@ -33,8 +32,7 @@ const routes = [
     name: 'Books',
     component: Books,
     meta: {
-      title: 'Kirjat',
-      background: '#111e6c',
+      title: 'Kirjat'
     },
   },
   {
@@ -42,8 +40,7 @@ const routes = [
     name: 'Foreign rights',
     component: Foreign,
     meta: {
-      title: 'Foreign rights',
-      background: '#111e6c',
+      title: 'Foreign rights'
     },
   },
   // Books
@@ -52,8 +49,7 @@ const routes = [
     name: 'Yo',
     component: Yo,
     meta: {
-      title: 'Yö',
-      background: '#111e6c',
+      title: 'Yö'
     },
   },
   {
@@ -62,7 +58,7 @@ const routes = [
     component: Vesi,
     meta: {
       title: 'Vesi',
-      background: '#111e6c',
+      subTitle: 'Kirja maailman tärkeimmästä aineesta'
     },
   },
   {
@@ -71,7 +67,7 @@ const routes = [
     component: IhmeIlmat,
     meta: {
       title: 'Ihme ilmat!',
-      background: '#111e6c',
+      subTitle: 'Miksi ilmasto muuttuu'
     },
   },
   {
@@ -79,8 +75,7 @@ const routes = [
     name: 'Lumotun maan kartasto',
     component: Lumotun,
     meta: {
-      title: 'Lumotun maan kartasto',
-      background: '#111e6c',
+      title: 'Lumotun maan kartasto'
     },
   },
 

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <vPage>
         <vBookHeader 
             title="Kirja maailman tärkeimmästä aineesta"
             :cover="Kansi"
@@ -84,13 +84,13 @@
               <a class="btn btn-primary btn-blue" href="http://www.myllylahti.fi/kirjat/lasten-ja-nuortenkirjat/vesi-kirja-maailman-taerkeimmaestae-aineesta-detail" target="_blank">Osta Vesi</a>
           </p>
         </section>
-    </div>
+    </vPage>
 </template>
 
 <script>
 import QuotesImage from '@/assets/vesi/vesi_sanottua.png';
 import Hero from '@/assets/vesi/vesi_title.png';
-import Kansi from '@/assets/vesi/vesi_kansi.png';
+import Kansi from '@/assets/vesi/kansi.jpg';
 import Miksi from '@/assets/vesi/vesi_miksi1.png';
 import Miksi2 from '@/assets/vesi/vesi_miksi2.png';
 import Sisallys2 from '@/assets/vesi/vesi_sisallys1.png';

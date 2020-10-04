@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <vPage>
     <section>
         <div class="re-content-block__paragraph re-content-block__paragraph--center">
           <h2 class="ingress ingress--center">Non fiction for children and the whole family</h2>
@@ -81,13 +81,11 @@
                 CHINA, CITIC Press,  RUSSIA, KompasGuide
             </li>
           </ul>
-    </vParagraph>
+        </vParagraph>
         </div>
-        <vImage :image="Laura" class="first-on-mobile"/>
-      </section>
-
-
-    </div>
+      <vImage :image="Laura" class="first-on-mobile"/>
+    </section>
+  </vPage>
 </template>
 
 <script>

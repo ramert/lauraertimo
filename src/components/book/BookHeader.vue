@@ -1,9 +1,9 @@
 <template>
   <div class="header">
-    <section class="row row-4-8">
-        <vImage :image="cover" isBorder="true"></vImage>
+    <section class="row row-3-9">
+        <vImage :image="cover"></vImage>
         <div>
-            <h2>{{title}}</h2>
+            <h2 v-if="title">{{title}}</h2>
             <h2 v-if="coTitle">{{coTitle}}</h2>
             <div class="info">
                 <h4>Kirjailija Laura Ertimo</h4>
@@ -13,7 +13,7 @@
                 </h4>
             </div>
             <div class="header__ingress">
-                <p class="ingress">{{ingress}}</p>
+                {{ingress}}
             </div>
         </div>
     </section>
@@ -39,7 +39,7 @@ export default {
 .header {
     margin-top: calc(4 * var(--spacing-unit));
 
-    .header__ingress {
+    &__ingress {
         padding: calc(2 * var(--spacing-unit)) 0;
     }
 }

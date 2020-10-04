@@ -1,18 +1,18 @@
-<template>
-  <div class="re-content-block">
-    <div class="hero"> 
-      <h1 class="hero__text">Kirjallisia matkoja ympäröivään maailmaan ja saavuttamattomiin todellisuuksiin</h1>
-      <vImage :image="Laura" isHero="true"/>
+<template>  
+    <div class="re-content-block">
+      <div class="hero"> 
+        <h1 class="hero__text">Kirjallisia matkoja ympäröivään maailmaan ja saavuttamattomiin todellisuuksiin</h1>
+        <vImage :image="Laura" isHero="true"/>
+      </div>
+      <section>
+        <h2 class="hero__title">
+          <span>Laura Ertimo</span>
+          <span class="hero__subtitle">Tietokirjailija ja maantieteilijä</span>
+        </h2>
+      </section>
+      <naviBar/>      
+      <vFooter />
     </div>
-    <section>
-      <h2 class="hero__title">
-        <span>Laura Ertimo</span>
-        <span class="hero__subtitle">Tietokirjailija ja Maantieteilijä</span>
-      </h2>
-    </section>
-    <naviBar/>      
-  </div>
-
 </template>
 
 <script>
@@ -73,7 +73,7 @@ export default {
     @media screen and (min-width: 640px) {
       font-size: 2.5rem;
       margin: calc(12 * var(--spacing-unit)) calc(6 * var(--spacing-unit));
-      padding-left: calc(16.5vw - 95px);
+      padding-left: calc(16.5vw - 110px);
     }
     @media screen and (min-width: 1400px) {
       padding-left: 160px;

@@ -1,5 +1,5 @@
 <template>
-  <div>
+ <vPage>
     <section class="author row row-8-4">
         <div>
                   <vParagraph>
@@ -71,7 +71,7 @@
       </div>
       <vImage :image="Laura" class="first-on-mobile"/>
       </section>
-    </div>
+  </vPage>
 </template>
 
 <script>
