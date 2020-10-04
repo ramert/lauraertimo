@@ -3,13 +3,13 @@
     <router-link to="/books" tag="button" tabIndex="0" class="button">
       <div class="button__separator"></div>
       <h3 class="button-text">Kirjat</h3>
-      <div class="button__separator "></div>
+      <div class="button__separator button__separator--hide"></div>
     </router-link>
     <!--<router-link to="/Blog" tag="button" class="button">Blogi</router-link>-->
     <router-link to="/author" tag="button" tabIndex="0" class="button">
       <div class="button__separator"></div>
       <h3 class="button-text">Tietokirjailija</h3>
-      <div class="button__separator"></div>
+      <div class="button__separator button__separator--hide"></div>
     </router-link>
     <router-link to="/foreign" tag="button" tabIndex="0" class="button">
       <div class="button__separator"></div>
@@ -29,6 +29,7 @@ export default {
 
 <style lang="scss" scoped> 
 .button-wrapper {
+  padding: calc(4* var(--spacing-unit)) 0;
   display: block;
   background: var(--color-background2);
 
@@ -70,7 +71,7 @@ export default {
   margin: 0;
   cursor: pointer;
   font-family: var(--font-family-sub-header);
-  padding: 5vw;
+  padding: 0 5vw;
   color: var(--color-blue);
   background: var(--color-background2);
   border: none;
@@ -91,6 +92,12 @@ export default {
     margin: var(--spacing-unit) 0;
     position: relative;
     overflow: visible;
+
+    &--hide {
+      @media screen and (max-width: 640px) {
+        display: none;
+      }
+    }
   }
 
   &:hover, &:focus {

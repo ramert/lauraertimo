@@ -60,7 +60,7 @@ export default {
 
     @media screen and (min-width: 640px) {
       top: 60%;
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 

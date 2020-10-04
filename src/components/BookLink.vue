@@ -76,7 +76,6 @@ export default {
     color: var(--color-blue);
     margin: calc(2* var(--spacing-unit)) 0;
     font-size: 1.1rem;
-    font-style: italic;
   }
 
   &__publisher {

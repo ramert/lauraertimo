@@ -1,8 +1,8 @@
 <template>
   <div class="header">
     <section class="row row-4-8">
-        <vImage :image="cover"></vImage>
-            <div>
+        <vImage :image="cover" isBorder="true"></vImage>
+        <div>
             <h2>{{title}}</h2>
             <h2 v-if="coTitle">{{coTitle}}</h2>
             <div class="info">
@@ -12,9 +12,9 @@
                     <a :href="buyLink" target="_blank">{{publisher}}, {{published}}</a>
                 </h4>
             </div>
-             <div class="header__ingress">
-                 <p class="ingress">{{ingress}}</p>
-             </div>
+            <div class="header__ingress">
+                <p class="ingress">{{ingress}}</p>
+            </div>
         </div>
     </section>
 

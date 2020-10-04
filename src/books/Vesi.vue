@@ -2,6 +2,7 @@
     <div>
         <vBookHeader 
             title="Kirja maailman tärkeimmästä aineesta"
+            :cover="Kansi"
             ingress="Koko perheen tietokirja maailman tärkeimmästä aineesta. Läpinäkyvä ja mauton neste saattaa huljahtaa viemäriin huomaamatta, mutta ilman sitä ei maapallolla olisi elämää. "
             coAuthor="kuvittaja Satu Kontinen"
             publisher="Myllylahti"
@@ -10,7 +11,7 @@
         />
 
         <section class="row row-8-4">
-          <vParagraph>
+          <vParagraph noMargin="true">
             Vesi koostuu neljästä pääluvusta, joissa elämän eliksiiriin
             sukelletaan eri näkökulmista. Fysiikan, kemian, maantieteen,
             kansanperinteen ja historian sekä biologian ja
@@ -27,15 +28,18 @@
             Kuvituksessa on runsaasti sisäisiä viitteitä -
             seuraamalla vesijohtoa käy ilmi, kuka kuvitusta pyörittää.
           </vParagraph>
-          <vImage :image="Sisallys" />
+          <div>
+            <vImage :image="Sisallys" isBorder="true" />
+          </div>
         </section>
 
-        <!-- TODO: this could be done with ::before -->
         <div class="re-content-block__separator"></div>
 
         <section class="row row-4-8">
-          <vImage :image="Sisallys2" />
-          <vParagraph>
+          <div>
+            <vImage :image="Sisallys2" isBorder="true"/>
+          </div>  
+          <vParagraph noMargin="true">
             Ensimmäinen pääluku on nimeltään Planeetta ja se käsittelee veden ominaisuuksia, olomuotoja ja paikkaa planeetallamme. Kaikki alkaa intialaisesta kansantarinasta, jossa suuri käärme on padonnut maailman vedet ja aiheuttanut suuren kuivuuden. Kun Indra vapauttaa veden virtaamaan, kirja pääsee matkaan. Perinteisen pallo-mallin sijaan Vesi-kirjassa molekyylitason ilmiöitä käsitellään Lego-palikoin. Aluksi tutkitaan aivan perusteita eli vesimolekyyliä ominiasuuksineen. Sitten tutustutaan sankarittariimme ja olomuotopeliin, jonka säännöt löytyvät termodynamiikasta. Kolikkoa heittämällä vaihdetaan olomuotoa ja sidotaan tai vapautetaan energiaa. Olomuodon muutoksiin perustuvat myös sääilmiöt, joita valotetaan pilvioppaan ja sateen syntyä käsittelevän sääsirkuksen keinoin. Sademääriä taas hahmotellaan maitopurkkien ja eri puolilla maapalloa sijaitsevien paikkojen avulla. Hirmumyrskyt saavat oman aukemansa ja sääilmiöiden lopuksi tutustutaan vielä Indran jousipyssyyn, jolla on tutumpikin nimi eli sateenkaari. Hopikansan tarina käärmeen klaanin synnystä johdattaa veden reittejä käsittelevään osaan, jossa tutustutaan veden karttakuvaan ja suolaisen- ja makeanveden jakautumiseen maapalolla. Omat alalukunsa saavat niin vesiputoukset, suolajärvet, jäätiköt kuin niiden maastoon jättämät jäljetkin. Maanalaiset vesivarat ovat kautta aikojen herättäneet sekalaisia tunteita: pohjavesistä kannetaan huolta ja jostainhan tarina Tuonelan virrastakin on saanut alkunsa. Maailman meriä ja ilmastonmuutoksenkin kannalta keskeistä ilmiötä, merivirtoja, käsitellään viiden aukeaman kokonaisuudessa, joka päättyy vuorovetten loputtomaan liikkeeseen. Niin vesimolekyylin matka on täynnä, ja matkaa voi vielä pysähtyä miettimään 6. tutkimusasemalle. Luvun päättää kyynel, joka vierii astronautin poskelle.
           </vParagraph>
         </section>
