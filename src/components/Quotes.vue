@@ -20,11 +20,11 @@
   max-width: 650px;
 }
 
-.quote-list:nth-child(odd) {
+.quote-list:nth-child(even) {
   margin-left: auto;
 }
 
-.quote-list:nth-child(even) {
+.quote-list:nth-child(odd) {
   margin-right: auto;
 }
 </style>

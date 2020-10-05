@@ -4,7 +4,8 @@
       <slot />
     </div>
     <div class="quote__reference">
-      <a :href="link" target="_blank">{{linkText}}</a>
+      <a v-if="link" :href="link" target="_blank">{{linkText}}</a>
+      <span v-else>{{linkText}}</span>
     </div>
   </div>
 </template>

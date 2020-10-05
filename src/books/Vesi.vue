@@ -10,7 +10,7 @@
             buyLink="http://www.myllylahti.fi/kirjat/lasten-ja-nuortenkirjat/vesi-kirja-maailman-taerkeimmaestae-aineesta-detail"
         />
 
-        <section class="row row-8-4">
+        <!--<section class="row row-8-4">
           <vParagraph noMargin="true">
             Vesi koostuu neljästä pääluvusta, joissa elämän eliksiiriin
             sukelletaan eri näkökulmista. Fysiikan, kemian, maantieteen,
@@ -74,16 +74,16 @@
             </vParagraph>
             <vImage :image="Miksi"/>
         </section>
-
+  -->
         <vQuotes :quotes="quotes" color="blue" />
 
-        <section id="osta">
+        <!--<section id="osta">
           <h2>Vesi-ostoksille</h2>
           <p>Vesi on saatavilla kirjakaupoista kautta maan.</p>
           <p>Saat sen suoraan kotiin Myllylahden verkkokaupasta:
               <a class="btn btn-primary btn-blue" href="http://www.myllylahti.fi/kirjat/lasten-ja-nuortenkirjat/vesi-kirja-maailman-taerkeimmaestae-aineesta-detail" target="_blank">Osta Vesi</a>
           </p>
-        </section>
+        </section>-->
     </vPage>
 </template>
 

@@ -2,6 +2,7 @@
   <vPage>
     <vBookHeader 
       title="Kirja unesta ja pimeän salaisuuksista"
+      :cover="Kansi"
       ingress="Yö on iltasatukirja, joka on totta. Se kirjoitettiin lasten ja aikuisten yhteisiä lukuhetkiä varten, mutta on
       sittemmin valloittanut sekä itse lukevan alakoululaisyleisön että aikuisia esteetikkoja ainakin 80-
       täyttäneisiin saakka."
@@ -10,7 +11,7 @@
       published="2016"
     />
     
-    <section class="row row-4-8">
+    <!--<section class="row row-4-8">
       <vImage :image="SisallysImage" />
       <vParagraph>
         Yö kirja unesta ja pimeän salaisuuksista jakautuu neljään osaan ja päättyy epilogin omaiseen
@@ -120,16 +121,16 @@ maailmanhistoriaan sukelletaan, sitä välittömämmin kaikki elämä on riippuv
 on syytä kysyä viimeinen kysymys: mistä vesi on peräisin? Ja tarjota kysymykseen paras saatavilla oleva
 vastaus.
      </vParagraph>
-    </section>
+    </section>-->
 
-    <vQuotes :quotes="quotes" color="black"/>
+    <vQuotes :quotes="quotes" color="blue"/>
 
     <vImage :image="FooterImage" />
   </vPage>
 </template>
 
 <script>
-import EsittelyImage from "@/assets/yo/kansi.png";
+import Kansi from "@/assets/yo/kansi.jpg";
 import FooterImage from "@/assets/yo/footer.png";
 import MiksiYoImage from "@/assets/yo/miksiyo.png";
 import SisallysImage from "@/assets/yo/sisallys.png";
@@ -179,7 +180,7 @@ export default {
       hero: Hero,
       mobileHero: MobileHero,
       quotesImage: QuotesImage,
-      Kansi: EsittelyImage,
+      Kansi,
       SisallysImage,
       FooterImage,
       MiksiYoImage,

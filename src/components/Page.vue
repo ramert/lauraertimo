@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div class="page">
         <button class="curl-top-left" tabIndex="0" @click="$router.go(-1)"></button>
         <vHeader :routeData="routeData"></vHeader>
-        <div class="page">
+        <div class="content">
         <slot/>
         </div>
         <vFooter></vFooter>
@@ -38,7 +38,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .page {
+  background: var(--color-background2);
+  //clip-path: polygon(35px 0, 100% 0%, 100% 100%, 0 100%, 0 35px);
+}
+
+.content {
   padding: 0 5vw calc( 6 * var(--spacing-unit));
   overflow: hidden;
   position: relative;
@@ -92,7 +98,7 @@ export default {
   top: 0;
   left: 0;
   background: linear-gradient(135deg, transparent 45%, #aaa 50%, #ccc 50%, #fff 80%);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
   transition: 0.2s;
 }
 
