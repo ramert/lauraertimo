@@ -80,11 +80,6 @@ export default {
 .app {
   padding: calc(3 * var(--spacing-unit)) 0;
 }
-@media screen and (min-width: 640px) {
-  .page {
-    padding: calc(5 * var(--spacing-unit)) 0;
-  }
-}
 
 /* TODO check if this works*/
 .app:before {

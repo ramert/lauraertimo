@@ -40,7 +40,9 @@ export default {
 
 .page {
   background: var(--color-background2);
-  //clip-path: polygon(35px 0, 100% 0%, 100% 100%, 0 100%, 0 35px);
+  @media screen and (min-width: 640px) {
+    padding: calc(5 * var(--spacing-unit)) 0 0;
+  }
 }
 
 .content {
