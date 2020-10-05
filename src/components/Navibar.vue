@@ -31,7 +31,6 @@ export default {
 .button-wrapper {
   padding: calc(4* var(--spacing-unit)) 0;
   display: block;
-  background: var(--color-background2);
 
   @media screen and (min-width: 640px) {
     display: grid;
@@ -73,7 +72,7 @@ export default {
   font-family: var(--font-family-sub-header);
   padding: 0 5vw;
   color: var(--color-blue);
-  background: var(--color-background2);
+  background: inherit;
   border: none;
   font-weight: 600;
   font-size: 1.2em;
