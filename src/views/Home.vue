@@ -1,5 +1,5 @@
 <template>  
-    <div class="re-content-block">
+    <div class="home">
       <div class="hero"> 
         <h1 class="hero__text">Kirjallisia matkoja ympäröivään maailmaan ja saavuttamattomiin todellisuuksiin</h1>
         <vImage :image="Laura" isHero="true"/>
@@ -32,10 +32,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .home {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-self: center;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -43,7 +40,7 @@ export default {
   position: relative;
   max-height: calc(100vh - 200px);
   overflow: hidden;
-  max-width: 100vw;
+  max-width: 100%;
 
 
   &__text {

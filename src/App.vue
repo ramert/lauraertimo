@@ -141,24 +141,13 @@ export default {
   grid-area: footer;
 }
 
-
-.re-fade-leave-active {
+.re-fade-leave-active, .re-fade-enter-active {
   transition-duration: 0.2s;
   transition-property: opacity;
   transition-timing-function: ease;
-  transition-delay: 0.10s;
 }
 
-.re-fade-enter-active {
-  transition-property: opacity;
-  transition-duration: 0.1s;
-}
-
-.re-fade-enter {
-  opacity: 0;
-}
-
-.re-fade-leave-active {
+.re-fade-enter, .re-fade-leave-active {
   opacity: 0;
 }
 

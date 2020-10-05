@@ -1,9 +1,8 @@
 <template>
     <div class="page">
-        <button class="curl-top-left" tabIndex="0" @click="$router.go(-1)"></button>
         <vHeader :routeData="routeData"></vHeader>
         <div class="content">
-        <slot/>
+          <slot/>
         </div>
         <vFooter></vFooter>
     </div>
@@ -53,53 +52,4 @@ export default {
     margin: calc( 6 * var(--spacing-unit)) 0 0;
   }
 }
-
-.curl-top-left {
-  position: absolute;
-  z-index: 1;
-  text-decoration: none;
-  font-size: 2rem;
-  top: 0;
-  left: 0;
-  transform: translateY(-50%);
-  background: none;
-  color: var(--color-blue);
-  border: none;
-  height: 50px;
-  width: 50px;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.curl-top-left:hover:before {
-  width: 70px;
-  height: 70px;
-}
-
-.curl-top-left:focus {
-  outline: none;
-}
-
-.curl-top-left:focus:before {
-  width: 150px;
-  height: 130px;
-}
-
-.curl-top-left:hover {
-  cursor: pointer;
-}
-
-.curl-top-left:before {
-  pointer-events: none;
-  position: absolute;
-  content: '';
-  height: 40px;
-  width: 40px;
-  top: 0;
-  left: 0;
-  background: linear-gradient(135deg, transparent 45%, #aaa 50%, #ccc 50%, #fff 80%);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-  transition: 0.2s;
-}
-
 </style>

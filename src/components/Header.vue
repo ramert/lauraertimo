@@ -1,9 +1,10 @@
 <template>
   <header class="header" :class="{'hide': isRoot}">
-    <nav class="main-nav">
-        <h1>{{pageTitle}}</h1>
+    <nav class="main-nav title">
+        <h1 >{{pageTitle}}</h1>
         <h3 v-if="pageSubTitle">{{pageSubTitle}}</h3>
     </nav>
+    <button class="back" tabIndex="0" @click="$router.go(-1)">&lt;</button>
   </header>
 </template>
 
@@ -36,25 +37,11 @@ export default {
 <style lang="scss" scoped>
   .header {
     width: 100%;
+    color: var(--color-blue);  
+    position: relative;
   }
 
   .title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: var(--color-blue);  
-  }
-
-  .title h3 {
-    margin-left: var(--spacing-unit);
-    margin-top: var(--spacing-unit);
-  }
-
-  h1 {
-    margin: 0;
-  }
-
-  .main-nav {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -62,6 +49,40 @@ export default {
     color: var(--color-blue);
     align-items: center;
     justify-content: center;
+
+    h1 {
+      margin: 0;
+    }
+
+    h3 {
+      margin-left: var(--spacing-unit);
+      margin-top: var(--spacing-unit);
+    }
   }
+  .back {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family-header);
+    font-weight: 600;
+    font-size: 1.5rem;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    height: 100%;
+    background: none;
+    color: var(--color-blue);
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    @media screen and (min-width: 640px) {
+      font-size: 3rem;
+      padding: 20px 30px;
+    }
+}
 
 </style>
