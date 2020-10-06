@@ -120,6 +120,7 @@ const WorldClearText = [
   {
     name:"Maapallo. Planeettamme selkokielellä",
     image: Maapallotieto,
+    toLink:"/maapallotieto",
     illustrator:"Markus Hotakainen",
     publisher:"Oppimateriaalikeskus Opike 2020",
     publisherLink: "https://opike.fi/",

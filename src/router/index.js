@@ -10,6 +10,7 @@ import Yo from '@/books/Yo';
 import Vesi from '@/books/Vesi';
 import IhmeIlmat from '@/books/IhmeIlmat';
 import Lumotun from '@/books/LumotunMaanKartasto';
+import Maaapallo from '@/books/SelkoMaapallo';
 
 Vue.use(Router);
 
@@ -78,6 +79,15 @@ const routes = [
       title: 'Lumotun maan kartasto'
     },
   },
+  {
+    path: '/maapallotieto',
+    name: 'Maapallo. Planeettamme selkokielellä',
+    component: Maaapallo,
+    meta: {
+      title: 'Maapallo. Planeettamme selkokielellä'
+    },
+  },
+  
 
 ];
 
@@ -87,7 +97,10 @@ const router = new Router({
 });
 
 router.afterEach((to, from, next) => {
-  window.scrollTo(0, 0);
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
 });
 
 export default router;
