@@ -22,7 +22,7 @@
         <vParagraph>
         <h2>Sold Foreign rights</h2>
             <ul>
-              <vForeignItem v-for="right in rights" :cover="right.cover" :title="right.title" :orig="right.orig" :rights="right.rights" :key="right.title"/> 
+              <vForeignItem v-for="right in rights" :cover="right.cover" :title="right.title" :link="right.link" :orig="right.orig" :rights="right.rights" :key="right.title"/> 
           </ul>
         </vParagraph>
         </div>
@@ -39,8 +39,7 @@
   import IhmeIlmatImage from '@/assets/ihmeilmat/ihme-ilmat-miksi-ilmasto-muuttuu.jpg';
   import LumottuImage from '@/assets/lumotunmaankartasto/lumotun-maan-kartasto.jpg';
   import PikkuTietoMissaImage from '@/assets/missa-sina-olet.jpg';
-  import ForeignItem from '@/components/book/RightBookItem';
-
+  import ForeignItem from '@/components/book/ForeignBookItem';
 
   /*import Facebook from '@/components/Facebook';
   import Instrram from '@/components/Instagram';
@@ -54,6 +53,7 @@
       cover: IhmeIlmatImage,
       title:"Weird Weather!",
       orig:"Ihme ilmat! 2019",
+      link:"http://www.ahlbackagency.com/book/weird-weather-why-does-climate-change/",
       rights: [
         "FINLAND: Into Kustannus (orig.)",
         "ESTONIA: Avita",
@@ -73,6 +73,7 @@
     },
     {
       cover: PikkuTietoMissaImage,
+      link:"http://www.ahlbackagency.com/book/mini-science-where-are-you/",
       title:"Where are you?",
       orig:"Missä sinä olet? 2020",
       rights: [
@@ -85,6 +86,7 @@
     {
       title:"Invisible World",
       orig:"Mennään piiloon! 2021",
+      link:"http://www.ahlbackagency.com/book/mini-science-invisible-world/",
       rights: [
         "FINLAND: Karisto (orig.)",
         "TURKEY: Yapi Kredi Publishing",
@@ -93,6 +95,7 @@
     {
       cover: LumottuImage,
       title:"Enchanted Planet Earth",
+      link: "http://www.ahlbackagency.com/book/the-enchanted-planet-earth/",
       orig:"Lumotun Maan kartasto 2020",
       rights: [
         "FINLAND: Kustantamo S&S (orig.)",
@@ -102,6 +105,7 @@
     {
       cover: VesiImage,
       title:"What is Water?",
+      link: "http://www.ahlbackagency.com/book/what-is-water/",
       orig:"Vesi - kirja maailman tärkeimmästä aineesta 1997",
       rights: [
         "FINLAND, Myllylahti (orig.)",
@@ -111,6 +115,7 @@
         {
       cover: YoImage,
       title:"What is the night?",
+      link: "http://www.ahlbackagency.com/book/what-is-the-night/",
       orig:"Yö - kirja unesta ja pimeän salaisuuksista 1996",
       rights: [
         "FINLAND, Myllylahti (orig.)",

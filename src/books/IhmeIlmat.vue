@@ -20,7 +20,7 @@
         <h3>Ihme ilmat! valloittaa maailmaa</h3>
         <vParagraph noMargin="true">
             <b>Imelik ilm! Miks kliima muutub </b>
-            <a href="https://www.avita.ee/32413"> Avita, Viro 2020</a>
+            <a href="https://www.avita.ee/32413" target="_blank"> Avita, Viro 2020</a>
         </vParagraph>
 
         <div class="re-content-block__separator"></div>

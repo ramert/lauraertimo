@@ -4,7 +4,7 @@ h1, h2, h3, h4, p {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-p, span {
+p, span, a {
   font-family: var(--font-family);
 }
 

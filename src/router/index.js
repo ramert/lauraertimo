@@ -1,4 +1,5 @@
 import Vue from 'vue';
+
 import Router from 'vue-router';
 import Home from '@/views/Home';
 import Books from '@/views/Books';
@@ -25,7 +26,8 @@ const routes = [
     name: 'Author',
     component: Author,
     meta: {
-      title: 'Tietokirjailija'
+      title: 'Tietokirjailija',
+      parent: '/'
     },
   },
   {
@@ -33,7 +35,8 @@ const routes = [
     name: 'Books',
     component: Books,
     meta: {
-      title: 'Kirjat'
+      title: 'Kirjat',
+      parent: '/'
     },
   },
   {
@@ -41,7 +44,8 @@ const routes = [
     name: 'Foreign rights',
     component: Foreign,
     meta: {
-      title: 'Foreign rights'
+      title: 'Foreign rights',
+      parent: '/'
     },
   },
   // Books
@@ -50,7 +54,8 @@ const routes = [
     name: 'Yo',
     component: Yo,
     meta: {
-      title: 'Yö'
+      title: 'Yö',
+      parent: '/books'
     },
   },
   {
@@ -59,7 +64,8 @@ const routes = [
     component: Vesi,
     meta: {
       title: 'Vesi',
-      subTitle: 'Kirja maailman tärkeimmästä aineesta'
+      subTitle: 'Kirja maailman tärkeimmästä aineesta',
+      parent: '/books'
     },
   },
   {
@@ -68,7 +74,8 @@ const routes = [
     component: IhmeIlmat,
     meta: {
       title: 'Ihme ilmat!',
-      subTitle: 'Miksi ilmasto muuttuu'
+      subTitle: 'Miksi ilmasto muuttuu',
+      parent: '/books'
     },
   },
   {
@@ -76,7 +83,8 @@ const routes = [
     name: 'Lumotun maan kartasto',
     component: Lumotun,
     meta: {
-      title: 'Lumotun maan kartasto'
+      title: 'Lumotun maan kartasto',
+      parent: '/books'
     },
   },
   {
@@ -84,7 +92,8 @@ const routes = [
     name: 'Maapallo. Planeettamme selkokielellä',
     component: Maaapallo,
     meta: {
-      title: 'Maapallo. Planeettamme selkokielellä'
+      title: 'Maapallo. Planeettamme selkokielellä',
+            parent: '/books'
     },
   },
   
@@ -96,11 +105,12 @@ const router = new Router({
   routes,
 });
 
-router.afterEach((to, from, next) => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
-});
 
+router.afterEach((to, from, next) => {
+  setTimeout(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, 200);
+});
 export default router;

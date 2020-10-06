@@ -4,7 +4,7 @@
         <h1 >{{pageTitle}}</h1>
         <h3 v-if="pageSubTitle">{{pageSubTitle}}</h3>
     </nav>
-    <button class="back" tabIndex="0" @click="$router.go(-1)">&lt;</button>
+    <router-link class="back" :to="parent">&lt;</router-link>
   </header>
 </template>
 
@@ -27,6 +27,7 @@ export default {
         this.background = newVal.background;
         this.pageTitle = newVal.title;
         this.pageSubTitle = newVal.subTitle;
+        this.parent = newVal.parent
       },
       immediate: true,
     },
@@ -61,6 +62,7 @@ export default {
   }
   .back {
     position: absolute;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     font-family: var(--font-family-header);
@@ -74,6 +76,7 @@ export default {
     color: var(--color-blue);
     border: none;
     cursor: pointer;
+    text-decoration: none;
 
     &:focus {
       outline: none;

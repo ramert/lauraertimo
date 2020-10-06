@@ -3,7 +3,8 @@
         <vImage :image="cover" />
         <div>
             <h3>{{title}} </h3>
-            <span>orig. {{orig}}</span>
+            <div>orig. {{orig}}</div>
+            <a class="list-item__button" :href="link" target="_blank">Book details</a>
         </div>
         <div class="list-item__sold">
             <h4>
@@ -19,7 +20,7 @@
 <script>
 export default {
     name: "vRightBookItem",
-    props: ["title", "orig", "cover", "rights"]
+    props: ["title", "orig", "link", "cover", "rights"]
 }
 </script>
 
@@ -27,11 +28,20 @@ export default {
   .list-item {
     margin: calc(var(--spacing-unit) * 8) 0;
     display: grid;
-    gap: 12px;
-    grid-template-columns: 70px 1fr;
+    gap: calc(var(--spacing-unit) * 3);
+    grid-template-columns: 80px 1fr;
     
     &__sold {
       grid-column: 1 / span 2;
+    }
+
+    &__button {
+      display: inline-block;
+      background: var(--color-blue);
+      margin-top: var(--spacing-unit);
+      color: white;
+      text-decoration: none;
+      padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
     }
   }
   .rights-sold::before {
