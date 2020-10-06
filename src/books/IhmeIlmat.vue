@@ -38,11 +38,6 @@ const quotes = [
         "url": "https://www.hs.fi/kulttuuri/art-2000006281513.html",
         "urlText": "Päivi Heikkilä-Halttunen, Helsingin Sanomat, 23.10.2019"
     },
-    {
-        "text": "Laura Ertimon ja Mari Ahokoivun lasten tietokirja Ihme ilmat! Miksi ilmasto muuttuu on kompakti ja helppolukuinen tietokirja, joka tyydyttää vielä isommankin yläkoululaisen ja jopa aikuisen tiedonnälkää. Ertimon maantieteilijän koulutus on antanut hyvän lähtökohdan tiivistää tuhtia faktaa helposti omaksuttavaan muotoon. Aloitteleva lapsilukija voi keskittyä Ahokoivun sarjakuvastrippeihin ja päätyy niidenkin avulla pohtimaan olennaisia asioista, joilla voi arkisin valinnoin – yhdessä aikuisten kanssa – vaikuttaa ilmastonmuutokseen.",
-        "url": "https://www.hs.fi/kulttuuri/art-2000006281513.html",
-        "urlText": "Päivi Heikkilä-Halttunen, Helsingin Sanomat, 23.10.2019"
-    },
     {   
         "text": "Ihme ilmat! on siis erinomaisesti kuvitettu, selkeä tietopaketti, joka sopii hyvin myös aikuisen ja lapsen yhdessä tutkittavaksi. Mikäli aihe yhtään kiinnostaa, kirja kannattaa kyllä ehdottomasti ottaa lukulistalle.",
         "urlText": "Kirjavinkit, 29.11.2019"
