@@ -66,6 +66,10 @@ export default {
     }
   }
 
+  h2 {
+    font-family: var(--font-family);
+  }
+
   margin: 0 0 calc(2 * var(--spacing-unit));
 
   &__link {

@@ -42,6 +42,10 @@ export default {
     &__ingress {
         padding: calc(2 * var(--spacing-unit)) 0;
     }
+
+    h2, h4 {
+        font-family: var(--font-family);
+    }
 }
 
 .separator {
