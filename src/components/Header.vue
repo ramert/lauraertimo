@@ -4,7 +4,7 @@
         <h1 >{{pageTitle}}</h1>
         <h3 v-if="pageSubTitle">{{pageSubTitle}}</h3>
     </nav>
-    <router-link class="back" :to="parent">&lt;</router-link>
+    <router-link class="back" :to="parent">V</router-link>
   </header>
 </template>
 
@@ -46,13 +46,14 @@ export default {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: calc(3 * var(--spacing-unit)) 0 ;
+    padding: calc(3 * var(--spacing-unit));
     color: var(--color-blue);
     align-items: center;
     justify-content: center;
 
     h1 {
       margin: 0;
+      padding-left: calc(18 * var(--spacing-unit));
     }
 
     h3 {
@@ -63,6 +64,7 @@ export default {
   .back {
     position: absolute;
     box-sizing: border-box;
+    transform: rotate(90deg);
     display: flex;
     align-items: center;
     font-family: var(--font-family-header);
@@ -83,7 +85,7 @@ export default {
     }
 
     @media screen and (min-width: 640px) {
-      font-size: 3rem;
+      font-size: 2.25rem;
       padding: 20px 30px;
     }
 }

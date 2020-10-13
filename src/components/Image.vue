@@ -1,5 +1,5 @@
 <template>
-  <div class="image" :class="{border: isBorder}">
+  <div class="image" :class="{border: isBorder, hero__image: isHero}">
     <transition>
       <img :src="image" :class="{thumbnail: isThumbnail, hero: isHero}" v-show="isLoaded" @load="loaded"/>
     </transition>
@@ -54,12 +54,8 @@ img {
   }
 }
 
-
-
-
-
 img.v-enter, img.v-leave {
-  height: 0;
+  //height: 0;
   opacity: 0;
 }
 </style>

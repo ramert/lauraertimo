@@ -81,20 +81,6 @@ export default {
   padding: calc(3 * var(--spacing-unit)) 0;
 }
 
-/* TODO check if this works*/
-.app:before {
-    border-left: 30px solid transparent !important;
-}
-.app:before, .app:before {
-    content: "";
-    position: absolute;
-    /*width: 100%;*/
-    height: 0;
-    top: 20px;
-    left: 30px;
-    border-bottom: 30px solid #fff;
-}
-
 .main {
   grid-area: main;
   display: flex;

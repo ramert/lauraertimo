@@ -114,11 +114,19 @@ export default {
 }
 
 .light {
+  &.button-wrapper {
+    padding: 0;
+  }
   .button {
     color: white;
+    padding: 0;
+
+    &:hover {
+      background: var(--color-gray);
+    }
   }
   .button, .button-text {
-    padding: 0;
+    
   }
 }
 

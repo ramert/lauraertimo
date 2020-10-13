@@ -1,6 +1,6 @@
 <template>
-    <li class="list-item">
-        <vImage :image="cover" />
+    <li class="list-item" :class="{'list-item--no-cover': !cover}">
+        <vImage v-if="cover" :image="cover" />
         <div>
             <h3>{{title}} </h3>
             <div>orig. {{orig}}</div>
@@ -10,8 +10,8 @@
             <h4>
             Rights sold: 
             </h4>
-            <ul v-for="right in rights" :key="right">
-                <li class="rights-sold">{{right}}</li>
+            <ul>
+                <li v-for="right in rights" :key="right" class="rights-sold">{{right}}</li>
             </ul>
         </div>
     </li>
@@ -26,10 +26,14 @@ export default {
 
 <style lang="scss" scoped> 
   .list-item {
-    margin: calc(var(--spacing-unit) * 8) 0;
+    margin: calc(var(--spacing-unit) * 6) 0 calc(var(--spacing-unit) * 10);
     display: grid;
     gap: calc(var(--spacing-unit) * 3);
     grid-template-columns: 80px 1fr;
+
+    &--no-cover {
+      grid-template-columns: 1fr;
+    }
     
     &__sold {
       grid-column: 1 / span 2;
