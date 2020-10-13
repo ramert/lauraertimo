@@ -146,6 +146,12 @@ export default {
   opacity: 0;
 }
 
+@media ( prefers-reduced-motion ) {
+  .re-fade-enter, .re-fade-leave-active {
+    opacity: 1;
+  }
+}
+
 .hide {
   display: none;
 }

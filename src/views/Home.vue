@@ -5,19 +5,25 @@
         <vImage :image="Laura" isHero="true"/>
       </div>
       <section>
-        <h2 class="hero__title">
+        <h2 class="hero__title navi-spacing">
           <span>Laura Ertimo</span>
           <span class="hero__subtitle">Tietokirjailija ja maantieteilijä</span>
         </h2>
       </section>
-      <naviBar/>      
+      <vNaviBar/> 
+      <vNews />  
       <vFooter />
     </div>
 </template>
 
 <script>
+import Vue from "vue";
 import Navibar from "@/components/Navibar";
+import News from "@/components/News";
 import Laura from '@/assets/Laura-home.jpg';
+
+Vue.component("vNaviBar", Navibar);
+Vue.component('vNews', News)
 
 export default {
   name: "Home",
@@ -65,17 +71,11 @@ export default {
     font-size: 1.75rem;
     display: flex;
     flex-direction: column;
-    margin: 5vw;
+
 
     @media screen and (min-width: 640px) {
       font-size: 2.5rem;
-      margin: calc(12 * var(--spacing-unit)) calc(6 * var(--spacing-unit));
-      padding-left: calc(16.5vw - 110px);
     }
-    @media screen and (min-width: 1400px) {
-      padding-left: 160px;
-    }
-
   }
   &__subtitle {
     font-size: 1.5rem;

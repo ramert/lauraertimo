@@ -1,5 +1,6 @@
 <template>
   <footer class="footer">
+    <vNaviBar light="true"/> 
     <div class="col-sm-12">
       <ul class="footer-links">
         <li class="footer-link">
@@ -14,11 +15,6 @@
 </template>
 
 <script>
-import Vue from "vue";
-import Navibar from "@/components/Navibar";
-
-Vue.component("naviBar", Navibar);
-
 export default {
   name: "vFooter"
 };
@@ -26,11 +22,11 @@ export default {
 
 <style scoped>
 .footer {
+  background: var(--color-background1);
   position: relative;
 }
 .footer-links {
   display: flex;
-  background: var(--color-background1);
   padding: calc(6 * var(--spacing-unit));
   justify-content: center;
   flex-wrap: wrap;

@@ -1,20 +1,20 @@
 <template>
-  <div class="button-wrapper" role="group">
+  <div class="button-wrapper" role="group" :class="{light: light}">
     <router-link to="/books" tag="button" tabIndex="0" class="button">
-      <div class="button__separator"></div>
+      <div v-if="!light" class="button__separator"></div>
       <h3 class="button-text">Kirjat</h3>
-      <div class="button__separator button__separator--hide"></div>
+      <div v-if="!light" class="button__separator button__separator--hide"></div>
     </router-link>
     <!--<router-link to="/Blog" tag="button" class="button">Blogi</router-link>-->
     <router-link to="/author" tag="button" tabIndex="0" class="button">
-      <div class="button__separator"></div>
+      <div v-if="!light" class="button__separator"></div>
       <h3 class="button-text">Tietokirjailija</h3>
-      <div class="button__separator button__separator--hide"></div>
+      <div v-if="!light" class="button__separator button__separator--hide"></div>
     </router-link>
     <router-link to="/foreign" tag="button" tabIndex="0" class="button">
-      <div class="button__separator"></div>
+      <div v-if="!light" class="button__separator"></div>
       <h3 class="button-text">Foreign rights</h3>
-      <div class="button__separator"></div>
+      <div v-if="!light" class="button__separator"></div>
     </router-link>
   </div>
 </template>
@@ -24,6 +24,7 @@ import Vue from "vue";
 
 export default {
   name: "navibar",
+  props: ['light']
 };
 </script>
 
@@ -32,7 +33,7 @@ export default {
   padding: calc(4* var(--spacing-unit)) 0;
   display: block;
 
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -78,7 +79,7 @@ export default {
   font-size: 1.2em;
   transition: all 0.3s ease-out;
 
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 768px) {
       justify-content: center;
       padding: calc(6 * var(--spacing-unit));
   }
@@ -92,11 +93,11 @@ export default {
     position: relative;
     overflow: visible;
 
-    &--hide {
+    /*&--hide {
       @media screen and (max-width: 640px) {
         display: none;
       }
-    }
+    }*/
   }
 
   &:hover, &:focus {
@@ -106,11 +107,19 @@ export default {
       background-color: var(--color-background2);
     }
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
-
-
-.button:focus {
-  outline: none;
+.light {
+  .button {
+    color: white;
+  }
+  .button, .button-text {
+    padding: 0;
+  }
 }
+
 </style>

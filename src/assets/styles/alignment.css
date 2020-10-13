@@ -1,3 +1,18 @@
 .center {
   text-align: center;
 }
+
+.navi-spacing {
+  margin: 5vw;
+}
+@media screen and (min-width: 640px) {
+  .navi-spacing {
+    margin: calc(12 * var(--spacing-unit)) calc(6 * var(--spacing-unit));
+    padding: 0 calc(16.5vw - 110px);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .navi-spacing {
+    padding-left: 160px;
+  }
+}
