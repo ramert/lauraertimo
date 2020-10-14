@@ -79,6 +79,7 @@ export default {
 
 .app {
   padding: calc(3 * var(--spacing-unit)) 0;
+  overflow-x: hidden;
 }
 
 .main {
