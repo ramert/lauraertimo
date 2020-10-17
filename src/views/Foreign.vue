@@ -7,7 +7,7 @@
       </section>
       <section class="row row-8-4">
         <div>
-        <vParagraph>
+        <vParagraph noMarginTop="true">
             <div>
                 I am a geographer and full time author specialising in children’s non fiction. <a href="http://www.ahlbackagency.com/author/laura-ertimo/">Elina Ahlbeck Literary Agency</a> represents my work outside Finland.
             </div>

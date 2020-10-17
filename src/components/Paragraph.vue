@@ -1,5 +1,5 @@
 <template>
-  <div class="re-content-block__paragraph" :class="{'re-content-block__paragraph--no-margin': noMargin}">
+  <div class="re-content-block__paragraph" :class="{'re-content-block__paragraph--no-margin': noMargin, 're-content-block__paragraph--no-margin-top': noMarginTop}">
     <p>
       <slot></slot>
     </p>
@@ -9,6 +9,6 @@
 <script>
   export default {
     name: 'vParagraph',
-    props: ['noMargin']
+    props: ['noMargin', 'noMarginTop']
   };
 </script>

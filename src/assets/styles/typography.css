@@ -1,5 +1,4 @@
 h1, h2, h3, h4, p {
-  font-family: var(--font-family-header);
   font-weight: normal;
   -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -16,18 +15,23 @@ p, span, a {
   color: var(--color-foreground2);
 }
 
-h1 {
+h1, .h1 {
+  font-family: var(--font-family-header);
   font-size: 1.5rem;
 }
 
-h2, .bold-quote {
+h2, .h2 {
+  font-family: var(--font-family-header);
   font-size: 1.1rem;
+  margin: 1em 0 0.5em;
 }
-h3 {
+h3, .h3 {
+  font-family: var(--font-family-header);
   font-size: 1rem;
   margin: 0;
 }
-h4 {
+h4, .h4 {
+  font-family: var(--font-family-header);
   margin: 0;
 }
 
@@ -37,14 +41,14 @@ h4 {
 }
 
 @media screen and (min-width: 400px) {
-  h1 {
+  h1, .h1 {
     font-size: calc(1.5rem + (24 - 12) * ((100vw - 400px) / (800 - 400)));
 
   }
-  h2, .bold-quote {
+  h2, .h2 {
     font-size: 1.5rem;
   }
-  h3 {
+  h3, .h3 {
     font-size: 1.3rem;
   }
 }

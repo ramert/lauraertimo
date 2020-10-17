@@ -3,7 +3,7 @@
         <vImage v-if="cover" :image="cover" />
         <div>
             <h3>{{title}} </h3>
-            <div>orig. {{orig}}</div>
+            <div>Original title: {{orig}}</div>
             <a class="list-item__button" :href="link" target="_blank">Book details</a>
         </div>
         <div class="list-item__sold">

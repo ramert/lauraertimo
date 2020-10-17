@@ -1,10 +1,12 @@
 <template>
   <header class="header" :class="{'hide': isRoot}">
-    <nav class="main-nav title">
-        <h1 >{{pageTitle}}</h1>
-        <h3 v-if="pageSubTitle">{{pageSubTitle}}</h3>
+    <nav class="header__title">
+        <router-link class="header__back" :to="parent">V</router-link>
+        <h1 class="header__title-text">
+          <span class="h1">{{pageTitle}}</span>
+          <span class="h3" v-if="pageSubTitle">{{pageSubTitle}}</span>
+        </h1>
     </nav>
-    <router-link class="back" :to="parent">V</router-link>
   </header>
 </template>
 
@@ -40,53 +42,48 @@ export default {
     width: 100%;
     color: var(--color-blue);  
     position: relative;
-  }
 
-  .title {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: calc(3 * var(--spacing-unit));
-    color: var(--color-blue);
-    align-items: center;
-    justify-content: center;
-
-    h1 {
-      margin: 0;
-      padding-left: calc(18 * var(--spacing-unit));
+    &__title {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      padding: calc(3 * var(--spacing-unit));
+      color: var(--color-blue);
+      align-items: center;
+      justify-content: center;
     }
 
-    h3 {
-      margin-left: var(--spacing-unit);
-      margin-top: var(--spacing-unit);
-    }
-  }
-  .back {
-    position: absolute;
-    box-sizing: border-box;
-    transform: rotate(90deg);
-    display: flex;
-    align-items: center;
-    font-family: var(--font-family-header);
-    font-weight: 600;
-    font-size: 1.5rem;
-    top: 0px;
-    left: 0px;
-    padding: 10px;
-    height: 100%;
-    background: none;
-    color: var(--color-blue);
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-
-    &:focus {
-      outline: none;
+    &__title-text {
+      margin: 0 auto;
+      padding: 0 calc(6* var(--spacing-unit));
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
 
-    @media screen and (min-width: 640px) {
-      font-size: 2.25rem;
-      padding: 20px 30px;
+    &__back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(90deg);
+        font-family: var(--font-family-header);
+        font-weight: 600;
+        font-size: 1.5rem;
+        padding: 10px;
+        background: none;
+        color: var(--color-blue);
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:focus {
+          outline: none;
+        }
+
+        @media screen and (min-width: 640px) {
+          font-size: 2.25rem;
+          padding: 20px 30px;
+        }
     }
 }
 

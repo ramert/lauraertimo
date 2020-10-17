@@ -92,8 +92,9 @@ const routes = [
     name: 'Maapallo. Planeettamme selkokielellä',
     component: Maaapallo,
     meta: {
-      title: 'Maapallo. Planeettamme selkokielellä',
-            parent: '/books'
+      title: 'Maapallo',
+      subTitle: 'Planeettamme selkokielellä',
+      parent: '/books'
     },
   },
   

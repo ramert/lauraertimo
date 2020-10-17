@@ -32,7 +32,7 @@
     const ihmeilmat = {
         name: "Ihme ilmat!",
         title: "Miksi ilmasto muuttuu",
-        secondWriter: "kuvittaja Mari Ahokoivu",
+        secondWriter: "Kuvittaja Mari Ahokoivu",
         publisher:  {
             name: "Into Kustannus 2019",
             url: ""
