@@ -45,16 +45,16 @@ p, .p {
 
 .decoration-text {
     position: absolute;
-    top: -20px;
-    left: -9px;
+    top: -0.9em;
+    left: -0.5em;
     color: var(--color-blue);
     opacity: 0.15;
 }
 
 @media screen and (min-width: 640px) {
   .decoration-text {
-    top: -45px;
-    left: -30px;
+    top: -0.9em;
+    left: -0.5em;
   }
 }
 

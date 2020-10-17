@@ -10,8 +10,6 @@
         </span>
         <vImage :image="Laura" alt="Laura Ertimon kuva" isHero="true"/>
       </div>
-      <section>
-      </section>
       <vNaviBar/> 
       <vNews />  
       <vFooter />

@@ -58,18 +58,21 @@ export default {
   padding: 0 5vw;
   color: var(--color-blue);
   border: none;
-  border-left: 2px solid var(--color-blue);
+  
   font-weight: 600;
   font-size: 1.2em;
   transition: all 0.3s ease-out;
 
-  &:first-of-type {
-    border-left: none;
-  }
+  
 
   @media screen and (min-width: 768px) {
+      border-left: 2px solid var(--color-blue);
       justify-content: center;
       padding: calc(2* var(--spacing-unit)) calc(4* var(--spacing-unit));
+
+      &:first-of-type {
+        border-left: none;
+      }
   }
 
   &__separator {

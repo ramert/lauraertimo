@@ -59,17 +59,7 @@ export default {
 
 <style lang="scss" scoped>
 .list {
-    display: flex;
-    flex-direction: column;
-    gap: calc(9 * var(--spacing-unit));
-
-    @media screen and (min-width: 640px) {
-        gap: calc(18 * var(--spacing-unit));
-    }
-
-    h3 {
-        font-family: var(--font-family);
-    }
+    display: block;
 
     p {
         margin: 0;
@@ -77,6 +67,12 @@ export default {
 }
 
 .list-item {
+    margin-bottom: calc(9 * var(--spacing-unit));
+
+    @media screen and (min-width: 640px) {
+        margin-bottom: calc(18 * var(--spacing-unit));
+    }
+
     &__content {
         position: relative;
         display: flex;
@@ -98,4 +94,18 @@ export default {
         }
     }
 }
+
+.navi-spacing {
+    margin: 5vw;
+    @media screen and (min-width: 640px) {
+        margin: calc(12 * var(--spacing-unit)) calc(6 * var(--spacing-unit));
+        padding: 0 calc(16.5vw - 110px);
+    }
+
+    @media screen and (min-width: 1400px) {
+        padding-left: 160px;
+    }
+}
+
+
 </style>
