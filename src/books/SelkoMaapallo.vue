@@ -9,7 +9,7 @@
             buyLink="https://www.opike.fi/"
         />
 
-        <vQuotes :quotes="quotes" color="blue" />
+        <vQuotes :quotes="quotes" />
     </vPage>
 </template>
 

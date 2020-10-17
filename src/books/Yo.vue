@@ -123,7 +123,7 @@ vastaus.
      </vParagraph>
     </section>-->
 
-    <vQuotes :quotes="quotes" color="blue"/>
+    <vQuotes :quotes="quotes" />
 
     <vImage :image="FooterImage" />
   </vPage>

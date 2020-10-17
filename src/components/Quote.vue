@@ -1,5 +1,5 @@
 <template>
-  <div class="quote" :class="color? 're-'+color: ''">
+  <div class="quote">
     <div class="quote__text">
       <slot />
     </div>
@@ -21,33 +21,30 @@
 .quote {
   display: flex;
   flex-direction: column;
-  color: white;
-  padding: var(--typo-spacing-large);
+  padding: var(--typo-spacing-large) 0;
   margin-bottom: var(--typo-spacing-large);
 }
 
 .quote__text {
+  position: relative;
   max-width: var(--paragraph-max-width);
   margin: 0 auto;
 }
 
 .quote__reference {
-  margin-top: var(--typo-spacing-large);
+  padding-top: calc( 2* var(--spacing-unit));
   align-self: flex-end;
 }
 
-.quote__reference a {
-  color: white;
-}
-
-.quote__text::before, .quote__text::after {
-  color: white;
-  font-style: italic;
-  content: '"';
-  font-size: 3em;
-  line-height: 0.1em;
-  margin-right: 0.2em;
-  vertical-align: -0.4em;
-
+.quote__text::before {
+  font-family: var(--font-family-header);
+  color: var(--color-blue);
+  position: absolute;
+  content: "\201D";
+  opacity: 0.15;
+  font-size: 8em;
+  line-height: 1;
+  top: -35px;
+  left: -30px;
 }
 </style>

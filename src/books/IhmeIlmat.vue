@@ -25,7 +25,7 @@
             </vParagraph>
         </div>
 
-        <vQuotes :quotes="quotes" color="blue" />
+        <vQuotes :quotes="quotes" />
     </vPage>
 </template>
 

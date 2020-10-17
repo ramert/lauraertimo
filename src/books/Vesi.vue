@@ -75,7 +75,7 @@
             <vImage :image="Miksi"/>
         </section>
   -->
-        <vQuotes :quotes="quotes" color="blue" />
+        <vQuotes :quotes="quotes" />
 
         <!--<section id="osta">
           <h2>Vesi-ostoksille</h2>
