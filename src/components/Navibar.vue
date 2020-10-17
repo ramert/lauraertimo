@@ -1,13 +1,13 @@
 <template>
   <div class="button-wrapper" role="group" :class="{light: light}">
     <router-link to="/books" tag="button" tabIndex="0" class="button">
-      <h3 class="button-text">Kirjat</h3>
+      <span class="h3 button-text">Kirjat</span>
     </router-link>
     <router-link to="/author" tag="button" tabIndex="0" class="button">
-      <h3 class="button-text">Tietokirjailija</h3>
+      <span class="h3 button-text">Tietokirjailija</span>
     </router-link>
     <router-link to="/foreign" tag="button" tabIndex="0" class="button">
-      <h3 class="button-text">Foreign rights</h3>
+      <span class="h3 button-text">Foreign rights</span>
     </router-link>
   </div>
 </template>
@@ -103,6 +103,7 @@ export default {
     background: inherit;
     color: white;
     padding: 0;
+    border-left: none;
 
     &:hover, &:focus {
       background: black;

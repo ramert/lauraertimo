@@ -19,7 +19,7 @@
       <h2>Aiempaa tuotantoa</h2>
       <ul>
         <li v-for="book in EarlierBooks" :key="book.name" class="link">
-          <h4>{{book.name}}</h4>
+          <h3>{{book.name}}</h3>
           <div>{{book.publisher}}</div>
           <div v-if="book.info">{{book.info}}</div>
         </li>

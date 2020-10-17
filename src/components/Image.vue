@@ -1,7 +1,7 @@
 <template>
   <div class="image" :class="{border: isBorder, hero__image: isHero}">
     <transition>
-      <img :src="image" :class="{thumbnail: isThumbnail, hero: isHero}" v-show="isLoaded" @load="loaded"/>
+      <img :src="image" :alt="alt" :class="{thumbnail: isThumbnail, hero: isHero}" v-show="isLoaded" @load="loaded"/>
     </transition>
   </div>
 </template>
@@ -9,7 +9,7 @@
 <script>
 export default {
   name: "vImage",
-  props: ["image", "loadingColor", "isThumbnail", "isBorder", "isHero"],
+  props: ["image", "loadingColor", "isThumbnail", "isBorder", "isHero", 'alt'],
   data: function () {
     return {
       isLoaded: false,

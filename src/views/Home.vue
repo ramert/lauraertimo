@@ -8,7 +8,7 @@
         <span class="hero__text">
           Kirjallisia matkoja ympäröivään maailmaan ja saavuttamattomiin todellisuuksiin
         </span>
-        <vImage :image="Laura" isHero="true"/>
+        <vImage :image="Laura" alt="Laura Ertimon kuva" isHero="true"/>
       </div>
       <section>
       </section>
@@ -48,6 +48,7 @@ export default {
   position: relative;
   max-height: calc(100vh - 200px);
   overflow: hidden;
+  background: var(--color-blue);
   max-width: 100%;
 
     &__title {

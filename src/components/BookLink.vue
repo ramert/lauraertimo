@@ -2,7 +2,7 @@
   <li>
     <router-link v-if="toLink" :to="toLink" class="book book--link">
       <div class="book__image-wrapper" :class="{'book__image-wrapper--bg': !image && flag}">
-        <vImage v-if="image" class="book__image" :image="image" :loadingColor="loadingColor" isThumbnail="true"/>
+        <vImage v-if="image" class="book__image" :image="image" :loadingColor="loadingColor" isThumbnail="true" :alt="name + ' kansi'"/>
         <div v-else class="book__placeholder"></div>
         <span v-if="flag" class="book__flag">Tulossa</span>
       </div>
@@ -61,7 +61,7 @@ export default {
 
   &--link {
     &:hover, &:focus {
-      background: white;
+      background:var(--color-lightblue);
     }
   }
 
