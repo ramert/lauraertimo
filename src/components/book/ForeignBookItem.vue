@@ -48,10 +48,5 @@ export default {
       padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
     }
   }
-  .rights-sold::before {
-    content: '\2767';
-    color: var(--color-blue);
-    padding-right: 0.2em;
-  }
 
 </style>

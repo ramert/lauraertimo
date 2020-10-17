@@ -20,8 +20,6 @@
             </div>
         </div>
     </section>
-
-    <hr class="separator" />
   </div>
 </template>
 
@@ -55,7 +53,7 @@ export default {
     background-color: var(--color-lightgray);
     color: var(--color-blue);
     min-width: 50%;
-    height: 3px;
+    height: 2px;
     border: none;
     margin: 40px 0;
     position: relative;
@@ -63,7 +61,7 @@ export default {
 
     &::before {
         font-family: cursive;
-        content: '❦';
+        content: '';
         display: block;
         width: 20%;
         padding: 0.3em;

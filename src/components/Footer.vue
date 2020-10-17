@@ -34,7 +34,7 @@ export default {
 }
 
 .footer-link {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0 calc(2 * var(--spacing-unit));
 }
 

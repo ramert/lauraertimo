@@ -1,14 +1,16 @@
 <template>  
     <div class="home">
       <div class="hero"> 
-        <h1 class="hero__text">Kirjallisia matkoja ympäröivään maailmaan ja saavuttamattomiin todellisuuksiin</h1>
+        <h1 class="hero__title">
+            <span>Laura Ertimo</span>
+            <span class="hero__subtitle">Tietokirjailija ja maantieteilijä</span>
+        </h1>
+        <span class="hero__text">
+          Kirjallisia matkoja ympäröivään maailmaan ja saavuttamattomiin todellisuuksiin
+        </span>
         <vImage :image="Laura" isHero="true"/>
       </div>
       <section>
-        <h2 class="hero__title navi-spacing">
-          <span>Laura Ertimo</span>
-          <span class="hero__subtitle">Tietokirjailija ja maantieteilijä</span>
-        </h2>
       </section>
       <vNaviBar/> 
       <vNews />  
@@ -48,39 +50,65 @@ export default {
   overflow: hidden;
   max-width: 100%;
 
+    &__title {
+    position: absolute;
+    color: white;
+    top: 10%;
+    right: 5%;
+    width: 50%;
+    text-align: right;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+
+    @media screen and (min-width: 640px) {
+      top: 10%;
+      width: 60%;
+      font-size: 1.8rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+      top: 15%;
+      font-size: 2.5rem;
+    }
+  }
+  &__subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    @media screen and (min-width: 640px) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1.75rem;
+    }
+  }
+
 
   &__text {
     font-family: var(--font-family);
     font-size: 1.1rem;
     font-weight: 600;
-    text-align: center;
+    text-align: right;
     position: absolute;
-    width: 40%;
+    width: 50%;
     transform: translateY(-50%);
     color: white;
     right: 5%;
-    top: 50%;
+    top: 75%;
 
     @media screen and (min-width: 640px) {
-      top: 60%;
-      font-size: 1.8rem;
+      width: 45%;
+      top: 70%;
+      font-size: 1.3rem;
     }
-  }
 
-  &__title {
-    font-size: 1.75rem;
-    display: flex;
-    flex-direction: column;
-
-
-    @media screen and (min-width: 640px) {
-      font-size: 2.5rem;
-    }
-  }
-  &__subtitle {
-    font-size: 1.5rem;
-    @media screen and (min-width: 640px) {
-      font-size: 1.75rem;
+    @media screen and (min-width: 1024px) {
+      width: 45%;
+      top: 70%;
+      font-size: 1.6rem;
     }
   }
 }

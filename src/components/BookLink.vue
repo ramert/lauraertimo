@@ -7,7 +7,7 @@
         <span v-if="flag" class="book__flag">Tulossa</span>
       </div>
       <div>
-        <h2 class="book__link">{{name}}</h2>
+        <h2 class="book__link h3 book__link--underline">{{name}}</h2>
         <div>
           <span>Laura Ertimo</span>
           <span v-if="illustrator">ja {{illustrator}}</span>
@@ -23,7 +23,7 @@
         <span v-if="flag" class="book__flag">Tulossa</span>
       </div>
       <div>
-        <h2 class="book__link">{{name}}</h2>
+        <h2 class="book__link h3">{{name}}</h2>
         <div>
           <span>Laura Ertimo</span>
           <span v-if="illustrator">ja {{illustrator}}</span>
@@ -52,7 +52,6 @@ export default {
   display: grid;
   padding: calc(2 * var(--spacing-unit));
   color: var(--color-foreground1);
-  border: 1px solid var(--color-lightgray);
   text-decoration: none;
   transition: background-color 0.2s ease;
   @media screen and (min-width: 640px) {
@@ -66,14 +65,16 @@ export default {
     }
   }
 
-  h2 {
-    font-family: var(--font-family);
-  }
-
   margin: 0 0 calc(2 * var(--spacing-unit));
 
   &__link {
+    font-family: var(--font-family);
+    text-transform: uppercase;
     margin: 0;
+
+    &--underline {
+      text-decoration: underline;
+    }
   }
 
   &__description {

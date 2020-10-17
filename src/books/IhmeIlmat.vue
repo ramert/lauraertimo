@@ -9,21 +9,21 @@
             published="2019"
             buyLink="https://kauppa.intokustannus.fi/kirja/ihme-ilmat-miksi-ilmasto-muuttuu/"
         />
-        <h2>Uutisia</h2>
-        <h3>Ihme ilmat! saa jatkoa</h3>
-        <vParagraph noMargin="true">
-            Vuoden 2021 alussa ilmestyy puuhakirja, josta löytyy tekemistä koko perheelle, parille sukulaiselle ja mahdollisesti myös presidentille. Syksyllä 2021 Lotan ja Kasperin seikkailut jatkuvat, kun mehiläinen pistää Lottaa jalkaan ja onnettomuudesta seuraa Aika matka! 
-        </vParagraph>
-        <vParagraph noMargin="true">
-            Ihme ilmat! taipuu teatteriksi. <a href="https://www.teatteri-ilmio.fi/" target="_blank" >Teatteri Ilmi Ö</a> tarttuu haasteeseen ja luo tietokirjan pohjalta <a href="https://www.teatteri-ilmio.fi/nosto/ihme-ilmat-forumteatteriesitys-2/" target="_blank">forumteatteriesityksen.</a>
-        </vParagraph>
-        <h3>Ihme ilmat! valloittaa maailmaa</h3>
-        <vParagraph noMargin="true">
-            <b>Imelik ilm! Miks kliima muutub </b>
-            <a href="https://www.avita.ee/32413" target="_blank"> Avita, Viro 2020</a>
-        </vParagraph>
-
-        <div class="re-content-block__separator"></div>
+        <div class="news">
+            <span class="h1 decoration-text">Uutisia</span>
+            <h3>Ihme ilmat! saa jatkoa</h3>
+            <vParagraph noMargin="true">
+                Vuoden 2021 alussa ilmestyy puuhakirja, josta löytyy tekemistä koko perheelle, parille sukulaiselle ja mahdollisesti myös presidentille. Syksyllä 2021 Lotan ja Kasperin seikkailut jatkuvat, kun mehiläinen pistää Lottaa jalkaan ja onnettomuudesta seuraa Aika matka! 
+            </vParagraph>
+            <vParagraph noMargin="true">
+                Ihme ilmat! taipuu teatteriksi. <a href="https://www.teatteri-ilmio.fi/" target="_blank" >Teatteri Ilmi Ö</a> tarttuu haasteeseen ja luo tietokirjan pohjalta <a href="https://www.teatteri-ilmio.fi/nosto/ihme-ilmat-forumteatteriesitys-2/" target="_blank">forumteatteriesityksen.</a>
+            </vParagraph>
+            <h3>Ihme ilmat! valloittaa maailmaa</h3>
+            <vParagraph noMargin="true">
+                <b>Imelik ilm! Miks kliima muutub </b>
+                <a href="https://www.avita.ee/32413" target="_blank"> Avita, Viro 2020</a>
+            </vParagraph>
+        </div>
 
         <vQuotes :quotes="quotes" color="blue" />
     </vPage>
@@ -94,3 +94,10 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+    .news {
+        margin-top: calc(15* var(--spacing-unit));
+        position: relative;
+    }
+</style>

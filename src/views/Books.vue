@@ -52,7 +52,7 @@ const ComicBooks = [
   {
     name: "Ihme ilmat! Koko perheen puuhakirja",
     illustrator: "Mari Ahokoivu",
-    toLink:"/ihmeIlmatPuuha",
+    //toLink:"/ihmeIlmatPuuha",
     flag: "Tulossa",
     publisher: "Into Kustannus 2021",
     publisherLink: "https://kauppa.intokustannus.fi/",
@@ -61,7 +61,7 @@ const ComicBooks = [
     {
     name: "Aika matka!",
     illustrator: "Mari Ahokoivu",
-    toLink:"/aikaMatka",
+    //toLink:"/aikaMatka",
     flag: "Tulossa",
     publisher: "Into Kustannus 2021",
     publisherLink: "https://kauppa.intokustannus.fi/",
@@ -112,7 +112,7 @@ const SmallChildrenBooks = [
   {
     name:"Pikkutieto: Mennään piiloon!",
     flag: "Tulossa",
-    toLink:"/pikkuTietoMennaanPiiloon",
+    //toLink:"/pikkuTietoMennaanPiiloon",
     illustrator:"Sanna Pelliccioni",
     publisher:"Karisto 2021",
     publisherLink: "https://www.karisto.fi/",
@@ -133,7 +133,7 @@ const WorldClearText = [
   {
     name:"Ilmastonmuutos selkokielellä",
     flag: "Tulossa",
-    toLink:"/ilmastonMuutosSelko",
+    //toLink:"/ilmastonMuutosSelko",
     publisher:"Oppimateriaalikeskus Opike 2020",
     publisherLink: "https://opike.fi/",
     description:"Kirja selvittää ilmastonmuutoksen syitä ja hillintää selkokielisesti."

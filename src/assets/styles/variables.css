@@ -1,8 +1,9 @@
 :root {
 
-  --font-family-header: "Marcellus SC", serif;
-  --font-family: "EB Garamond", serif;
-  --font-family-sub-header: "Arvo", serif;
+  --font-family-header: 'Oswald', sans-serif;
+  --font-family: 'Raleway', sans-serif;
+  /*--font-family-header: "Marcellus SC", serif;
+  --font-family: "EB Garamond", serif;*/
   --color-background1: #1c1c1c;
   --color-background2: #fbfbf8;
   --color-foreground1: #1c1c1c;
@@ -13,6 +14,7 @@
   --color-red: #cf1945;
   --color-gray: #666;
   --color-lightgray: #ccc;
+  --color-darkwhite: #e2e2db;
   --spacing-unit: 4px;
   --typo-spacing-unit: 0.6rem;
   --typo-spacing-large: 1rem;
