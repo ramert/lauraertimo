@@ -10,8 +10,14 @@ import Foreign from '@/views/Foreign';
 import Yo from '@/books/Yo';
 import Vesi from '@/books/Vesi';
 import IhmeIlmat from '@/books/IhmeIlmat';
+import IhmeIlmatPuuha from '@/books/IhmeIlmatPuuha';
 import Lumotun from '@/books/LumotunMaanKartasto';
-import Maaapallo from '@/books/SelkoMaapallo';
+import Maapallo from '@/books/SelkoMaapallo';
+import SelkoIlmastonMuutos from '@/books/SelkoIlmastonMuutos';
+import AikaMatka from '@/books/AikaMatka';
+import PikkuTietoMissaOlet from '@/books/PikkuTietoMissaOlet';
+import PikkuTietoMennaanPiiloon from '@/books/PikkuTietoMennaanPiiloon';
+
 
 Vue.use(Router);
 
@@ -55,6 +61,7 @@ const routes = [
     component: Yo,
     meta: {
       title: 'Yö',
+      subTitle: 'Kirja unesta ja pimeän salaisuuksista',
       parent: '/books'
     },
   },
@@ -90,15 +97,59 @@ const routes = [
   {
     path: '/maapallotieto',
     name: 'Maapallo. Planeettamme selkokielellä',
-    component: Maaapallo,
+    component: Maapallo,
     meta: {
       title: 'Maapallo',
       subTitle: 'Planeettamme selkokielellä',
       parent: '/books'
     },
   },
-  
-
+  {
+    path: '/ihmeIlmatPuuha',
+    name: 'Ihme ilmat! Koko perheen puuhakirja',
+    component: IhmeIlmatPuuha,
+    meta: {
+      title: 'Ihme ilmat!',
+      subTitle: 'Koko perheen puuhakirja',
+      parent: '/books'
+    },
+  },
+  {
+    path: '/aikaMatka',
+    name: 'Aika matka',
+    component: AikaMatka,
+    meta: {
+      title: 'Aika matka',
+      parent: '/books'
+    },
+  },
+  {
+    path: '/pikkuTietoMissaOlet',
+    name: 'Pikkutieto: Missa sina olet',
+    component: PikkuTietoMissaOlet,
+    meta: {
+      title: 'Pikkutieto: Missä sinä olet?',
+      parent: '/books'
+    },
+  },
+  {
+    path: '/pikkuTietoMennaanPiiloon',
+    name: 'Pikkutieto: Mennaan piiloon',
+    component: PikkuTietoMennaanPiiloon,
+    meta: {
+      title: 'Pikkutieto: Mennään piiloon',
+      parent: '/books'
+    },
+  },
+  {
+    path: '/ilmastonMuutosSelko',
+    name: 'Ilmastonmuutos selkokielella',
+    component: SelkoIlmastonMuutos,
+    meta: {
+      title: 'Ilmastonmuutos selkokielellä',
+      parent: '/books'
+    },
+  }
 ];
 
 const router = new Router({

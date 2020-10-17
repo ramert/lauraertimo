@@ -1,7 +1,10 @@
 <template>
   <div class="header">
     <section class="row row-3-9">
-        <vImage :image="cover"></vImage>
+        <vImage v-if="cover" :image="cover"></vImage>
+        <div v-else class="placeholder">
+            <span v-if="flag" class="placeholder__flag">{{flag}}</span>
+        </div>
         <div>
             <h2 v-if="title">{{title}}</h2>
             <h2 v-if="coTitle">{{coTitle}}</h2>
@@ -25,7 +28,7 @@
 <script>
 export default {
     name: "vBookHeader",
-    props: ["title", "coTitle", "cover", "image", "ingress", "published", "publisher", "buyLink", "coAuthor"]
+    props: ["title", "coTitle", "cover", "image", "ingress", "published", "publisher", "buyLink", "coAuthor", "flag"]
 }
 </script>
 
@@ -72,6 +75,20 @@ export default {
         background-color: var(--color-background2);
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+    }
+}
+
+.placeholder {
+    position: relative;
+    background: var(--color-blue);
+
+    &__flag {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: white;
+        font-weight: 600;
+        transform: translate(-50%, -50%) rotate(-45deg);
     }
 }
 

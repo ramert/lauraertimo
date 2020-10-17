@@ -4,7 +4,7 @@
             title="Miksi ilmasto muuttuu"
             :cover="IhmeIlmatImage"
             ingress="Sarjakuvaa, tarinaa ja perinteistä tietotekstiä yhdistelevä kirja kertoo ilmastonmuutoksesta, sen mekanismeista ja hillitsemisestä."
-            coAuthor="kuvittaja Mari Ahokoivu"
+            coAuthor="Kuvittaja Mari Ahokoivu"
             publisher="Into Kustannus"
             published="2019"
             buyLink="https://kauppa.intokustannus.fi/kirja/ihme-ilmat-miksi-ilmasto-muuttuu/"

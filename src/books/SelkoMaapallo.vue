@@ -1,7 +1,7 @@
 <template>
     <vPage>
         <vBookHeader 
-            ingress="Kymmenen lumoavaa tositarinaa ja kymmenen satumaista karttaa."
+            ingress="Selkokielinen maapallokirja selvittää planeettamme toimintaa kaasupallon tiivistymisestä tulevaisuuden kynnykselle."
             :cover="Cover"
             coAuthor="Kirjailija MarkusHotakainenn"
             publisher="Opike"

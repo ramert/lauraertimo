@@ -121,12 +121,9 @@ export default {
     color: white;
     padding: 0;
 
-    &:hover {
+    &:hover, &:focus {
       background: var(--color-gray);
     }
-  }
-  .button, .button-text {
-    
   }
 }
 

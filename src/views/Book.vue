@@ -1,3 +1,5 @@
+<!--
+//TODO: MAke the books as JSON data from Contentful
 <script>
     const yo = {
         name: "Yö",
@@ -73,4 +75,4 @@
         ]
     }
 
-</script>
+</script> -->
