@@ -6,7 +6,7 @@
       ingress="Yö on iltasatukirja, joka on totta. Se kirjoitettiin lasten ja aikuisten yhteisiä lukuhetkiä varten, mutta on
       sittemmin valloittanut sekä itse lukevan alakoululaisyleisön että aikuisia esteetikkoja ainakin 80-
       täyttäneisiin saakka."
-      coAuthor="kuvittaja Satu Kontinen"
+      coAuthor="Kuvittaja Satu Kontinen"
       publisher="Myllylahti"
       published="2016"
     />

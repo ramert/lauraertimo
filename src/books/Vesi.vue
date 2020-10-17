@@ -4,7 +4,7 @@
             title="Kirja maailman tärkeimmästä aineesta"
             :cover="Kansi"
             ingress="Koko perheen tietokirja maailman tärkeimmästä aineesta. Läpinäkyvä ja mauton neste saattaa huljahtaa viemäriin huomaamatta, mutta ilman sitä ei maapallolla olisi elämää. "
-            coAuthor="kuvittaja Satu Kontinen"
+            coAuthor="Kuvittaja Satu Kontinen"
             publisher="Myllylahti"
             published="2017"
             buyLink="http://www.myllylahti.fi/kirjat/lasten-ja-nuortenkirjat/vesi-kirja-maailman-taerkeimmaestae-aineesta-detail"
