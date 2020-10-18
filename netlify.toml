@@ -1,4 +1,9 @@
 [[redirects]]
+  from = "/Laura-home.jpg"
+  to = "/static/Laura-home.jpg"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
