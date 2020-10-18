@@ -1,6 +1,7 @@
 <template>
     <vPage>
         <vBookHeader 
+            name="Lumotun maan kartasto"
             ingress="Kymmenen lumoavaa tositarinaa ja kymmenen satumaista karttaa."
             :cover="Cover"
             coAuthor="Kuvittaja Satu Kontinen"

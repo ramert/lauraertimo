@@ -1,6 +1,7 @@
 <template>
     <vPage>
         <vBookHeader 
+            name="Pikkutieto: missä sinä olet?"
             ingress="Seikkailijahahmo Plop kuljettaa perheen pienimmät ensimmäiseen suureen seikkailuun."
             :cover="PikkuTieto"
             coAuthor="Kuvittaja Sanna Pelliccioni"

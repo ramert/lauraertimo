@@ -1,6 +1,7 @@
 <template>
     <vPage>
         <vBookHeader 
+            title="Maapallo Planeettamme selkokielellä"
             ingress="Selkokielinen maapallokirja selvittää planeettamme toimintaa kaasupallon tiivistymisestä tulevaisuuden kynnykselle."
             :cover="Cover"
             coAuthor="Kirjailija MarkusHotakainenn"

@@ -1,6 +1,7 @@
 <template>
   <vPage>
     <vBookHeader 
+      name="Yö - kirja unesta ja pineän salaisuuksista"
       title="Kirja unesta ja pimeän salaisuuksista"
       :cover="Kansi"
       ingress="Yö on iltasatukirja, joka on totta. Se kirjoitettiin lasten ja aikuisten yhteisiä lukuhetkiä varten, mutta on

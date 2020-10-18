@@ -122,7 +122,7 @@ const SmallChildrenBooks = [
 
 const WorldClearText = [  
   {
-    name:"Maapallo. Planeettamme selkokielellä",
+    name:"Maapallo Planeettamme selkokielellä",
     image: Maapallotieto,
     toLink:"/maapallotieto",
     illustrator:"Markus Hotakainen",

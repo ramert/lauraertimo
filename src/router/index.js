@@ -96,7 +96,7 @@ const routes = [
   },
   {
     path: '/maapallotieto',
-    name: 'Maapallo. Planeettamme selkokielellä',
+    name: 'Maapallo Planeettamme selkokielellä',
     component: Maapallo,
     meta: {
       title: 'Maapallo',

@@ -1,6 +1,7 @@
 <template>
     <vPage>
         <vBookHeader 
+            name="Pikkutieto: mennään piiloon"
             ingress="Plop tutkii, mitä kaikkea näkymätöntä ympärillämme häärii. On monta tapaa mennä piiloon."
             coAuthor="Kuvittaja Sanna Pelliccioni"
             publisher="Karisto"

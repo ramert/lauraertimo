@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <section class="row row-3-9 row-3-9--mobile">
-        <vImage v-if="cover" :image="cover" alignLeft="true"></vImage>
+        <vImage v-if="cover" :image="cover" alignLeft="true" :alt="name + ' kansi'"></vImage>
         <div v-else class="placeholder">
             <span v-if="flag" class="placeholder__flag">{{flag}}</span>
         </div>
@@ -25,7 +25,7 @@
 <script>
 export default {
     name: "vBookHeader",
-    props: ["title", "cover", "image", "ingress", "published", "publisher", "buyLink", "coAuthor", "flag"]
+    props: ["name", "title", "cover", "image", "ingress", "published", "publisher", "buyLink", "coAuthor", "flag"]
 }
 </script>
 

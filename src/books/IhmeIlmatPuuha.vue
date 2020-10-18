@@ -1,6 +1,7 @@
 <template>
     <vPage>
         <vBookHeader 
+            name="Ihme ilmat puuhakirja"
             title="Koko perheen puuhakirja"
             ingress="Tehtäviä, jotka auttavat ymmärtämään maailman muutosta ja muuttamaan maailmaa."
             coAuthor="Kuvittaja Mari Ahokoivu"
