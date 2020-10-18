@@ -48,14 +48,14 @@ export default {
 <style lang="scss" scoped>
 .book {
   display: grid;
-  padding: calc(2 * var(--spacing-unit)) 0 calc(2 * var(--spacing-unit));
+  padding: calc(3 * var(--spacing-unit)) 0;
   margin-bottom: calc(3 * var(--spacing-unit));
   color: var(--color-foreground1);
   grid-template-columns: 100px 1fr;
   column-gap: calc(3 * var(--spacing-unit));
   text-decoration: none;
   transition: background-color 0.2s ease;
-  
+
   @media screen and (min-width: 640px) {
     grid-template-columns: 125px 1fr;
     padding-right: calc(4 * var(--spacing-unit));
@@ -102,16 +102,15 @@ export default {
     }
 
     &--bg {
-      background: var(--color-blue);
+      background: var(--color-lightblue);
     }
   }
 
   &__image {
     position: relative;
     margin-bottom: calc(2 * var(--spacing-unit));
-    box-shadow: -10px -10px 0px 0px var(--color-lightblue);
+    box-shadow: -12px -12px 0px 0px var(--color-lightblue);
     @media screen and (min-width: 640px) {
-      box-shadow: -20px -20px 0px 0px var(--color-lightblue);
       margin-bottom: 0;
     }
   }
@@ -120,7 +119,7 @@ export default {
     position: absolute;
     top: 50%;
     left: 50%;
-    color: white;
+    color: var(--color-blue);
     font-weight: 600;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
