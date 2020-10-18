@@ -1,10 +1,26 @@
 .row {
   display: grid;
-  column-gap: calc(3 * var(--spacing-unit));
+  column-gap: calc(5 * var(--spacing-unit));
 }
 
 .row-8-4, .row-4-8, .row-6-6, .row-3-9, .row-9-3 {
   grid-template-columns: 1fr;
+}
+
+.row-8-4--mobile {
+  grid-template-columns: 2fr 1fr;
+}
+.row-4-8--mobile {
+  grid-template-columns: 1fr 2fr;
+}
+.row-6-6--mobile {
+  grid-template-columns: 1fr 1fr;
+}
+.row-3-9--mobile {
+  grid-template-columns: 3fr 9fr;
+}
+.row-9-3--mobile {
+  grid-template-columns: 9fr 3fr;
 }
 
 @media screen and (max-width: 640px) {

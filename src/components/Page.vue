@@ -49,9 +49,5 @@ export default {
   padding: 0 5vw calc( 6 * var(--spacing-unit));
   overflow: hidden;
   position: relative;
-
-  h3 {
-    margin: calc( 6 * var(--spacing-unit)) 0 0;
-  }
 }
 </style>

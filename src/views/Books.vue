@@ -1,6 +1,6 @@
 <template>
   <vPage>
-    <div v-for="bookList in AllBooks" :key="bookList.title">
+    <div class="book-section" v-for="bookList in AllBooks" :key="bookList.title">
       <h2>{{bookList.title}}</h2>
       <ul>
         <book v-for="book in bookList.books" :key="book.name"
@@ -208,10 +208,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.root {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: calc(6 * var(--spacing-unit));
+.book-section {
+  padding-bottom: calc(5 * var(--spacing-unit));
 }
 .link {
   padding: var(--spacing-unit);

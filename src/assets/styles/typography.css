@@ -17,12 +17,12 @@ p, span, a {
 
 h1, .h1 {
   font-family: var(--font-family-header);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 h2, .h2 {
   font-family: var(--font-family-header);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin: 0.5em 0;
 }
 h3, .h3 {
@@ -34,6 +34,19 @@ h4, .h4 {
   font-family: var(--font-family-header);
   margin: 0;
 }
+
+@media screen and (min-width: 400px) {
+  h1, .h1 {
+    font-size: calc(1.8rem + (24 - 12) * ((100vw - 400px) / (800 - 400)));
+  }
+  h2, .h2 {
+    font-size: 1.8rem;
+  }
+  h3, .h3 {
+    font-size: 1.4rem;
+  }
+}
+
 p, .p {
   font-size: 0.9em;
 }
@@ -48,33 +61,22 @@ p, .p {
     top: -0.9em;
     left: -0.5em;
     color: var(--color-blue);
-    opacity: 0.15;
+    opacity: 0.2;
 }
 
 @media screen and (min-width: 640px) {
   .decoration-text {
     top: -0.9em;
     left: -0.5em;
+    opacity: 0.18;
   }
 }
 
-@media screen and (min-width: 400px) {
-  h1, .h1 {
-    font-size: calc(1.5rem + (24 - 12) * ((100vw - 400px) / (800 - 400)));
-
-  }
-  h2, .h2 {
-    font-size: 1.8rem;
-  }
-  h3, .h3 {
-    font-size: 1.3rem;
-  }
+p {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  text-align: left;
 }
-  p {
-    font-family: var(--font-family);
-    font-size: 1rem;
-    text-align: left;
-  }
 
 .ingress {
   max-width: var(--paragraph-max-width);

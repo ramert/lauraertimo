@@ -17,34 +17,42 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .quote {
   display: flex;
   flex-direction: column;
   padding: var(--typo-spacing-large) 0;
   margin-bottom: var(--typo-spacing-large);
+
+  &__text {
+    position: relative;
+    max-width: var(--paragraph-max-width);
+    margin: 0 auto;
+
+    &::before {
+      font-family: var(--font-family-header);
+      color: var(--color-blue);
+      position: absolute;
+      content: "\201D";
+      opacity: 0.15;
+      font-size: 5em;
+      line-height: 1;
+      top: -35px;
+      left: -30px;
+      top: -0.3em;
+      left: -0.2em;
+
+      @media screen and (min-width: 640px) {
+        font-size: 8em;
+      }
+    }
+  }
+
+  &__reference {
+    padding-top: calc( 2* var(--spacing-unit));
+    align-self: flex-end;
+  }
 }
 
-.quote__text {
-  position: relative;
-  max-width: var(--paragraph-max-width);
-  margin: 0 auto;
-}
 
-.quote__reference {
-  padding-top: calc( 2* var(--spacing-unit));
-  align-self: flex-end;
-}
-
-.quote__text::before {
-  font-family: var(--font-family-header);
-  color: var(--color-blue);
-  position: absolute;
-  content: "\201D";
-  opacity: 0.15;
-  font-size: 8em;
-  line-height: 1;
-  top: -35px;
-  left: -30px;
-}
 </style>

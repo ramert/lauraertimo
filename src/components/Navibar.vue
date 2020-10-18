@@ -85,7 +85,7 @@ export default {
     overflow: visible;
   }
 
-  &:hover, &:focus {
+  &:hover {
     color: var(--color-background2);
     background-color: var(--color-blue);
   }
@@ -108,7 +108,7 @@ export default {
     padding: 0;
     border-left: none;
 
-    &:hover, &:focus {
+    &:hover {
       background: black;
     }
   }

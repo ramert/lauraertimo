@@ -63,6 +63,7 @@ export default {
 
     &__back {
         position: absolute;
+        opacity: 0.8;
         top: 0;
         left: 0;
         transform: rotate(90deg);

@@ -3,7 +3,6 @@
     <router-link v-if="toLink" :to="toLink" class="book book--link">
       <div class="book__image-wrapper" :class="{'book__image-wrapper--bg': !image && flag}">
         <vImage v-if="image" class="book__image" :image="image" :loadingColor="loadingColor" isThumbnail="true" :alt="name + ' kansi'"/>
-        <div v-else class="book__placeholder"></div>
         <span v-if="flag" class="book__flag">Tulossa</span>
       </div>
       <div>
@@ -19,7 +18,6 @@
     <div v-else class="book">
       <div class="book__image-wrapper" :class="{'book__image-wrapper--bg': !image && flag}">
         <vImage v-if="image" class="book__image" :image="image" :loadingColor="loadingColor" isThumbnail="true"/>
-        <div v-else class="book__placeholder"></div>
         <span v-if="flag" class="book__flag">Tulossa</span>
       </div>
       <div>
@@ -50,12 +48,16 @@ export default {
 <style lang="scss" scoped>
 .book {
   display: grid;
-  padding: calc(2 * var(--spacing-unit));
+  padding: calc(2 * var(--spacing-unit)) 0 calc(2 * var(--spacing-unit));
+  margin-bottom: calc(3 * var(--spacing-unit));
   color: var(--color-foreground1);
+  grid-template-columns: 100px 1fr;
+  column-gap: calc(3 * var(--spacing-unit));
   text-decoration: none;
   transition: background-color 0.2s ease;
+  
   @media screen and (min-width: 640px) {
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 125px 1fr;
     padding-right: calc(4 * var(--spacing-unit));
   }
 
@@ -64,8 +66,6 @@ export default {
       background:var(--color-lightblue);
     }
   }
-
-  margin: 0 0 calc(2 * var(--spacing-unit));
 
   &__link {
     font-family: var(--font-family);
@@ -80,7 +80,7 @@ export default {
   &__description {
     color: var(--color-blue);
     margin: calc(2* var(--spacing-unit)) 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   &__publisher {
@@ -93,10 +93,10 @@ export default {
     justify-content: center;
     align-items: center;
     min-height: 120px;
+    height: 120px;
     margin-bottom: calc(2 * var(--spacing-unit));
     
     @media screen and (min-width: 640px) {
-      min-height: 90px;
       margin-right: calc(4 * var(--spacing-unit));
       margin-bottom: 0;
     }
@@ -107,8 +107,11 @@ export default {
   }
 
   &__image {
+    position: relative;
     margin-bottom: calc(2 * var(--spacing-unit));
+    box-shadow: -10px -10px 0px 0px var(--color-lightblue);
     @media screen and (min-width: 640px) {
+      box-shadow: -20px -20px 0px 0px var(--color-lightblue);
       margin-bottom: 0;
     }
   }
@@ -120,14 +123,6 @@ export default {
     color: white;
     font-weight: 600;
     transform: translate(-50%, -50%) rotate(-45deg);
-  }
-
-  &__placeholder {
-    &::before {
-      content: '\2767';
-      font-size: 4em;
-      color: var(--color-blue);
-    }
   }
 }
 </style>

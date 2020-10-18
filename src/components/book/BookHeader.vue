@@ -1,19 +1,18 @@
 <template>
   <div class="header">
-    <section class="row row-3-9">
-        <vImage v-if="cover" :image="cover"></vImage>
+    <section class="row row-3-9 row-3-9--mobile">
+        <vImage v-if="cover" :image="cover" alignLeft="true"></vImage>
         <div v-else class="placeholder">
             <span v-if="flag" class="placeholder__flag">{{flag}}</span>
         </div>
         <div>
-            <h2 v-if="title">{{title}}</h2>
-            <h2 v-if="coTitle">{{coTitle}}</h2>
+            <h2 class="header__title h2" v-if="title">{{title}}</h2>
             <div class="info">
-                <h4>Kirjailija Laura Ertimo</h4>
-                <h4 v-if="coAuthor">{{coAuthor}}</h4>
-                <h4>
+                <span class="h4">Kirjailija Laura Ertimo</span>
+                <span class="h4" v-if="coAuthor">{{coAuthor}}</span>
+                <span class="h4">
                     <a :href="buyLink" target="_blank">{{publisher}}, {{published}}</a>
-                </h4>
+                </span>
             </div>
             <div class="header__ingress">
                 {{ingress}}
@@ -26,7 +25,7 @@
 <script>
 export default {
     name: "vBookHeader",
-    props: ["title", "coTitle", "cover", "image", "ingress", "published", "publisher", "buyLink", "coAuthor", "flag"]
+    props: ["title", "cover", "image", "ingress", "published", "publisher", "buyLink", "coAuthor", "flag"]
 }
 </script>
 
@@ -38,41 +37,18 @@ export default {
 }
 
 .header {
-    margin-top: calc(4 * var(--spacing-unit));
+    margin-top: calc(6 * var(--spacing-unit));
 
     &__ingress {
         padding: calc(2 * var(--spacing-unit)) 0;
     }
 
-    h2, h4 {
+    .h2, .h4 {
         font-family: var(--font-family);
     }
-}
 
-.separator {
-    background-color: var(--color-lightgray);
-    color: var(--color-blue);
-    min-width: 50%;
-    height: 2px;
-    border: none;
-    margin: 40px 0;
-    position: relative;
-    overflow: visible;
-
-    &::before {
-        font-family: cursive;
-        content: '';
-        display: block;
-        width: 20%;
-        padding: 0.3em;
-        font-size: 2em;
-        text-align: center;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        background-color: var(--color-background2);
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+    &__title {
+        margin-top: 0;
     }
 }
 
@@ -89,5 +65,4 @@ export default {
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 }
-
 </style>
