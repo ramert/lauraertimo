@@ -45,11 +45,12 @@ export default {
 .hero {
   position: relative;
   max-height: calc(100vh - 200px);
+  min-height: calc(100vh - 200px);
   overflow: hidden;
-  background: var(--color-blue);
+  background: var(--color-lightblue);
   max-width: 100%;
 
-    &__title {
+  &__title {
     position: absolute;
     color: white;
     top: 10%;

@@ -54,7 +54,7 @@ export default {
   grid-template-columns: 100px 1fr;
   column-gap: calc(3 * var(--spacing-unit));
   text-decoration: none;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 
   @media screen and (min-width: 640px) {
     grid-template-columns: 125px 1fr;
@@ -64,6 +64,7 @@ export default {
   &--link {
     &:hover, &:focus {
       background:var(--color-lightblue);
+      box-shadow: -12px 0px 0px 0px var(--color-lightblue);
     }
   }
 
@@ -73,6 +74,7 @@ export default {
     margin: 0;
 
     &--underline {
+      color: var(--color-blue);
       text-decoration: underline;
     }
   }
