@@ -5,7 +5,8 @@
                 <span class="h1 decoration-text">{{news.category}}</span>
                 <span class="h3 list-item__title">{{news.title}} </span>
                 <p>{{news.text}}</p>
-                <a class="list-item__button" :href="news.link" target="_blank">Lue lisää...</a>
+                <router-link v-if="news.link.startsWith('/')" :to="news.link" tag="a" class="list-item__button">Lue lisää...</router-link>
+                <a v-else class="list-item__button" :href="news.link" target="_blank">Lue lisää...</a>
             </div>
         </li>
     </ul>
@@ -16,33 +17,33 @@ import Vue from "vue";
 
 const AllNews = [
     {
-        category: 'Kirja',
-        title: "Uusin kirjani Ihme ilmat!",
-        text: "Tähän jotain jotain jotain muuta?",
-        link: "/Ihmeilmat"
+        category: 'Kirjat',
+        title: "Lumotun Maan kartasto",
+        text: "Kymmenen lumoavaa tositarinaa ja kymmenen satumaista karttaa.",
+        link: "/lumotunMaanKartasto"
     },
     {
-        category: 'Esiintyminen',
-        title: "Keskustellaan ilmastonmuutoksesta Helsingin kirjamessuilla!",
-        text: "Tähän jotain",
-        link: "https://kirjamessut.messukeskus.com/ohjelma/45195/mik-ihmeen-ilmastonmuutos/"
+        category: 'Vierailut',
+        title: "Lastenkirja- ja sanataidefestivaali Kirjalitta",
+        text: "Kirjalitassa on tänä vuonna teemana taikuus. Nähdään Lumotun Maan työpajassa lauantaina 7.11.!",
+        link: "https://kirjalitta.fi/kirjalitta-2020-taikavoimaa-tarinoista/"
     },
     {
-        category: 'Haastattelu',
-        title: "Haastatteluni Sanan arvo -juttusarjassa.",
-        text: "Tähän jotain",
+        category: 'Mediassa',
+        title: "Sirpaletiedon ajassa kirja on anarkistinen esine",
+        text: "Lue haastatteluni Sanan arvo -sarjassa.",
         link: "https://www.sanasto.fi/sanan-arvo-sirpaletiedon-ajassa-kirja-on-anarkistinen-esine/"
     },
     {
-        category: 'Uutisia',
-        title: "Teatteri Ilmi Ö muokkaa Ihme ilmat! koululaisille suunnatuksi esitykseksi.",
-        text: "Tähän jotain",
+        category: 'Uutta',
+        title: "Yhteistyötä Teatteri Ilmi Ö:n kanssa",
+        text: "Teatteri ILMI Ö:n syksyn ensi-iltaesitys on nuorille sunnattu osallistava Ihme Ilmat.",
         link: "https://www.teatteri-ilmio.fi/nosto/ihme-ilmat-forumteatteriesitys-2/"
     },
     {
-        category: 'Joku muu',
-        title: "Kai Vaijärvi blogi kirjoistani",
-        text: "Blogissa Ihme ilmat!, Lumotun Maan kartasto, Pikkutieto-sarjan avaava Missä sinä olet? ja ensimmäinen, Markus Hotakaisen kanssa kirjoittamani selkokirjan Maapallo.",
+        category: 'Mediassa',
+        title: "Lumotun maan kartastossa Irvikissa törmää galaksiin",
+        text: "Kai Vaijärvi esittelee ja arvioi laajasti tuotantoani Lastenkulttuurin vinkkarissa.",
         link: "http://karivaijarvi.blogspot.com/2020/09/lumotun-maan-kartastossa-irvikissa.html"
     }
 ]
