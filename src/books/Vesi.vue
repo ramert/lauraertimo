@@ -88,14 +88,13 @@
 </template>
 
 <script>
-import QuotesImage from '@/assets/vesi/vesi_sanottua.png';
-import Hero from '@/assets/vesi/vesi_title.png';
+//import QuotesImage from '@/assets/vesi/vesi_sanottua.png';
+//import Hero from '@/assets/vesi/vesi_title.png';
 import Kansi from '@/assets/vesi/kansi.jpg';
-import Miksi from '@/assets/vesi/vesi_miksi1.png';
+/*import Miksi from '@/assets/vesi/vesi_miksi1.png';
 import Miksi2 from '@/assets/vesi/vesi_miksi2.png';
 import Sisallys2 from '@/assets/vesi/vesi_sisallys1.png';
-import Sisallys from '@/assets/vesi/vesi_sisallys2.png';
-
+import Sisallys from '@/assets/vesi/vesi_sisallys2.png';*/
 const quotes = [
   {
     "text": "Ertimon tapa suhtautua tietoon on kiinni lasten ja nuorten ajassa: kovan faktan rinnalla pohditaan mytologioiden merkitystä, sitä mistä ne saavat alkunsa ja miten kulkevat historiasta nykypäivään.",
@@ -138,21 +137,9 @@ export default {
   name: 'vesi',
   data() {
     return {
-      Hero,
-      QuotesImage,
       Kansi,
-      Miksi,
-      Miksi2,
-      Sisallys,
-      Sisallys2,
       quotes,
     };
   },
 };
 </script>
-
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>

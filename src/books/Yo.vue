@@ -132,12 +132,12 @@ vastaus.
 
 <script>
 import Kansi from "@/assets/yo/kansi.jpg";
-import FooterImage from "@/assets/yo/footer.png";
+/*import FooterImage from "@/assets/yo/footer.png";
 import MiksiYoImage from "@/assets/yo/miksiyo.png";
 import SisallysImage from "@/assets/yo/sisallys.png";
 import Hero from "@/assets/yo/yo-title.jpg";
 import MobileHero from "@/assets/yo/yo-title-mobile.jpg";
-import QuotesImage from "@/assets/yo/arvostelut.png";
+import QuotesImage from "@/assets/yo/arvostelut.png";*/
 
 const quotes = [
   {
@@ -172,21 +172,12 @@ const quotes = [
   }
 ];
 
-const quotePromote = quotes[0];
-
 export default {
   name: "yo",
   data() {
     return {
-      hero: Hero,
-      mobileHero: MobileHero,
-      quotesImage: QuotesImage,
       Kansi,
-      SisallysImage,
-      FooterImage,
-      MiksiYoImage,
       quotes,
-      quotePromote
     };
   }
 };
