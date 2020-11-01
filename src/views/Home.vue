@@ -11,7 +11,9 @@
         <vImage :image="Laura" alt="Laura Ertimon kuva" isHero="true"/>
       </div>
       <vNaviBar/> 
-      <vNews />  
+      <div class="navi-spacing">
+        <vNews :newsData="news" />  
+      </div>
       <vFooter />
     </div>
 </template>
@@ -23,13 +25,47 @@ import News from "@/components/News";
 import Laura from '@/assets/Laura-home.jpg';
 
 Vue.component("vNaviBar", Navibar);
-Vue.component('vNews', News)
+Vue.component('vNews', News);
+
+const news = [
+    {
+        category: 'Kirjat',
+        title: "Lumotun Maan kartasto",
+        text: "Kymmenen lumoavaa tositarinaa ja kymmenen satumaista karttaa.",
+        link: "/lumotunMaanKartasto"
+    },
+    {
+        category: 'Vierailut',
+        title: "Lastenkirja- ja sanataidefestivaali Kirjalitta",
+        text: "Kirjalitassa on tänä vuonna teemana taikuus. Nähdään Lumotun Maan työpajassa lauantaina 7.11.!",
+        link: "https://kirjalitta.fi/kirjalitta-2020-taikavoimaa-tarinoista/"
+    },
+    {
+        category: 'Mediassa',
+        title: "Sirpaletiedon ajassa kirja on anarkistinen esine",
+        text: "Lue haastatteluni Sanan arvo -sarjassa.",
+        link: "https://www.sanasto.fi/sanan-arvo-sirpaletiedon-ajassa-kirja-on-anarkistinen-esine/"
+    },
+    {
+        category: 'Uutta',
+        title: "Yhteistyötä Teatteri Ilmi Ö:n kanssa",
+        text: "Teatteri ILMI Ö:n syksyn ensi-iltaesitys on nuorille sunnattu osallistava Ihme Ilmat.",
+        link: "https://www.teatteri-ilmio.fi/nosto/ihme-ilmat-forumteatteriesitys-2/"
+    },
+    {
+        category: 'Mediassa',
+        title: "Lumotun maan kartastossa Irvikissa törmää galaksiin",
+        text: "Kai Vaijärvi esittelee ja arvioi laajasti tuotantoani Lastenkulttuurin vinkkarissa.",
+        link: "http://karivaijarvi.blogspot.com/2020/09/lumotun-maan-kartastossa-irvikissa.html"
+    }
+]
 
 export default {
   name: "Home",
   data() {
     return {
-      Laura
+      Laura,
+      news
     };
   }
 };
@@ -45,7 +81,6 @@ export default {
 .hero {
   position: relative;
   max-height: calc(100vh - 200px);
-  min-height: calc(100vh - 200px);
   overflow: hidden;
   background: var(--color-lightblue);
   max-width: 100%;
@@ -111,5 +146,17 @@ export default {
       font-size: 1.6rem;
     }
   }
+}
+
+.navi-spacing {
+    margin: 5vw;
+    @media screen and (min-width: 640px) {
+        margin: 0 calc(6 * var(--spacing-unit));
+        padding: 0 calc(16.5vw - 110px);
+    }
+
+    @media screen and (min-width: 1400px) {
+        padding-left: 160px;
+    }
 }
 </style>

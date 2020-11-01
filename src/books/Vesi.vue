@@ -2,7 +2,6 @@
     <vPage>
         <vBookHeader 
             name="Vesi - kirja maailman tärkeimmäistä aineesta"
-            title="Kirja maailman tärkeimmästä aineesta"
             :cover="Kansi"
             ingress="Koko perheen tietokirja maailman tärkeimmästä aineesta. Läpinäkyvä ja mauton neste saattaa huljahtaa viemäriin huomaamatta, mutta ilman sitä ei maapallolla olisi elämää. "
             coAuthor="Kuvittaja Satu Kontinen"

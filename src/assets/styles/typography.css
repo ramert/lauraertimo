@@ -1,10 +1,11 @@
 h1, h2, h3, h4, p {
   font-weight: normal;
-  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 p, span, a {
   font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
 }
 
 .right {
@@ -17,7 +18,7 @@ p, span, a {
 
 h1, .h1 {
   font-family: var(--font-family-header);
-  font-size: 1.7rem;
+  font-size: 1.65rem;
 }
 
 h2, .h2 {

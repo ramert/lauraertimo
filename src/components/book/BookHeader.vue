@@ -1,12 +1,12 @@
 <template>
   <div class="header">
-    <section class="row row-3-9 row-3-9--mobile">
+    <section class="row row-3-9">
         <vImage v-if="cover" :image="cover" alignLeft="true" :alt="name + ' kansi'"></vImage>
         <div v-else class="placeholder">
             <span v-if="flag" class="placeholder__flag">{{flag}}</span>
         </div>
-        <div>
-            <h2 class="header__title h2" v-if="title">{{title}}</h2>
+        <div class="header__text-block">
+            <h2 class="header__title h3" v-if="name">{{name}}</h2>
             <div class="info">
                 <span class="h4">Kirjailija Laura Ertimo</span>
                 <span class="h4" v-if="coAuthor">{{coAuthor}}</span>
@@ -14,7 +14,7 @@
                     <a :href="buyLink" target="_blank">{{publisher}}, {{published}}</a>
                 </span>
             </div>
-            <div class="header__ingress">
+            <div v-if="ingress" class="header__ingress">
                 {{ingress}}
             </div>
         </div>
@@ -37,7 +37,23 @@ export default {
 }
 
 .header {
-    margin-top: calc(6 * var(--spacing-unit));
+    margin-top: calc(3 * var(--spacing-unit));
+    background: var(--color-lightlightblue);
+
+    @media screen and (min-width: 640px) {
+        margin-top: calc(6 * var(--spacing-unit));
+    }
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: calc(4 * var(--spacing-unit)) 0;
+
+        @media screen and (min-width: 640px) {
+            margin: 0;
+        }
+    }
 
     &__ingress {
         padding: calc(2 * var(--spacing-unit)) 0;
@@ -48,6 +64,7 @@ export default {
     }
 
     &__title {
+        color: var(--color-blue);
         margin-top: 0;
     }
 }

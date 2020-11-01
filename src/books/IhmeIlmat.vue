@@ -1,8 +1,7 @@
 <template>
     <vPage>
         <vBookHeader
-            name="Ihme ilmat!"
-            title="Miksi ilmasto muuttuu"
+            name="Ihme ilmat! Miksi ilmasto muuttuu"
             :cover="IhmeIlmatImage"
             ingress="Sarjakuvaa, tarinaa ja perinteistä tietotekstiä yhdistelevä kirja kertoo ilmastonmuutoksesta, sen mekanismeista ja hillitsemisestä."
             coAuthor="Kuvittaja Mari Ahokoivu"

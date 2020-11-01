@@ -1,7 +1,7 @@
 <template>
   <header class="header" :class="{'hide': isRoot}">
     <nav class="header__title">
-        <router-link class="header__back" :to="parent">V</router-link>
+        <router-link class="header__back" :to="parent">&lt;</router-link>
         <h1 class="header__title-text">
           <span class="h1">{{pageTitle}}</span>
           <span class="h3" v-if="pageSubTitle">{{pageSubTitle}}</span>
@@ -63,13 +63,12 @@ export default {
 
     &__back {
         position: absolute;
-        opacity: 0.8;
+        line-height: 1.3em;
         top: 0;
         left: 0;
-        transform: rotate(90deg);
         font-family: var(--font-family-header);
         font-weight: 600;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         padding: 10px;
         background: none;
         color: var(--color-blue);
@@ -82,7 +81,7 @@ export default {
         }
 
         @media screen and (min-width: 640px) {
-          font-size: 2.25rem;
+          font-size: 3rem;
           padding: 20px 30px;
         }
     }

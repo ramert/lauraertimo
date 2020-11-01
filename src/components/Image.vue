@@ -55,6 +55,10 @@ img {
       max-width: 100%;
       max-height: initial;
     }
+
+    @media screen and (min-width: 1280px) {
+      width: 100%;
+    }
   }
 }
 

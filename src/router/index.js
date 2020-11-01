@@ -71,7 +71,6 @@ const routes = [
     component: Vesi,
     meta: {
       title: 'Vesi',
-      subTitle: 'Kirja maailman tärkeimmästä aineesta',
       parent: '/books'
     },
   },
@@ -81,7 +80,6 @@ const routes = [
     component: IhmeIlmat,
     meta: {
       title: 'Ihme ilmat!',
-      subTitle: 'Miksi ilmasto muuttuu',
       parent: '/books'
     },
   },

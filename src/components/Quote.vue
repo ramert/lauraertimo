@@ -27,7 +27,6 @@
   &__text {
     position: relative;
     max-width: var(--paragraph-max-width);
-    margin: 0 auto;
 
     &::before {
       font-family: var(--font-family-header);
