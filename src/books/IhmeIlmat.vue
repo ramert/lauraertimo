@@ -95,9 +95,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .news {
-        margin-top: calc(15* var(--spacing-unit));
+        margin-top: calc(10 * var(--spacing-unit));
+
+        @media screen and (min-width: 640px) {
+            margin-top: calc(15 * var(--spacing-unit));
+        }
+
         position: relative;
     }
 </style>

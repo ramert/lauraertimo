@@ -11,8 +11,9 @@
                 <span class="h4">Kirjailija Laura Ertimo</span>
                 <span class="h4" v-if="coAuthor">{{coAuthor}}</span>
                 <span class="h4">
-                    <a :href="buyLink" target="_blank">{{publisher}}, {{published}}</a>
+                    <a :href="buyLink" target="_blank">{{publisher}}</a>
                 </span>
+                <span>{{published}}</span>
             </div>
             <div v-if="ingress" class="header__ingress">
                 {{ingress}}
@@ -38,17 +39,17 @@ export default {
 
 .header {
     margin-top: calc(3 * var(--spacing-unit));
-    background: var(--color-lightlightblue);
 
     @media screen and (min-width: 640px) {
         margin-top: calc(6 * var(--spacing-unit));
+        background: var(--color-lightlightblue);
     }
 
     &__text-block {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: calc(4 * var(--spacing-unit)) 0;
+        margin-top: calc(4 * var(--spacing-unit));
 
         @media screen and (min-width: 640px) {
             margin: 0;
