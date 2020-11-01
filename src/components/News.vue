@@ -2,13 +2,20 @@
     <ul class="list" :class="{'list--book-margin': bookPage}">
         <li v-for="news in newsData" :key="news.id" class="list-item">
             <div class="list-item__content">
-                <span class="h1 decoration-text">{{news.category}}</span>
+                <span class="h1 decoration-text" :class="className()">{{news.category}}</span>
                 <span class="h3 list-item__title">{{news.title}} </span>
                 <vParagraph noMargin="true">{{news.text}}</vParagraph>
                 <span v-if="news.quoter">-{{news.quoter}}</span>
                 <div v-if="news.link">
+                    <ul v-if="Array.isArray(news.link)">
+                        <li v-for="aLink in news.link" :key="aLink.name">
+                            <a :href="aLink.link" target="_blank">{{aLink.name}} </a>
+                        </li>
+                    </ul>
+                    <div v-else>
                     <router-link v-if="news.link.startsWith('/')" :to="news.link" tag="a" class="list-item__button">Lue lisää...</router-link>
                     <a v-else class="list-item__button" :href="news.link" target="_blank">Lue lisää...</a>
+                    </div>
                 </div>
             </div>
         </li>
@@ -20,7 +27,13 @@ import Vue from "vue";
 
 export default {
   name: "vNews",
-  props: ['newsData', 'bookPage'],
+  props: ['newsData', 'bookPage', 'color'],
+  methods: {
+    className() {
+        console.log(this);
+        return this.color ? `decoration-text--${this.color}` : '';
+    }
+  }
 };
 </script>
 

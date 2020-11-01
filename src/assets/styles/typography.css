@@ -65,6 +65,10 @@ p, .p {
     opacity: 0.2;
 }
 
+.decoration-text--brown {
+  color: var(--color-brown);
+}
+
 @media screen and (min-width: 640px) {
   .decoration-text {
     top: -0.9em;

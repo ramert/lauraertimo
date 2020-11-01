@@ -1,101 +1,119 @@
 <template>
  <vPage>
-    <section class="author row row-8-4">
+    <section class="author row row-3-9">
+        <vImage :image="Laura" class="first-on-mobile" alt="Laura Ertimo"/>
         <div>
-                  <vParagraph>
-              Olen tietokirjaileva maantieteilijä.
+            <vParagraph>
+              Olen tietokirjaileva maantieteilijä. 
+              Valmistuin filosofian maisteriksi Helsingin yliopistosta. 
+              Olen työskennellyt vapaana kirjailijana vuodesta 2015. 
               Kirjoitan maailmasta ja luonnon ja ihmisen ajoittain hankalasta suhteesta. 
-              Tavoitteenani on kirjoittaa kirjoja, joita koko perhe lukee yhdessä. 
-              Työskentelen tiiviisti yhteistyössä useiden suomalaisten kuvittajien kanssa. 
+              Tavoitteenani on kirjoittaa kirjoja, joita koko perhe lukee yhdessä.
+            </vParagraph>
+            <vParagraph> 
+              Työskentelen useiden suomalaisten kuvittajien kanssa. 
               Kirjoitusprosessini kulkee käsi kädessä kuvitustyön kanssa, 
               ja ajattelen kirjojani yhteistyön synnyttäminä kokonaisteoksina. 
-              Tutustu kirjoihini lähemmin KIRJAT-osiossa, 
-              josta löytyy myös linkkejä arvioihin ja kustantajien kirjasivuille.<br/>
-
-        </vParagraph>
-        <vParagraph> 
-          Työskentelen täysiaikaisesti kirjailijana. Kirjoitustyön ohella teen kirjailijavierailuja. Vierailuni suuntautuvat kouluille ja kirja-alan tapahtumiin. Myös virtuaalivierailun ovat mahdollisia.
-        </vParagraph>
-        <vParagraph>
-        <h3>Yhteydenotot kustantamon tai sosiaalisen median kautta</h3>
-            <ul>
-              <div>
-                Kirjailijavierailut <a href="https://kirjailijavierailut.lukukeskus.fi/kirjailijat/ertimo-laura/"> Lukukeskuksen</a> kautta
-              </div>
-               <li>
-                <!--<a class="some-list-element" href="https://www.facebook.com/lauraertimokirjailija">
-                  <facebook /> <div>Facebook Laura Ertimo</div>
-                </a>-->
-                <a href="https://www.facebook.com/lauraertimokirjailija" >
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <!--<a class="some-list-element" href="https://www.instagram.com/lauraertimo/" >
-                  <instagram /> <div>Instagram Laura Ertimo</div>
-                </a>-->
-                <a href="https://www.instagram.com/lauraertimo/" >
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a href="https://kauppa.intokustannus.fi/yhteystiedot/">Into Kustannus </a>
-              </li>
-              <li>
-                <a href="https://kustantamo.sets.fi/media/">Kustantamo S&S </a>
-              </li>
-              <li>
-                <a href="https://opike.fi/">Oppimateriaalikeskus Opike </a>
-              </li>
-            </ul>
-          <a href="https://www.ahlbackagency.com/contact-us/">Elina Ahlbäck Literary Agency</a> edustaa kirjani kansainvälisillä markkinoilla. Agentuuri hoitaa myös esitysoikeuksiin liittyvät asiat.
-          
-        </vParagraph>
-          <vParagraph>
-            <h3>Kumppaneitani kuvitettujen tietokirjojen maailmassa</h3>
-            <ul>
-              <li>
-                <a href="https://mariahokoivu.com/" >Mari Ahokoivu </a>
-              </li>
-              <li>
-                <a href="http://www.satukala.com/" >Satu Kontinen</a>
-              </li>
-              <li>
-                <a href="https://www.illustratorsannapelliccioni.com/">Sanna Pelliccioni </a>
-              </li>
-              <li>
-                <a href="https://www.tiedekuvitus.fi/">Sole Lätti  </a>
-              </li>
-            </ul>
-        </vParagraph>
-      </div>
-      <vImage :image="Laura" class="first-on-mobile"/>
-      </section>
+              Tutustu kirjoihini lähemmin 
+              <router-link to="/books" tag="a">KIRJAT-osiossa</router-link>,
+              josta löytyy myös linkkejä arvioihin ja kustantajien kirjasivuille.
+            </vParagraph>
+        </div>
+    </section>
+    <vNews :newsData="news" color="brown" bookPage="true" /> 
   </vPage>
 </template>
 
 <script>
-  import Vue from 'vue';
-  import Laura from '@/assets/author/LauraPortrait.jpg';
-  import Facebook from '@/components/Facebook';
-  import Instrram from '@/components/Instagram';
-  Vue.component("facebook", Facebook);
-  Vue.component("instagram", Instrram);
+import Vue from 'vue';
+import Laura from '@/assets/author/LauraPortrait.jpg';
 
-
-  export default {
-    name: 'Author',
-    data() {
-      return {
-        Laura
-      }
+const news = [
+    {
+        category: 'Vierailut',
+        title: "Kirjailijavierailut Lukukeskuksen kautta",
+        text: "Kirjoitustyön ohella teen kirjailijavierailuja. Vierailuni suuntautuvat kouluille ja kirja-alan tapahtumiin. Myös virtuaalivierailun ovat mahdollisia.",
+        link: "https://kirjailijavierailut.lukukeskus.fi/kirjailijat/ertimo-laura/"
+    },
+    {
+        category: 'Mediassa',
+        title: "Kirjailijasivut sosiaalisessa mediassa",
+        text: "Löydät ajankohtaisia asioita ja kirja-arvosteluja Facebook-sivultani ja kuvitettuja hetkiä kirjailija-arjesta Instagramista. Some-tilien kautta saat minuun suoran yhteyden.",
+        link: [
+          {
+            name: 'Facebook',
+            link: "https://www.facebook.com/lauraertimokirjailija"
+          },
+          {
+            name: "Instagram",
+            link: "https://www.instagram.com/lauraertimo/"
+          }
+        ]
+    },
+    {
+        category: 'Yhteydenotot',
+        title: "Arvostelukappaleita ja lisätietoja kustantamoiden kautta",
+        text: "On upeaa kuulla lukijoiden kommentteja, kirjabloggaajien tunnelmia ja kirja-arvosteluja. Ota näissä asioissa yhteyttä kustantajaan. Uusimpien kirjojeni kustantajia ovat:",
+        link: [
+          {
+            name: "Into Kustannus",
+            link: "https://kauppa.intokustannus.fi/yhteystiedot/"
+          },
+          {
+            name: "Kustantamo S&S",
+            link: "https://kustantamo.sets.fi/media/"
+          },
+         {
+            name: "Oppimateriaalikeskus Opike",
+            link: "https://opike.fi/"
+          }
+        ]
+    },
+    {
+        category: 'Yhteistyötä',
+        title: "Lasten tietokirjat saavat kansainvälistä huomiota",
+        text: "Elina Ahlbäck Literary Agency edustaa kirjojani kansainvälisillä kirjamarkkinoilla. Agentuuri hoitaa myös esitysoikeuksiin liittyvät asiat.",
+        link: "https://www.ahlbackagency.com/contact-us/"
+    },
+    {
+        category: 'Yhteistyötä',
+        title: "Työskentelen tiiviissä yhteistyössä kuvittajien kanssa",
+        text: "Kumppaneitani kuvitettujen tietokirjojen maailmassa ovat:",
+        link: [
+          {
+            name: "Mari Ahokoivu",
+            link: "https://mariahokoivu.com/"
+          },
+          {
+            name: "Satu Kontinen",
+            link: "http://www.satukala.com/"
+          },
+          {
+            name: "Sanna Pelliccioni",
+            link: "https://www.illustratorsannapelliccioni.com/"
+          },
+          {
+            name: "Sole Lätti",
+            link: "https://www.tiedekuvitus.fi/"
+          }
+        ]
+    }
+];
+export default {
+  name: 'Author',
+  data() {
+    return {
+      Laura,
+      news
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>
 .author {
   margin-top: calc(4* var(--spacing-unit));
+  background: var(--color-light-brown);
 }
 .some-list-element {
   display: grid;
