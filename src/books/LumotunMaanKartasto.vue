@@ -30,20 +30,21 @@
     const news = [
         {
             category: 'Vierailut',
-            title:" Tarvii otsikon",
-            text: "Lumotun Maan kartasto on innoittajana taikojen maailmaan sukeltavassa Kirjalitassa marraskuussa 2020. Työpajassamme tehdään yhdessä uusi lumottu maailmankartta.",
+            title:"Lastenkirja- ja sanataidefestivaali Kirjalitta",
+            text: "Kirjalitassa on tänä vuonna teemana taikuus. Nähdään Lumotun Maan työpajassa lauantaina 7.11.!",
             link: "https://kirjalitta.fi/kirjalitta-2020-taikavoimaa-tarinoista/"
         },
         {
             category: 'Mediassa',
-            title:" Tarvii otsikon",
+            title:"Kunniamaininta Lumotun Maan kartaston kuvituksesta",
             text: "Satu Kontinen sai kunniamaininnan Lumotun Maan kartaston kuvituksilla kansainvälisessä 3x3 -lehden ammattilaissarjassa. Lumotun Maan kartasto on mukana 17. annaalissa.",
             link: "http://www.3x3mag.com/shows/show17/professional-show/professional-show-no-17-winners "
         },
         {
             category: "Ulkomailla",
-            title:" Tarvii otsikon",
-            text: "Lumotun Maan kartaston käännösoikeudet myytiin Venäjälle!",
+            title:"Lumotun Maan kartaston käännösoikeudet myytiin Venäjälle!",
+            text: "”We are happy to be the future publisher of this beautiful book. Those maps of the enchanted planet Earth will help children learn a lot more about our planet and will fascinate the adults, too. We feel that such wonderful books may become even more important in this time of uncertainty to show us that life on the planet Earth still goes on and on.”",
+            quoter: "Anastasia Filippova, AST Publishing Group, Russia",
             link: "http://www.ahlbackagency.com/2020/04/russian-rights-sold-for-enchanted-planet-earth/"
         }
     ];

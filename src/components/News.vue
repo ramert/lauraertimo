@@ -5,6 +5,7 @@
                 <span class="h1 decoration-text">{{news.category}}</span>
                 <span class="h3 list-item__title">{{news.title}} </span>
                 <vParagraph noMargin="true">{{news.text}}</vParagraph>
+                <span v-if="news.quoter">-{{news.quoter}}</span>
                 <router-link v-if="news.link.startsWith('/')" :to="news.link" tag="a" class="list-item__button">Lue lisää...</router-link>
                 <a v-else class="list-item__button" :href="news.link" target="_blank">Lue lisää...</a>
             </div>
