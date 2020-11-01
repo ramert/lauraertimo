@@ -10,6 +10,10 @@
           <a href="https://www.instagram.com/lauraertimo/" target="_blank">Instagram</a>
         </li>
       </ul>
+      <div class="footer__copywrite">
+          <span>Copyright © 2020, Laura Ertimo</span>
+          <span class="footer-link footer-link--no-margin">, Valokuvat: <a href="https://www.annaautio.com">Anna Autio</a></span>
+      </div>
     </div>
   </footer>
 </template>
@@ -20,10 +24,19 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .footer {
   background: var(--color-background1);
   position: relative;
+  color: white;
+
+  &__copywrite {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: calc(6 * var(--spacing-unit));
+  }
 }
 .footer-links {
   display: flex;
@@ -36,9 +49,13 @@ export default {
 .footer-link {
   font-size: 1rem;
   margin: 0 calc(2 * var(--spacing-unit));
-}
 
-.footer-link a {
-  color: white;
+  & a {
+    color: white;
+  }
+
+  &--no-margin {
+    margin: 0;
+  }
 }
 </style>

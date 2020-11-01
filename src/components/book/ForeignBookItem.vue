@@ -7,9 +7,7 @@
             <a class="list-item__button" :href="link" target="_blank">Book details</a>
         </div>
         <div class="list-item__sold">
-            <h4>
-            Rights sold: 
-            </h4>
+            <h4>Rights sold: </h4>
             <ul>
                 <li v-for="right in rights" :key="right.label" class="rights-sold">
                   <a v-if="right.link" target="_blank" href="right.link">

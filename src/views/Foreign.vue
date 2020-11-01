@@ -1,39 +1,36 @@
 <template>
   <vPage>
-    <section>
-        <div class="re-content-block__paragraph re-content-block__paragraph--center">
-          <h2 class="ingress ingress--center">Non-fiction for children and the whole family</h2>
+      <section class="foreign row row-3-9">
+        <vImage :image="Laura" class="first-on-mobile"/>
+        <div>
+            <vParagraph>
+            <h2 class="h3">Non-fiction for children and the whole family</h2>
+            </vParagraph>
+            <vParagraph>
+                I am a geographer and full-time author with special interest in children’s nonfiction. 
+                For me children’s nonfiction books are not so much about education as they are a way to explore the world from a children's viewpoint. 
+                I wish to share moments of understanding whether it is about mechanics of climate change or wonders of the deep sea. 
+                My books are written for the whole family and at their best read together.
+            </vParagraph>
+            <vParagraph>
+              <a href="http://www.ahlbackagency.com/author/laura-ertimo/">Elina Ahlback Literary Agency</a> represents my work outside Finland. Feel free to contact the agency for more information and reading material!
+            </vParagraph>
         </div>
       </section>
-      <section class="row row-8-4">
-        <div>
-        <vParagraph noMarginTop="true">
-            <div>
-                I am a geographer and full time author specialising in children’s non fiction. <a href="http://www.ahlbackagency.com/author/laura-ertimo/">Elina Ahlbeck Literary Agency</a> represents my work outside Finland.
-            </div>
-            <div>
-                Feel free to contact the <a href="http://www.ahlbackagency.com/author/laura-ertimo/">agency</a> for more information and reading material:
-            </div>
-        </vParagraph>
-        <vParagraph>
-            <h2>News</h2>
-            <p>Weather activity book will be published in the beginning of 2021! And there’s next book in the making too.</p>
-        </vParagraph>
-        <vParagraph>
-        <h2>Sold Foreign rights</h2>
-            <ul>
-              <vForeignItem v-for="right in rights" :cover="right.cover" :title="right.title" :link="right.link" :orig="right.orig" :rights="right.rights" :key="right.title"/> 
-          </ul>
-        </vParagraph>
-        </div>
-      <vImage :image="Laura" class="first-on-mobile"/>
-    </section>
+
+    <vNews :newsData="news" color="brown" bookPage="true" /> 
+    <vParagraph noMargin="true">
+      <h2>Sold Foreign rights</h2>
+      <ul>
+          <vForeignItem v-for="right in rights" :cover="right.cover" :title="right.title" :link="right.link" :orig="right.orig" :rights="right.rights" :key="right.title"/> 
+      </ul>
+    </vParagraph>
   </vPage>
 </template>
 
 <script>
   import Vue from 'vue';
-  import Laura from '@/assets/author/LauraPortrait.jpg';
+  import Laura from '@/assets/foreign/Laura-foreign.jpg';
   import VesiImage from '@/assets/vesi/kansi.jpg';
   import YoImage from '@/assets/yo/kansi.jpg';
   import IhmeIlmatImage from '@/assets/ihmeilmat/ihme-ilmat-miksi-ilmasto-muuttuu.jpg';
@@ -42,6 +39,32 @@
   import ForeignItem from '@/components/book/ForeignBookItem';
 
   Vue.component("vForeignItem", ForeignItem);
+
+  const news = [
+    {
+        category: 'New book',
+        title: "Weird Weather Activity book",
+        text: "Weird Weather activity book will be published in the beginning of 2021! And there's the next book in the making too… Stay tuned for more information",
+    },
+    {
+        category: 'New Territory',
+        title: "Weird Weather travels across the Atlantic",
+        text: "Weird Weather will be published in the United States on Earth Day 2021. North American rights were acquired by Sky Pony Press, a children’s imprint of Skyhorse Publishing.",
+        link: "http://www.ahlbackagency.com/2020/04/weird-weather-will-be-published-in-the-united-states-on-earth-day-2021/"
+    },
+    {
+        category: 'In Media',
+        title: "Weird Weather in Spain",
+        text: "¡Qué clima tan raro!” el libro ilustrado de Laura Ertimo y Mari Ahokoivu que ayuda a entender y combatir el cambio climático por fin se publica en España.",
+        link: "https://vandal.elespanol.com/saladepeligro/5627/que-clima-tan-raro-el-libro-ilustrado-de-laura-ertimo-y-mari-ahokoivu-que-ayuda-a-entender-y-combatir-el-cambio-climatico-por-fin-se-publica-en-espana/"
+    },
+    {
+        category: 'New book',
+        title: "Mini Science and Plop explores invisible world",
+        text: "Mini Science series continues with a new title “Invisible world” in January 2021.",
+        link: "http://www.ahlbackagency.com/book/mini-science-invisible-world/"
+    }
+  ];
 
   const rights = [
     {
@@ -198,6 +221,7 @@
     data() {
       return {
         Laura,
+        news,
         rights
       }
     }
@@ -205,6 +229,9 @@
 </script>
 
 <style lang="scss" scoped>
+  .foreign {
+    background: var(--color-light-brown);
+  }
   .list-item {
     margin: calc(var(--spacing-unit) * 8) 0;
     display: grid;
