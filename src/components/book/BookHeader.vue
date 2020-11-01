@@ -42,7 +42,7 @@ export default {
 
     @media screen and (min-width: 640px) {
         margin-top: calc(6 * var(--spacing-unit));
-        background: var(--color-lightlightblue);
+        background: var(--color-lightblue);
     }
 
     &__text-block {

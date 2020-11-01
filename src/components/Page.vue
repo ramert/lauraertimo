@@ -46,7 +46,7 @@ export default {
 }
 
 .content {
-  padding: 0 5vw calc( 6 * var(--spacing-unit));
+  padding: 0 5vw calc( 10 * var(--spacing-unit));
   overflow: hidden;
   position: relative;
 }

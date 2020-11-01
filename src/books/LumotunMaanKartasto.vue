@@ -16,7 +16,7 @@
                 Satu loi teeman mukaisen visuaalisen ilmeen, joka kutsuu seikkailemaan, haaveilemaan ja kuvittelemaan. Tarjoamme matkoja maisemiin, joihin ei voi matkustaa lentokoneella. Lumotun Maan kartaston kehystarina kertoo karttojen tekemisestä, planeettamme kehityksestä ja paikasta avaruudesta sekä eräästä selvittämättömästä onnettomuudesta.
             </vParagraph>
         </section>
-        <vNews :newsData="news" noMargin="true" /> 
+        <vNews :newsData="news" bookPage="true" /> 
         <vQuotes :quotes="quotes" />
 
     </vPage>
@@ -102,10 +102,3 @@
         }
     };
 </script>
-
-<style scoped>
-    .news {
-        margin-top: calc(15* var(--spacing-unit));
-        position: relative;
-    }
-</style>

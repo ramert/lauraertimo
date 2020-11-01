@@ -49,7 +49,7 @@ const news = [
     {
         category: 'Uutta',
         title: "Yhteistyötä Teatteri Ilmi Ö:n kanssa",
-        text: "Teatteri ILMI Ö:n syksyn ensi-iltaesitys on nuorille sunnattu osallistava Ihme Ilmat.",
+        text: "Teatteri Ilmi Ö tarttuu haasteeseen ja luo tietokirjan pohjalta osallistavan esityksen koululaisille. Laura on mukana sekä esityksen rakentamisessa että lavalla.",
         link: "https://www.teatteri-ilmio.fi/nosto/ihme-ilmat-forumteatteriesitys-2/"
     },
     {

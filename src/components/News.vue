@@ -1,13 +1,15 @@
 <template>
-    <ul class="list" :class="{'list--no-margin': noMargin}">
+    <ul class="list" :class="{'list--book-margin': bookPage}">
         <li v-for="news in newsData" :key="news.id" class="list-item">
             <div class="list-item__content">
                 <span class="h1 decoration-text">{{news.category}}</span>
                 <span class="h3 list-item__title">{{news.title}} </span>
                 <vParagraph noMargin="true">{{news.text}}</vParagraph>
                 <span v-if="news.quoter">-{{news.quoter}}</span>
-                <router-link v-if="news.link.startsWith('/')" :to="news.link" tag="a" class="list-item__button">Lue lisää...</router-link>
-                <a v-else class="list-item__button" :href="news.link" target="_blank">Lue lisää...</a>
+                <div v-if="news.link">
+                    <router-link v-if="news.link.startsWith('/')" :to="news.link" tag="a" class="list-item__button">Lue lisää...</router-link>
+                    <a v-else class="list-item__button" :href="news.link" target="_blank">Lue lisää...</a>
+                </div>
             </div>
         </li>
     </ul>
@@ -18,7 +20,7 @@ import Vue from "vue";
 
 export default {
   name: "vNews",
-  props: ['newsData', 'noMargin'],
+  props: ['newsData', 'bookPage'],
 };
 </script>
 
@@ -37,6 +39,15 @@ export default {
     :last-of-type {
         margin-bottom: 0;
     }
+
+    &--book-margin {
+        position: relative;
+        margin-top: calc(10 * var(--spacing-unit));
+
+        @media screen and (min-width: 640px) {
+            margin-top: calc(15 * var(--spacing-unit));
+        }
+    }
 }
 
 .list-item {
@@ -50,7 +61,6 @@ export default {
         position: relative;
         display: flex;
         flex-direction: column;
-        //padding: var(--typo-spacing-large);
         gap: calc(var(--spacing-unit) * 3);
         grid-template-columns: 1fr;
     }

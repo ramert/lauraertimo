@@ -9,28 +9,34 @@
             published="2019"
             buyLink="https://kauppa.intokustannus.fi/kirja/ihme-ilmat-miksi-ilmasto-muuttuu/"
         />
-        <div class="news">
-            <span class="h1 decoration-text">Uutisia</span>
-            <h3>Ihme ilmat! saa jatkoa</h3>
-            <vParagraph noMargin="true">
-                Vuoden 2021 alussa ilmestyy puuhakirja, josta löytyy tekemistä koko perheelle, parille sukulaiselle ja mahdollisesti myös presidentille. Syksyllä 2021 Lotan ja Kasperin seikkailut jatkuvat, kun mehiläinen pistää Lottaa jalkaan ja onnettomuudesta seuraa Aika matka! 
-            </vParagraph>
-            <vParagraph noMargin="true">
-                Ihme ilmat! taipuu teatteriksi. <a href="https://www.teatteri-ilmio.fi/" target="_blank" >Teatteri Ilmi Ö</a> tarttuu haasteeseen ja luo tietokirjan pohjalta <a href="https://www.teatteri-ilmio.fi/nosto/ihme-ilmat-forumteatteriesitys-2/" target="_blank">forumteatteriesityksen.</a>
-            </vParagraph>
-            <h3>Ihme ilmat! valloittaa maailmaa</h3>
-            <vParagraph noMargin="true">
-                <b>Imelik ilm! Miks kliima muutub </b>
-                <a href="https://www.avita.ee/32413" target="_blank"> Avita, Viro 2020</a>
-            </vParagraph>
-        </div>
-
+        <vNews :newsData="news" bookPage="true" /> 
         <vQuotes :quotes="quotes" />
     </vPage>
 </template>
 
 <script>
 import IhmeIlmatImage from '@/assets/ihmeilmat/ihme-ilmat-miksi-ilmasto-muuttuu.jpg';
+
+
+const news = [
+    {
+        category: 'Kirjat',
+        title: "Ihme ilmat! saa jatkoa",
+        text: "Vuoden 2021 alussa ilmestyy puuhakirja, josta löytyy tekemistä koko perheelle, parille sukulaiselle ja mahdollisesti myös presidentille. Syksyllä 2021 Lotan ja Kasperin seikkailut jatkuvat, kun mehiläinen pistää Lottaa jalkaan ja onnettomuudesta seuraa Aika matka!",
+    },
+    {
+        category: 'Uutta',
+        title: "Yhteistyötä Teatteri Ilmi Ö:n kanssa",
+        text: "Teatteri Ilmi Ö tarttuu haasteeseen ja luo Ihme Ilmojen pohjalta osallistavan esityksen koululaisille.",
+        link: "https://www.teatteri-ilmio.fi/nosto/ihme-ilmat-forumteatteriesitys-2/"
+    },
+    {
+        category: 'Ulkomailla',
+        title: "Ihme ilmat! valloittaa maailmaa",
+        text: "Ihme ilmat on julkaistu Suomen lisäksi monissa Euroopan maissa: muun muassa Espanjassa, Italiassa, Puolassa ja Ruotsissa. Keväällä 2021 kirja ylittää jälleen yhden kynnyksen, kun se ilmestyy Yhdysvalloissa nimellä Why does climate change? Tutustu eri kieliversioihin Foreign Rights -sivulla.",
+        link: "/foreign"
+    },
+];
 
 const quotes = [
     {
@@ -89,20 +95,9 @@ export default {
     data() {
         return {
             IhmeIlmatImage,
+            news,
             quotes,
         }
     }
 };
 </script>
-
-<style scoped lang="scss">
-    .news {
-        margin-top: calc(10 * var(--spacing-unit));
-
-        @media screen and (min-width: 640px) {
-            margin-top: calc(15 * var(--spacing-unit));
-        }
-
-        position: relative;
-    }
-</style>
