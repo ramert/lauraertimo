@@ -12,7 +12,8 @@
       </ul>
       <div class="footer__copywrite">
           <span>Copyright © 2020, Laura Ertimo</span>
-          <span class="footer-link footer-link--no-margin">, Valokuvat: <a href="https://www.annaautio.com">Anna Autio</a></span>
+          <span class="hide-mobile">, </span>
+          <span class="footer-link footer-link--no-margin">Valokuvat: <a href="https://www.annaautio.com">Anna Autio</a></span>
       </div>
     </div>
   </footer>
@@ -25,6 +26,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+.hide-mobile {
+  display: none;
+  @media screen and (min-width: 640px) {
+    display: inline;
+  }
+}
 .footer {
   background: var(--color-background1);
   position: relative;
