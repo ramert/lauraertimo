@@ -82,8 +82,6 @@ export default {
     }
 
     &__button {
-        text-decoration: none;
-
         &:hover {
             text-decoration: underline;
         }
