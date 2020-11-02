@@ -30,7 +30,6 @@ export default {
   props: ['newsData', 'bookPage', 'color'],
   methods: {
     className() {
-        console.log(this);
         return this.color ? `decoration-text--${this.color}` : '';
     }
   }
