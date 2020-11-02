@@ -13,7 +13,7 @@
                 Missä sinä olet? sukeltaa avaruuteen, maapallolle ja lopulta solujen kautta atomien maailmaan. Kirja opettaa hahmottamaan asioiden ja ilmiöiden mittakaavoja. Se näyttää ihmisen osana suurempia kokonaisuuksia ja paljastaa toisaalta sisällemme kätkeytyvät universumit.
             </vParagraph>
         </section>
-        <vNews :newsData="news" bookMargin="true" /> 
+        <vNews :newsData="news" bookPage="true" />
         <vQuotes :quotes="quotes" />
     </vPage>
 </template>

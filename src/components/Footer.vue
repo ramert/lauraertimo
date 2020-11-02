@@ -35,6 +35,7 @@ export default {
 }
 .footer {
   background: var(--color-background1);
+  padding: 0 calc(2 * var(--spacing-unit));
   position: relative;
   color: white;
 
