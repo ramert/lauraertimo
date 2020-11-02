@@ -1,12 +1,12 @@
 <template>
   <div class="button-wrapper" role="group" :class="{light: light}">
-    <router-link to="/books" tag="button" tabIndex="0" class="button">
+    <router-link to="/books" tag="button" class="button">
       <span class="h3 button-text">Kirjat</span>
     </router-link>
-    <router-link to="/author" tag="button" tabIndex="0" class="button">
+    <router-link to="/author" tag="button" class="button">
       <span class="h3 button-text">Tietokirjailija</span>
     </router-link>
-    <router-link to="/foreign" tag="button" tabIndex="0" class="button">
+    <router-link to="/foreign" tag="button" class="button">
       <span class="h3 button-text">Foreign rights</span>
     </router-link>
   </div>
@@ -62,8 +62,6 @@ export default {
   font-weight: 600;
   font-size: 1.2em;
   transition: all 0.3s ease-out;
-
-  
 
   @media screen and (min-width: 768px) {
       border-left: 2px solid var(--color-blue);
