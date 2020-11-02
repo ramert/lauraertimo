@@ -37,30 +37,6 @@ Vue.component("vBookHeader", BookHeader);
 
 export default {
   name: "App",
-  mounted() {
-    EventBus.$on("route-changed", to => {
-      this.route = to;
-    });
-  },
-  data() {
-    // Set initial route to set stage
-    if (!this.route) {
-      this.route = EventBus.initial;
-      this.routeData = this.route.meta || {title: "Laura Ertimo"};
-      this.isRoot = this.route.path === '/';
-    }
-    return {
-      route: this.route,
-      transition: this.transition,
-      isRoot: this.isRoot
-    };
-  },
-  watch: {
-    $route(to, from) {
-      this.routeData = to.meta || "Laura Ertimo";
-      this.isRoot = to.path === '/';
-    }
-  }
 };
 </script>
 

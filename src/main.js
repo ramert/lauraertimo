@@ -9,6 +9,9 @@ Vue.config.productionTip = false;
 
 router.beforeEach((to, from, next) => {
   EventBus.initial = to;
+  if (from) {
+    EventBus.parent = from.path;
+  }
   EventBus.$emit('route-changed', to);
   next();
 })

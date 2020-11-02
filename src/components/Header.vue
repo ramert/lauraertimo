@@ -1,10 +1,10 @@
 <template>
-  <header class="header" :class="{'hide': isRoot}">
+  <header class="header">
     <nav class="header__title">
-        <router-link class="header__back" :to="parent">&lt;</router-link>
+        <router-link class="header__back" :to="routeData.parent">&lt;</router-link>
         <h1 class="header__title-text">
-          <span class="h1">{{pageTitle}}</span>
-          <span class="h3" v-if="pageSubTitle">{{pageSubTitle}}</span>
+          <span class="h1">{{routeData.title}}</span>
+          <span class="h3" v-if="routeData.subTitle">{{routeData.subTitle}}</span>
         </h1>
     </nav>
   </header>
@@ -15,25 +15,7 @@ import Vue from "vue";
 
 export default {
   name: "vHeader",
-  props: ["routeData"],
-  data: function () {
-    return { 
-      pageTitle: '',
-      pageSubTitle: undefined
-    }
-  },
-  watch: {
-    routeData: {
-      handler: function(newVal, oldVal) {
-        this.isRoot = window.location.pathname === "/";
-        this.background = newVal.background;
-        this.pageTitle = newVal.title;
-        this.pageSubTitle = newVal.subTitle;
-        this.parent = newVal.parent
-      },
-      immediate: true,
-    },
-  }
+  props: ["routeData"]
 };
 </script>
 

@@ -62,7 +62,6 @@ const routes = [
     meta: {
       title: 'Yö',
       subTitle: 'Kirja unesta ja pimeän salaisuuksista',
-      parent: '/books'
     },
   },
   {
@@ -71,7 +70,6 @@ const routes = [
     component: Vesi,
     meta: {
       title: 'Vesi',
-      parent: '/books'
     },
   },
   {
@@ -80,7 +78,6 @@ const routes = [
     component: IhmeIlmat,
     meta: {
       title: 'Ihme ilmat!',
-      parent: '/books'
     },
   },
   {
@@ -89,7 +86,6 @@ const routes = [
     component: Lumotun,
     meta: {
       title: 'Lumotun maan kartasto',
-      parent: '/books'
     },
   },
   {
@@ -99,7 +95,6 @@ const routes = [
     meta: {
       title: 'Maapallo',
       subTitle: 'Planeettamme selkokielellä',
-      parent: '/books'
     },
   },
   {
@@ -109,7 +104,6 @@ const routes = [
     meta: {
       title: 'Ihme ilmat!',
       subTitle: 'Koko perheen puuhakirja',
-      parent: '/books'
     },
   },
   {
@@ -118,7 +112,6 @@ const routes = [
     component: AikaMatka,
     meta: {
       title: 'Aika matka',
-      parent: '/books'
     },
   },
   {
@@ -127,7 +120,6 @@ const routes = [
     component: PikkuTietoMissaOlet,
     meta: {
       title: 'Pikkutieto: Missä sinä olet?',
-      parent: '/books'
     },
   },
   {
@@ -136,7 +128,6 @@ const routes = [
     component: PikkuTietoMennaanPiiloon,
     meta: {
       title: 'Pikkutieto: Mennään piiloon',
-      parent: '/books'
     },
   },
   {
@@ -145,7 +136,6 @@ const routes = [
     component: SelkoIlmastonMuutos,
     meta: {
       title: 'Ilmastonmuutos selkokielellä',
-      parent: '/books'
     },
   }
 ];
@@ -154,7 +144,6 @@ const router = new Router({
   mode: 'history',
   routes,
 });
-
 
 router.afterEach((to, from, next) => {
   setTimeout(() => {

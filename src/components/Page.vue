@@ -15,24 +15,13 @@ import { EventBus } from "@/common/event-bus.js";
 export default {
   name: "vPage",
   data() {
-    // Set initial route to set stage
-    if (!this.route) {
-      this.route = EventBus.initial;
-      this.routeData = this.route.meta || {title: "Laura Ertimo"};
-      this.isRoot = this.route.path === '/';
-    }
+    this.route = EventBus.initial;
+    this.path = this.route.meta.parent || EventBus.parent;
+    this.routeData = { ...this.route.meta, parent: this.path};
     return {
-      route: this.route,
-      transition: this.transition,
-      isRoot: this.isRoot
+      routeData: this.routeData,
     };
   },
-  watch: {
-    $route(to, from) {
-      this.routeData = to.meta || "Laura Ertimo";
-      this.isRoot = to.path === '/';
-    }
-  }
 };
 </script>
 
