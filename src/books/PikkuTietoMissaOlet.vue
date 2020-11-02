@@ -6,6 +6,7 @@
             coAuthor="Kuvittaja Sanna Pelliccioni"
             publisher="Minerva Kustannus"
             published="2020"
+            buyLink="https://www.minervakustannus.fi/kirjat/kirja.php?kirja=1618"
         />
         <section>
             <vParagraph noMargin="true">

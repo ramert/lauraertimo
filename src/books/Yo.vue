@@ -132,8 +132,8 @@ vastaus.
 
 <script>
 import Kansi from "@/assets/yo/kansi.jpg";
-/*import FooterImage from "@/assets/yo/footer.png";
-import MiksiYoImage from "@/assets/yo/miksiyo.png";
+import FooterImage from "@/assets/yo/footer.png";
+/*import MiksiYoImage from "@/assets/yo/miksiyo.png";
 import SisallysImage from "@/assets/yo/sisallys.png";
 import Hero from "@/assets/yo/yo-title.jpg";
 import MobileHero from "@/assets/yo/yo-title-mobile.jpg";
@@ -177,6 +177,7 @@ export default {
   data() {
     return {
       Kansi,
+      FooterImage,
       quotes,
     };
   }
