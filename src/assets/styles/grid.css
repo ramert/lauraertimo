@@ -47,6 +47,10 @@
   margin: 0;
 }
 
+.re-content-block__paragraph--no-margin p {
+  margin: 0;
+}
+
 .re-content-block__paragraph--no-margin-top {
   margin-top: 0;
 }

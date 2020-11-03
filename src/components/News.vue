@@ -44,11 +44,7 @@ export default {
         margin: calc(12 * var(--spacing-unit)) 0;
     }
 
-    p {
-        margin: 0;
-    }
-
-    :last-of-type {
+    .list-item:last-of-type {
         margin-bottom: 0;
     }
 
@@ -63,7 +59,7 @@ export default {
 }
 
 .list-item {
-    margin-bottom: calc(9 * var(--spacing-unit));
+    margin-bottom: calc(10 * var(--spacing-unit));
 
     @media screen and (min-width: 640px) {
         margin-bottom: calc(18 * var(--spacing-unit));
