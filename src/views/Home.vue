@@ -8,7 +8,7 @@
         <span class="hero__text">
           Kirjallisia matkoja ympäröivään maailmaan ja saavuttamattomiin todellisuuksiin
         </span>
-        <vImage :image="Laura" alt="Laura Ertimon kuva" isHero="true"/>
+        <vImage :image="Laura" :loadingImage="LauraBlur" alt="Laura Ertimon kuva" isHero="true"/>
       </div>
       <vNaviBar/> 
       <div class="navi-spacing">
@@ -23,6 +23,7 @@ import Vue from "vue";
 import Navibar from "@/components/Navibar";
 import News from "@/components/News";
 import Laura from '@/assets/Laura-home.jpg';
+import LauraBlur from '@/assets/Laura-home-blur.jpg';
 
 Vue.component("vNaviBar", Navibar);
 Vue.component('vNews', News);
@@ -65,6 +66,7 @@ export default {
   data() {
     return {
       Laura,
+      LauraBlur,
       news
     };
   }
