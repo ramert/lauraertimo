@@ -1,15 +1,13 @@
 <template>
-  <div class="image" :class="{border: isBorder, hero__image: isHero, 'image--left': alignLeft}">
-    <transition>
-      <img :src="image" :alt="alt" :class="{thumbnail: isThumbnail, hero: isHero}" v-show="isLoaded" @load="loaded"/>
-    </transition>
+  <div class="image" :class="{border: isBorder, hero__image: isHero, 'image--left': alignLeft}" v-lazy-container="{ selector: 'img' }">
+    <img :data-src="image" :data-loading="loadingImage" :alt="alt" :class="{thumbnail: isThumbnail, hero: isHero}" /> 
   </div>
 </template>
 
 <script>
 export default {
   name: "vImage",
-  props: ["image", "loadingColor", "isThumbnail", "isBorder", "isHero", 'alt', 'alignLeft'],
+  props: ["image", "loadingImage", "isThumbnail", "isBorder", "isHero", 'alt', 'alignLeft'],
   data: function () {
     return {
       isLoaded: false,
@@ -39,8 +37,6 @@ export default {
 }
 
 img {
-  transition: all .1s ease;
-  opacity: 1;
   max-width: 100%;
 
   &.thumbnail {
@@ -60,10 +56,5 @@ img {
       width: 100%;
     }
   }
-}
-
-img.v-enter, img.v-leave {
-  //height: 0;
-  opacity: 0;
 }
 </style>

@@ -4,8 +4,11 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 import { EventBus } from './common/event-bus';
+import VueLazyload from 'vue-lazyload'
+
 
 Vue.config.productionTip = false;
+Vue.use(VueLazyload);
 
 router.beforeEach((to, from, next) => {
   EventBus.initial = to;
@@ -23,4 +26,6 @@ new Vue({
   components: { App },
   template: '<App/>',
 });
+
+
 
