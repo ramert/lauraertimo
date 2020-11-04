@@ -10,7 +10,7 @@
             <h4>Rights sold: </h4>
             <ul>
                 <li v-for="right in rights" :key="right.label" class="rights-sold">
-                  <a v-if="right.link" target="_blank" href="right.link">
+                  <a v-if="right.link" target="_blank" :href="right.link">
                     {{right.label}}
                   </a>
                   <span v-else>{{right.label}}</span>
