@@ -41,7 +41,7 @@ export default {
     margin-top: calc(3 * var(--spacing-unit));
 
     @media screen and (min-width: 640px) {
-        margin-top: calc(6 * var(--spacing-unit));
+        margin: calc(6 * var(--spacing-unit)) 0;
         background: var(--color-lightblue);
     }
 
