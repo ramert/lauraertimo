@@ -29,12 +29,6 @@
 
     const news = [
         {
-            category: 'Vierailut',
-            title:"Lastenkirja- ja sanataidefestivaali Kirjalitta",
-            text: "Kirjalitassa on tänä vuonna teemana taikuus. Nähdään Lumotun Maan työpajassa lauantaina 7.11.!",
-            link: "https://kirjalitta.fi/kirjalitta-2020-taikavoimaa-tarinoista/"
-        },
-        {
             category: 'Mediassa',
             title:"Kunniamaininta Lumotun Maan kartaston kuvituksesta",
             text: "Satu Kontinen sai kunniamaininnan Lumotun Maan kartaston kuvituksilla kansainvälisessä 3x3 -lehden ammattilaissarjassa. Lumotun Maan kartasto on mukana 17. annaalissa.",

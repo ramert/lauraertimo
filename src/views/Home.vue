@@ -35,12 +35,6 @@ const news = [
         link: "/lumotunMaanKartasto"
     },
     {
-        category: 'Vierailut',
-        title: "Lastenkirja- ja sanataidefestivaali Kirjalitta",
-        text: "Kirjalitassa on tänä vuonna teemana taikuus. Nähdään Lumotun Maan työpajassa lauantaina 7.11.!",
-        link: "https://kirjalitta.fi/kirjalitta-2020-taikavoimaa-tarinoista/"
-    },
-    {
         category: 'Mediassa',
         title: "Sirpaletiedon ajassa kirja on anarkistinen esine",
         text: "Lue haastatteluni Sanan arvo -sarjassa.",
