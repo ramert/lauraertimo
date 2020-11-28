@@ -8,7 +8,7 @@
         <span class="hero__text">
           Kirjallisia matkoja ympäröivään maailmaan ja saavuttamattomiin todellisuuksiin
         </span>
-        <vImage :image="Laura" alt="Laura Ertimon kuva" isHero="true"/>
+        <vImage :image="Laura" alt="Laura Ertimo" isHero="true"/>
       </div>
       <vNaviBar/> 
       <div class="navi-spacing">
