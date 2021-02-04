@@ -28,6 +28,12 @@ Vue.component("vNaviBar", Navibar);
 Vue.component('vNews', News);
 
 const news = [
+   {
+        category: 'Palkinto',
+        title: 'Tietopöllö-palkinto 2020',
+        text: "Laura Ertimon kirjat avaavat polkuja tärkeiden ja ajankohtaisten aiheiden äärelle. Suomen tietokirjailijoiden yhdistys myönsi Lauralle vuoden 2020 Tietopöllö-palkinnon.",
+        link: 'https://www.suomentietokirjailijat.fi/ajankohtaista/vuoden-2020-tietopollo-palkinto-laura-ertimolle.html'
+    },
     {
         category: 'Kirjat',
         title: "Lumotun Maan kartasto",
