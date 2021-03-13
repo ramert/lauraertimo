@@ -64,7 +64,7 @@ p, .p {
 .decoration-text {
     position: absolute;
     top: -0.9em;
-    left: -0.5em;
+    left: -0.4em;
     color: var(--color-blue);
     opacity: 0.2;
 }
