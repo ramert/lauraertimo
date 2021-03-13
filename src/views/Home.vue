@@ -29,6 +29,12 @@ Vue.component('vNews', News);
 
 const news = [
    {
+      category: 'Kirjat',
+      title: 'Pikkutieto: Mennään Piiloon',
+      text: 'Uusi Pikkutieto Mennään piiloon on ilmesytynyt! Mitä kaikkea ympärillämme piilotteleekaan?',
+      link:  'https://www.karisto.fi/sivu/tuote/mennaan-piiloon/2756682'
+   },
+   {
         category: 'Palkinto',
         title: 'Tietopöllö-palkinto 2020',
         text: "Laura Ertimon kirjat avaavat polkuja tärkeiden ja ajankohtaisten aiheiden äärelle. Suomen tietokirjailijoiden yhdistys myönsi Lauralle vuoden 2020 Tietopöllö-palkinnon.",

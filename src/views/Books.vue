@@ -7,6 +7,7 @@
           :name="book.name"
           :image="book.image"
           :toLink="book.toLink"
+          :extLink="book.extLink"
           :illustrator="book.illustrator"
           :publisher="book.publisher"
           :publisherLink="book.publisherLink"
@@ -35,9 +36,12 @@ import Book from "@/components/BookLink";
 import VesiImage from '@/assets/vesi/kansi.jpg';
 import YoImage from '@/assets/yo/kansi.jpg';
 import IhmeIlmatImage from '@/assets/ihmeilmat/ihme-ilmat-miksi-ilmasto-muuttuu.jpg';
+import IhmeIlmatPuuhaImage from '@/assets/ihme-ilmat-puuha.jpeg';
 import LumottuImage from '@/assets/lumotunmaankartasto/lumotun-maan-kartasto.jpg';
 import PikkuTietoMissa from '@/assets/missa-sina-olet.jpg';
+import PikkuTietoMennaan from '@/assets/mennaan-piiloon.jpeg';
 import Maapallotieto from '@/assets/Maapallo_etukansi.jpg';
+import IlmastonMuutosSelko from '@/assets/IlmastonMuutosSelko.jpeg';
  
 const ComicBooks = [
   {
@@ -51,9 +55,9 @@ const ComicBooks = [
   },
   {
     name: "Ihme ilmat! Koko perheen puuhakirja",
+    image:  IhmeIlmatPuuhaImage,
     illustrator: "Mari Ahokoivu",
-    //toLink:"/ihmeIlmatPuuha",
-    flag: "Tulossa",
+    extLink:"https://kauppa.intokustannus.fi/kirja/ihme-ilmat-puuhakirja-ilmaston-pelastajille/",
     publisher: "Into Kustannus 2021",
     publisherLink: "https://kauppa.intokustannus.fi/",
     description: "Tehtäviä, jotka auttavat ymmärtämään maailman muutosta ja muuttamaan maailmaa."
@@ -111,8 +115,8 @@ const SmallChildrenBooks = [
   },
   {
     name:"Pikkutieto: Mennään piiloon!",
-    flag: "Tulossa",
-    //toLink:"/pikkuTietoMennaanPiiloon",
+    image: PikkuTietoMennaan,
+    extLink:"https://www.karisto.fi/sivu/tuote/mennaan-piiloon/2756682",
     illustrator:"Sanna Pelliccioni",
     publisher:"Karisto 2021",
     publisherLink: "https://www.karisto.fi/",
@@ -132,8 +136,8 @@ const WorldClearText = [
   },
   {
     name:"Ilmastonmuutos selkokielellä",
-    flag: "Tulossa",
-    //toLink:"/ilmastonMuutosSelko",
+    image: IlmastonMuutosSelko,
+    extLink:"https://www.opike.fi/?mod=products&pid=504",
     publisher:"Oppimateriaalikeskus Opike 2020",
     publisherLink: "https://opike.fi/",
     description:"Kirja selvittää ilmastonmuutoksen syitä ja hillintää selkokielisesti."
