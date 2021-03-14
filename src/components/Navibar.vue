@@ -25,11 +25,12 @@ export default {
 .button-wrapper {
   display: block;
   box-shadow: -2px 5px 5px -5px rgba(0,0,0,0.46);
-  margin-bottom: calc( 18 * var(--spacing-unit));
+  margin-bottom: calc( 12 * var(--spacing-unit));
 
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: calc( 18 * var(--spacing-unit));
   }
 }
 

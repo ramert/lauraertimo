@@ -13,8 +13,21 @@
                         </li>
                     </ul>
                     <div v-else>
-                    <router-link v-if="news.link.startsWith('/')" :to="news.link" tag="a" class="list-item__button">Lue lisää...</router-link>
-                    <a v-else class="list-item__button" :href="news.link" target="_blank">Lue lisää...</a>
+                        <router-link v-if="news.link.startsWith('/')" :to="news.link" tag="a" class="list-item__button">
+                            <span v-if="news.linkText">
+                                {{news.linkText}}...
+                            </span>
+                            <span v-else>
+                                Lue lisää...
+                            </span>
+                        </router-link>
+                        <a v-else class="list-item__button" :href="news.link" target="_blank">
+                            <span v-if="news.linkText">
+                                {{news.linkText}}...
+                            </span>
+                            <span v-else>
+                            Lue lisää...</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -41,7 +54,7 @@ export default {
     display: block;
     margin: 5vw 0;
     @media screen and (min-width: 640px) {
-        margin: calc(12 * var(--spacing-unit)) 0;
+        margin: calc(15 * var(--spacing-unit)) 0;
     }
 
     .list-item:last-of-type {
@@ -59,10 +72,10 @@ export default {
 }
 
 .list-item {
-    margin-bottom: calc(10 * var(--spacing-unit));
+    margin-bottom: calc(12 * var(--spacing-unit));
 
     @media screen and (min-width: 640px) {
-        margin-bottom: calc(18 * var(--spacing-unit));
+        margin-bottom: calc(22 * var(--spacing-unit));
     }
 
     &__content {

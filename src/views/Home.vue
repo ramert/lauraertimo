@@ -155,7 +155,7 @@ export default {
 }
 
 .navi-spacing {
-    margin: 5vw;
+    margin: calc(10 * var(--spacing-unit)) 5vw;
     @media screen and (min-width: 640px) {
         margin: 0 calc(6 * var(--spacing-unit));
         padding: 0 calc(16.5vw - 110px);

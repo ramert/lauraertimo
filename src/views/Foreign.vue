@@ -44,25 +44,31 @@
     {
         category: 'New book',
         title: "Weird Weather Activity book",
-        text: "Weird Weather activity book will be published in the beginning of 2021! And there's the next book in the making too… Stay tuned for more information",
+        text: "Weird Weather activity book is out! And there's the next book in the making too… Stay tuned for more information",
+        link: "https://kauppa.intokustannus.fi/kirja/ihme-ilmat-puuhakirja-ilmaston-pelastajille/",
+        linkText: 'Check out Activity book'
     },
     {
         category: 'New Territory',
         title: "Weird Weather travels across the Atlantic",
         text: "Weird Weather will be published in the United States on Earth Day 2021. North American rights were acquired by Sky Pony Press, a children’s imprint of Skyhorse Publishing.",
-        link: "http://www.ahlbackagency.com/2020/04/weird-weather-will-be-published-in-the-united-states-on-earth-day-2021/"
+        link: "http://www.ahlbackagency.com/2020/04/weird-weather-will-be-published-in-the-united-states-on-earth-day-2021/",
+        linkText: 'Read more'
     },
     {
         category: 'In Media',
         title: "Weird Weather in Spain",
         text: "¡Qué clima tan raro!” el libro ilustrado de Laura Ertimo y Mari Ahokoivu que ayuda a entender y combatir el cambio climático por fin se publica en España.",
-        link: "https://vandal.elespanol.com/saladepeligro/5627/que-clima-tan-raro-el-libro-ilustrado-de-laura-ertimo-y-mari-ahokoivu-que-ayuda-a-entender-y-combatir-el-cambio-climatico-por-fin-se-publica-en-espana/"
+        link: "https://vandal.elespanol.com/saladepeligro/5627/que-clima-tan-raro-el-libro-ilustrado-de-laura-ertimo-y-mari-ahokoivu-que-ayuda-a-entender-y-combatir-el-cambio-climatico-por-fin-se-publica-en-espana/",
+        linkText: 'Read more'
+
     },
     {
         category: 'New book',
         title: "Mini Science and Plop explores invisible world",
         text: "Mini Science series continues with a new title “Invisible world” in January 2021.",
-        link: "http://www.ahlbackagency.com/book/mini-science-invisible-world/"
+        link: "http://www.ahlbackagency.com/book/mini-science-invisible-world/",
+        linkText: 'Read more'
     }
   ];
 
