@@ -6,6 +6,9 @@
     <router-link to="/author" tag="button" class="button">
       <span class="h3 button-text">Tietokirjailija</span>
     </router-link>
+    <router-link to="/media" tag="button" class="button">
+      <span class="h3 button-text">Mediassa</span>
+    </router-link>
     <router-link to="/foreign" tag="button" class="button">
       <span class="h3 button-text">Foreign rights</span>
     </router-link>
@@ -24,12 +27,12 @@ export default {
 <style lang="scss" scoped> 
 .button-wrapper {
   display: block;
-  box-shadow: -2px 5px 5px -5px rgba(0,0,0,0.46);
+  border-bottom: 2px solid var(--color-blue);
   margin-bottom: calc( 12 * var(--spacing-unit));
 
   @media screen and (min-width: 768px) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: calc( 18 * var(--spacing-unit));
   }
 }
@@ -91,6 +94,13 @@ export default {
 
   &:focus {
     outline: none;
+    box-shadow: inset 0px -10px 0 0px var(--color-lightblue);
+  }
+
+    &:hover {
+    color: var(--color-background2);
+    background-color: var(--color-blue);
+    box-shadow: none;
   }
 }
 
@@ -99,6 +109,7 @@ export default {
     padding: 0;
     box-shadow: none;
     margin-bottom: 0;
+    border-bottom: none;
   }
   .button {
     margin: 0;

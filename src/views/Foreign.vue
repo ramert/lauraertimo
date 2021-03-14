@@ -34,8 +34,10 @@
   import VesiImage from '@/assets/vesi/kansi.jpg';
   import YoImage from '@/assets/yo/kansi.jpg';
   import IhmeIlmatImage from '@/assets/ihmeilmat/ihme-ilmat-miksi-ilmasto-muuttuu.jpg';
+  import IhmeIlmatPuuha from '@/assets/ihme-ilmat-puuha.jpeg';
   import LumottuImage from '@/assets/lumotunmaankartasto/lumotun-maan-kartasto.jpg';
   import PikkuTietoMissaImage from '@/assets/missa-sina-olet.jpg';
+  import PikkuTietoMennaanImage from '@/assets/mennaan-piiloon.jpeg';
   import ForeignItem from '@/components/book/ForeignBookItem';
 
   Vue.component("vForeignItem", ForeignItem);
@@ -95,6 +97,10 @@
           label: "ITALY: Mondadori/Edizioni Piemme",
           link: "https://www.battelloavapore.it/libri/cose-successo-al-clima-i-cambiamenti-del-nostro-pianeta-spiegati-ai-bambini"
         },
+          {
+          label: "LATVIA: Jumava",
+          link: ""
+        },
         {
           label: "LITHUANIA: Obuolys",
           link: "https://obuolys.lt/produktas/isproteje-orai/"
@@ -109,7 +115,7 @@
         },
         {
           label: "POLAND: Amber",
-          link: ""
+          link: "http://www.wydawnictwoamber.pl/kategorie/amberek-ilustrowane-edukacyjne-ksiazki-dla-dzieci-/co-sie-dzieje-z-pogoda-dlaczego-klimat-sie-zmienia,p260624324"
         },
         {
           label: "SERBIA: Odiseja",
@@ -124,17 +130,17 @@
           link: "https://www.editorialastronave.com/item/es/437-que-clima-tan-raro/"
         },
         {
+          label: "DENMARK: Staarup & Co.",
+          link: ""
+        },
+        {
           label: "SWEDEN: Rabén & Sjögren",
           link: "http://www.rabensjogren.se/bocker/193648-virrigt-vader"
         },
         {
-          label: "TURKEY: Kolektif",
-          link: ""
-        },
-        {
           label: "UNITED STATES (North America) Skyhorse Publishing/Sky Pony Press",
           link: "https://www.skyhorsepublishing.com/sky-pony-press/9781510763623/why-does-climate-change/"
-        }
+        },
       ]
     },
     {
@@ -162,6 +168,7 @@
       ]
     },
     {
+      cover: PikkuTietoMennaanImage,
       title:"Invisible World",
       orig:"Mennään piiloon! 2021",
       link:"http://www.ahlbackagency.com/book/mini-science-invisible-world/",
@@ -169,8 +176,26 @@
         {
           label: "FINLAND: Karisto (orig.)"
         },
+        { 
+          label: 'ESTONIA: Avita',
+          link: 'https://www.avita.ee/33672'
+        },
         {
           label: "TURKEY: Yapi Kredi Publishing"
+        }
+      ]
+    },
+    {
+      cover: IhmeIlmatPuuha,
+      title:"Weird Weather! Activity Book for Climate Heroes",
+      orig:"Ihme ilmat! Koko perheen puuhakirja! 2021",
+      link:"https://www.ahlbackagency.com/book/weird-weather-activity-book-for-climate-heroes/?bookId=1023",
+      rights: [
+        {
+          label: "FINLAND: Into Kustannus (orig.)"
+        },
+        { 
+          label: 'DENMARK: Staarup & Co.',
         }
       ]
     },
@@ -184,7 +209,13 @@
           label: "FINLAND: Kustantamo S&S (orig.)"
         },
         {
+          label: "POLAND: Eurograf"
+        },
+        {
           label: "RUSSIA: AST"
+        },
+        {
+          label: "TURKEY: Alfa"
         }
       ]
     },

@@ -4,7 +4,10 @@ import Router from 'vue-router';
 import Home from '@/views/Home';
 import Books from '@/views/Books';
 import Author from '@/views/Author';
+import Media from '@/views/Media';
 import Foreign from '@/views/Foreign';
+
+import Tietopollo from '@/views/Tietopollo';
 
 // Books
 import Yo from '@/books/Yo';
@@ -52,6 +55,23 @@ const routes = [
     meta: {
       title: 'Foreign rights',
       parent: '/'
+    },
+  },
+  {
+    path: '/media',
+    name: 'Mediassa',
+    component: Media,
+    meta: {
+      title: 'Mediassa',
+      parent: '/'
+    },
+  },
+  {
+    path: '/tietopollo',
+    name: 'Tietopöllö palkinto',
+    component: Tietopollo,
+    meta: {
+      title: 'Tietopöllö-palkinto',
     },
   },
   // Books

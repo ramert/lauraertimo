@@ -96,3 +96,8 @@ p {
   text-align: center;
 }
 
+a:focus {
+  outline: none;
+  box-shadow: inset 0px -1px 0 0px var(--color-blue);
+}
+

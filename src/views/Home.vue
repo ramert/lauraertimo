@@ -47,22 +47,10 @@ const news = [
         link: "/lumotunMaanKartasto"
     },
     {
-        category: 'Mediassa',
-        title: "Sirpaletiedon ajassa kirja on anarkistinen esine",
-        text: "Lue haastatteluni Sanan arvo -sarjassa.",
-        link: "https://www.sanasto.fi/sanan-arvo-sirpaletiedon-ajassa-kirja-on-anarkistinen-esine/"
-    },
-    {
         category: 'Uutta',
         title: "Yhteistyötä Teatteri Ilmi Ö:n kanssa",
         text: "Teatteri Ilmi Ö tarttuu haasteeseen ja luo tietokirjan pohjalta osallistavan esityksen koululaisille. Laura on mukana sekä esityksen rakentamisessa että lavalla.",
         link: "https://www.teatteri-ilmio.fi/nosto/ihme-ilmat-forumteatteriesitys-2/"
-    },
-    {
-        category: 'Mediassa',
-        title: "Lumotun maan kartastossa Irvikissa törmää galaksiin",
-        text: "Kai Vaijärvi esittelee ja arvioi laajasti tuotantoani Lastenkulttuurin vinkkarissa.",
-        link: "http://karivaijarvi.blogspot.com/2020/09/lumotun-maan-kartastossa-irvikissa.html"
     }
 ]
 
