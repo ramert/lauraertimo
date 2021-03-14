@@ -4,11 +4,11 @@
         <vImage :image="Laura" class="first-on-mobile" alt="Laura Ertimo"/>
         <div>
             <vParagraph>
-              Olen tietokirjaileva maantieteilijä. 
-              Valmistuin filosofian maisteriksi Helsingin yliopistosta. 
-              Olen työskennellyt vapaana kirjailijana vuodesta 2015. 
-              Kirjoitan maailmasta ja luonnon ja ihmisen ajoittain hankalasta suhteesta. 
-              Tavoitteenani on kirjoittaa kirjoja, joita koko perhe lukee yhdessä.
+              Lasten tietokirjallisuudessa on kyse tulevaisuuden demokratiasta.<br/>
+              Olen erityisesti lapsille ja koko perheelle tietokirjaileva maantieteilijä. 
+              Kuljen lukijan rinnalla kohti luonnonilmiöitä ja maailman ihmeellistä monimuotoisuutta. 
+              Innostun nuorten mielien notkeudesta ja halusta kohdella ympäröivää luontoa tasavertaisena kumppanina.<br/>
+              Kirjojeni ytimessä on ajatus lapsista ja nuorista tiedolle avoimina olentoina, joilla on tarve rakentaa kokonaista maailmankuvaa. Kirjani tarjoavat näkymiä ja haastavat ajattelemaan, hankkimaan lisää tietoa. 
             </vParagraph>
             <vParagraph> 
               Työskentelen useiden suomalaisten kuvittajien kanssa. 
