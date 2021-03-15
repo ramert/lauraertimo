@@ -7,7 +7,7 @@ import Author from '@/views/Author';
 import Media from '@/views/Media';
 import Foreign from '@/views/Foreign';
 
-import Tietopollo from '@/views/Tietopollo';
+import Tietopollo from '@/views/TietoPollo';
 
 // Books
 import Yo from '@/books/Yo';
