@@ -7,7 +7,7 @@
               Lasten tietokirjallisuudessa on kyse tulevaisuuden demokratiasta.<br/>
               Olen erityisesti lapsille ja koko perheelle tietokirjaileva maantieteilijä. 
               Kuljen lukijan rinnalla kohti luonnonilmiöitä ja maailman ihmeellistä monimuotoisuutta. 
-              Innostun nuorten mielien notkeudesta ja halusta kohdella ympäröivää luontoa tasavertaisena kumppanina.<br/>
+              Innostun nuorten mielien notkeudesta ja lasten suorasukaisesta, tasavertaisesta suhteesta eläviin olentoihin.
               Kirjojeni ytimessä on ajatus lapsista ja nuorista tiedolle avoimina olentoina, joilla on tarve rakentaa kokonaista maailmankuvaa. Kirjani tarjoavat näkymiä ja haastavat ajattelemaan, hankkimaan lisää tietoa. 
             </vParagraph>
             <vParagraph> 
@@ -26,13 +26,13 @@
 
 <script>
 import Vue from 'vue';
-import Laura from '@/assets/author/LauraPortrait.jpg';
+import Laura from '@/assets/author/LauraPortrait2.jpg';
 
 const news = [
     {
         category: 'Vierailut',
         title: "Kirjailijavierailut Lukukeskuksen kautta",
-        text: "Kirjoitustyön ohella teen kirjailijavierailuja. Vierailuni suuntautuvat kouluille ja kirja-alan tapahtumiin. Myös virtuaalivierailun ovat mahdollisia.",
+        text: "Kirjoitustyön ohella teen kirjailijavierailuja. Vierailuni suuntautuvat kouluille, kirjastoihin ja kirja-alan tapahtumiin. Myös virtuaalivierailut ovat mahdollisia.",
         link: "https://kirjailijavierailut.lukukeskus.fi/kirjailijat/ertimo-laura/"
     },
     {
