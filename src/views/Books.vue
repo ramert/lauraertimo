@@ -35,6 +35,7 @@ import Book from "@/components/BookLink";
 
 import VesiImage from '@/assets/vesi/kansi.jpg';
 import YoImage from '@/assets/yo/kansi.jpg';
+import AikamatkaImage from '@/assets/aikamatka/aika-matkakansi.jpeg';
 import IhmeIlmatImage from '@/assets/ihmeilmat/ihme-ilmat-miksi-ilmasto-muuttuu.jpg';
 import IhmeIlmatPuuhaImage from '@/assets/ihme-ilmat-puuha.jpeg';
 import LumottuImage from '@/assets/lumotunmaankartasto/lumotun-maan-kartasto.jpg';
@@ -44,6 +45,15 @@ import Maapallotieto from '@/assets/Maapallo_etukansi.jpg';
 import IlmastonMuutosSelko from '@/assets/IlmastonMuutosSelko.jpeg';
  
 const ComicBooks = [
+  {
+    name: "Aika matka!",
+    image: AikamatkaImage,
+    illustrator: "Mari Ahokoivu",
+    extLink:"https://kauppa.intokustannus.fi/kirja/aika-matka-lotta-kasper-ja-luontokadon-arvoitus/",
+    publisher: "Into Kustannus 2021",
+    publisherLink: "https://kauppa.intokustannus.fi/",
+    description: "Suuri seikkailu ympäri maailman ja aikakaudelta toiselle valottaa luontokadon juuria. Sateenkaaren kyydissä löytyy myös ratkaisuja!"
+  },
   {
     name: "Ihme ilmat! Miksi ilmasto muuttuu",
     image:IhmeIlmatImage,
@@ -61,15 +71,6 @@ const ComicBooks = [
     publisher: "Into Kustannus 2021",
     publisherLink: "https://kauppa.intokustannus.fi/",
     description: "Tehtäviä, jotka auttavat ymmärtämään maailman muutosta ja muuttamaan maailmaa."
-  },
-    {
-    name: "Aika matka!",
-    illustrator: "Mari Ahokoivu",
-    //toLink:"/aikaMatka",
-    flag: "Tulossa",
-    publisher: "Into Kustannus 2021",
-    publisherLink: "https://kauppa.intokustannus.fi/",
-    description: "Suuri seikkailu avaa ympäristökriisin peruja."
   }
 ];
 

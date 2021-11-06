@@ -30,9 +30,9 @@ Vue.component('vNews', News);
 const news = [
    {
         category: 'Kirjat',
-        title: 'Pikkutieto: Mennään Piiloon',
-        text: 'Uusi Pikkutieto Mennään piiloon on ilmestynyt! Mitä kaikkea ympärillämme piilotteleekaan?',
-        link:  'https://www.karisto.fi/sivu/tuote/mennaan-piiloon/2756682'
+        title: 'Aika matka! on ilmestynyt',
+        text: 'Uusi sarjakuva-tietokirja ottaa ympäristön ilmiöitä haltuun Ihme ilmoista tuttujen hahmojen kanssa. Nyt hahmotellaan ajankulkua ja energiaa ihmisen ja luonnon kantilta, sillä selvitettävänä on luontokadon arvoitus. Mutta miten sateenkaari liittyy tähän kaikkeen?',
+        link:  'https://kauppa.intokustannus.fi/kirja/aika-matka-lotta-kasper-ja-luontokadon-arvoitus/'
    },
    {
         category: 'Palkinto',
