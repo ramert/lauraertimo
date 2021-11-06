@@ -71,6 +71,13 @@ const ComicBooks = [
     publisher: "Into Kustannus 2021",
     publisherLink: "https://kauppa.intokustannus.fi/",
     description: "Tehtäviä, jotka auttavat ymmärtämään maailman muutosta ja muuttamaan maailmaa."
+  },
+  {
+    name: "Tietopalat: Mikä on robotti?",
+    flag: "tulossa",
+    illustrator: "Aapo Ravantti",
+    publisher: "WSOY 2022",
+    description: "Helppolukuisessa Tietopalat-kirjassa kaverukset Ro ja Botti pohtivat, missä kaikkialla robotteihin voi törmätä nyt ja tulevaisuudessa."
   }
 ];
 
