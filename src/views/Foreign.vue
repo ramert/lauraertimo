@@ -216,6 +216,10 @@
         },
         {
           label: "TURKEY: Alfa"
+        },
+        {
+          label: "ESTONIA: Avita",
+          link: "https://www.avita.ee/34918"
         }
       ]
     },
@@ -231,6 +235,10 @@
         {
           label: "RUSSIA, KompasGuide",
           link: 'https://www.kompasgid.ru/ru/knigi/voda-kniga-o-samom-vazhnom-veshchestve-v-mire'
+        },
+        {
+          label: "ESTONIA, Tammerraamat",
+          link: "http://www.tammerraamat.ee/raamatud/281/Vesi"
         }
       ]
     },
@@ -248,6 +256,11 @@
         },
         {
           label:  "RUSSIA, KompasGuide"
+        },
+        {
+          label: "ESTONIA: Tammerraamat",
+          link: "http://www.tammerraamat.ee/raamatud/288/%C3%96%C3%96"
+
         }
       ]
     }
