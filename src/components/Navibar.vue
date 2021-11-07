@@ -87,20 +87,17 @@ export default {
     overflow: visible;
   }
 
-  &:hover {
-    color: var(--color-background2);
-    background-color: var(--color-blue);
-  }
-
   &:focus {
     outline: none;
     box-shadow: inset 0px -10px 0 0px var(--color-lightblue);
   }
 
+  @media screen and (min-width: 640px) { 
     &:hover {
-    color: var(--color-background2);
-    background-color: var(--color-blue);
-    box-shadow: none;
+      color: var(--color-background2);
+      background-color: var(--color-blue);
+      box-shadow: none;
+    }
   }
 }
 
