@@ -28,7 +28,7 @@ Vue.component("vNaviBar", Navibar);
 Vue.component('vNews', News);
 
 const news = [
-   {    category: 'Ehdokkkuus',
+   {    category: 'Ehdokkuus',
         title: 'Aika matka! Finlandia-palkintoehdokkaana',
         text: 'Laura Ertimon ja Mari Ahokoivun Aika matka! Lotta, Kasper ja luontokadon arvoitus on ehdolla Lasten- ja nuortenkirjallisuuden Finlandia-palkinnon saajaksi. "Kokonaisuus on eloisa runsaudensarvi, joka houkuttelee tutkimaan, palaamaan ja vaikuttamaan."',
         link: 'https://kirjasaatio.fi/finlandia/lasten-ja-nuortenkirjallisuuden-finlandia'
