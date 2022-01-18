@@ -37,19 +37,20 @@ const news = [
     {
         category: 'Kirjat',
         title: 'Mikä on robotti WSOY:n Tietopalat-sarjassa',
+        text: 'Mitä robotit oikein ovat ja mitä kaikkea ne pystyvät tekemään? Hauskasti kuvitetussa Tietopalat-kirjassa kaverukset Ro ja Botti pohtivat, missä kaikkialla robotteihin voi törmätä nyt ja tulevaisuudessa.',
         link: '/books'
     },
     {    
         category: 'Ehdokkuus',
         title: 'Aika matka! Finlandia-palkintoehdokkaana',
-        text: 'Laura Ertimon ja Mari Ahokoivun Aika matka! Lotta, Kasper ja luontokadon arvoitus on ehdolla Lasten- ja nuortenkirjallisuuden Finlandia-palkinnon saajaksi. "Kokonaisuus on eloisa runsaudensarvi, joka houkuttelee tutkimaan, palaamaan ja vaikuttamaan."',
+        text: 'Laura Ertimon ja Mari Ahokoivun Aika matka! Lotta, Kasper ja luontokadon arvoitus oli ehdolla 2021 Lasten- ja nuortenkirjallisuuden Finlandia-palkinnon saajaksi. "Kokonaisuus on eloisa runsaudensarvi, joka houkuttelee tutkimaan, palaamaan ja vaikuttamaan."',
         link: 'https://kirjasaatio.fi/finlandia/lasten-ja-nuortenkirjallisuuden-finlandia'
     },
     {
-          category: 'Palkinto',
-          title: 'Tietopöllö-palkinto 2020',
-          text: "Laura Ertimon kirjat avaavat polkuja tärkeiden ja ajankohtaisten aiheiden äärelle. Suomen tietokirjailijoiden yhdistys myönsi Lauralle vuoden 2020 Tietopöllö-palkinnon.",
-          link: 'https://www.suomentietokirjailijat.fi/ajankohtaista/vuoden-2020-tietopollo-palkinto-laura-ertimolle.html'
+        category: 'Palkinto',
+        title: 'Tietopöllö-palkinto 2020',
+        text: "Laura Ertimon kirjat avaavat polkuja tärkeiden ja ajankohtaisten aiheiden äärelle. Suomen tietokirjailijoiden yhdistys myönsi Lauralle vuoden 2020 Tietopöllö-palkinnon.",
+        link: 'https://www.suomentietokirjailijat.fi/ajankohtaista/vuoden-2020-tietopollo-palkinto-laura-ertimolle.html'
     }
 ]
 

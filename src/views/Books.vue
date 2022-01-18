@@ -50,7 +50,7 @@ const ComicBooks = [
     name: "Aika matka!",
     image: AikamatkaImage,
     illustrator: "Mari Ahokoivu",
-    extLink:"https://kauppa.intokustannus.fi/kirja/aika-matka-lotta-kasper-ja-luontokadon-arvoitus/",
+    toLink:"/aikaMatka",
     publisher: "Into Kustannus 2021",
     publisherLink: "https://kauppa.intokustannus.fi/",
     description: "Suuri seikkailu ympäri maailman ja aikakaudelta toiselle valottaa luontokadon juuria. Sateenkaaren kyydissä löytyy myös ratkaisuja!"
@@ -72,10 +72,7 @@ const ComicBooks = [
     publisher: "Into Kustannus 2021",
     publisherLink: "https://kauppa.intokustannus.fi/",
     description: "Tehtäviä, jotka auttavat ymmärtämään maailman muutosta ja muuttamaan maailmaa."
-  }
-];
-
-const FamilyBooks = [
+  },
   {
     name: "Tietopalat: Mikä on robotti?",
     image: MikaOnRobotti,
@@ -84,6 +81,9 @@ const FamilyBooks = [
     publisher: "WSOY 2022",
     description: "Helppolukuisessa Tietopalat-kirjassa kaverukset Ro ja Botti pohtivat, missä kaikkialla robotteihin voi törmätä nyt ja tulevaisuudessa."
   },
+];
+
+const FamilyBooks = [
   {
     name:"Lumotun Maan kartasto",
     image:LumottuImage,
