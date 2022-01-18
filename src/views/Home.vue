@@ -28,34 +28,28 @@ Vue.component("vNaviBar", Navibar);
 Vue.component('vNews', News);
 
 const news = [
-   {    category: 'Ehdokkuus',
+    {
+        category: 'Mediassa',
+        title: 'Teatteri Ilmi Ö. ja tietokirjailija Ihme ilmat -kiertueella',
+        text: '"Vaati monen monta puoli-improvisoitua kierrosta ja simultaani-käsikirjoittamista, jotta Ihme ilmat -kirjan sisällöstä kuoriutuivat esiin ilmastonmuutoksen kokonaisuutta kuvaavat Ihme ilmat -kohtaukset."  Lue Lauran raportti tietokirjan teatterillistamisesta ja lavakokemuksista Assitej lasten- ja nuortenteatterijärjestön jäsenlehdestä sivulta 8. ',
+        link: 'http://files.yg.fi/f6/71/f6716327-c5b0-42d3-a46a-ed8afde2e221.pdf'
+    },
+    {
+        category: 'Kirjat',
+        title: 'Mikä on robotti WSOY:n Tietopalat-sarjassa',
+        link: '/books'
+    },
+    {    
+        category: 'Ehdokkuus',
         title: 'Aika matka! Finlandia-palkintoehdokkaana',
         text: 'Laura Ertimon ja Mari Ahokoivun Aika matka! Lotta, Kasper ja luontokadon arvoitus on ehdolla Lasten- ja nuortenkirjallisuuden Finlandia-palkinnon saajaksi. "Kokonaisuus on eloisa runsaudensarvi, joka houkuttelee tutkimaan, palaamaan ja vaikuttamaan."',
         link: 'https://kirjasaatio.fi/finlandia/lasten-ja-nuortenkirjallisuuden-finlandia'
-   },
-   {
-        category: 'Kirjat',
-        title: 'Aika matka! on ilmestynyt',
-        text: 'Uusi sarjakuva-tietokirja ottaa ympäristön ilmiöitä haltuun Ihme ilmoista tuttujen hahmojen kanssa. Nyt hahmotellaan ajankulkua ja energiaa ihmisen ja luonnon kantilta, sillä selvitettävänä on luontokadon arvoitus. Mutta miten sateenkaari liittyy tähän kaikkeen?',
-        link:  'https://kauppa.intokustannus.fi/kirja/aika-matka-lotta-kasper-ja-luontokadon-arvoitus/'
-   },
-   {
-        category: 'Palkinto',
-        title: 'Tietopöllö-palkinto 2020',
-        text: "Laura Ertimon kirjat avaavat polkuja tärkeiden ja ajankohtaisten aiheiden äärelle. Suomen tietokirjailijoiden yhdistys myönsi Lauralle vuoden 2020 Tietopöllö-palkinnon.",
-        link: 'https://www.suomentietokirjailijat.fi/ajankohtaista/vuoden-2020-tietopollo-palkinto-laura-ertimolle.html'
     },
     {
-        category: 'Kirjat',
-        title: "Lumotun Maan kartasto",
-        text: "Kymmenen lumoavaa tositarinaa ja kymmenen satumaista karttaa.",
-        link: "/lumotunMaanKartasto"
-    },
-    {
-        category: 'Uutta',
-        title: "Yhteistyötä Teatteri Ilmi Ö:n kanssa",
-        text: "Teatteri Ilmi Ö tarttuu haasteeseen ja luo tietokirjan pohjalta osallistavan esityksen koululaisille. Laura on mukana sekä esityksen rakentamisessa että lavalla.",
-        link: "https://www.teatteri-ilmio.fi/nosto/ihme-ilmat-forumteatteriesitys-2/"
+          category: 'Palkinto',
+          title: 'Tietopöllö-palkinto 2020',
+          text: "Laura Ertimon kirjat avaavat polkuja tärkeiden ja ajankohtaisten aiheiden äärelle. Suomen tietokirjailijoiden yhdistys myönsi Lauralle vuoden 2020 Tietopöllö-palkinnon.",
+          link: 'https://www.suomentietokirjailijat.fi/ajankohtaista/vuoden-2020-tietopollo-palkinto-laura-ertimolle.html'
     }
 ]
 

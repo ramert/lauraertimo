@@ -5,9 +5,25 @@
 </template>
 
 <script>
-import Vue from 'vue';
-
 const content = [
+  {
+        category: 'Kirja-arvostelu',
+        title: 'Miten kertoa lapsille luonnon tuhosta? ',
+        text: '"Laura Ertimon ja Mari Ahokoivun kirja vastaa vaikeaan kysymykseen erinomaisesti (...) Edeltäjänsä tavoin Aika matka! on onnistunut valitsemaan oikeat esimerkit, jotka sopivat monenikäisille lukijoille."',
+        link: 'https://www.hs.fi/kulttuuri/art-2000008430170.html'
+    },
+    {
+        category: 'Mediassa',
+        title: 'Teatteri Ilmi Ö. ja tietokirjailija Ihme ilmat -kiertueella',
+        text: '"Vaati monen monta puoli-improvisoitua kierrosta ja simultaani-käsikirjoittamista, jotta Ihme ilmat -kirjan sisällöstä kuoriutuivat esiin ilmastonmuutoksen kokonaisuutta kuvaavat Ihme ilmat -kohtaukset."  Lue Lauran raportti tietokirjan teatterillistamisesta ja lavakokemuksista Assitej lasten- ja nuortenteatterijärjestön jäsenlehdestä sivulta 8. ',
+        link: 'http://files.yg.fi/f6/71/f6716327-c5b0-42d3-a46a-ed8afde2e221.pdf'
+    },
+    {    
+        category: 'Ehdokkuus',
+        title: 'Aika matka! Finlandia-palkintoehdokkaana',
+        text: 'Laura Ertimon ja Mari Ahokoivun Aika matka! Lotta, Kasper ja luontokadon arvoitus on ehdolla Lasten- ja nuortenkirjallisuuden Finlandia-palkinnon saajaksi. "Kokonaisuus on eloisa runsaudensarvi, joka houkuttelee tutkimaan, palaamaan ja vaikuttamaan."',
+        link: 'https://kirjasaatio.fi/finlandia/lasten-ja-nuortenkirjallisuuden-finlandia'
+   },
     {
         category: 'Haastattelu',
         title: "Sirpaletiedon ajassa kirja on anarkistinen esine",

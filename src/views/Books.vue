@@ -43,6 +43,7 @@ import PikkuTietoMissa from '@/assets/missa-sina-olet.jpg';
 import PikkuTietoMennaan from '@/assets/mennaan-piiloon.jpeg';
 import Maapallotieto from '@/assets/Maapallo_etukansi.jpg';
 import IlmastonMuutosSelko from '@/assets/IlmastonMuutosSelko.jpeg';
+import MikaOnRobotti from '@/assets/mikaonrobotti.png';
  
 const ComicBooks = [
   {
@@ -71,17 +72,18 @@ const ComicBooks = [
     publisher: "Into Kustannus 2021",
     publisherLink: "https://kauppa.intokustannus.fi/",
     description: "Tehtäviä, jotka auttavat ymmärtämään maailman muutosta ja muuttamaan maailmaa."
-  },
-  {
-    name: "Tietopalat: Mikä on robotti?",
-    flag: "tulossa",
-    illustrator: "Aapo Ravantti",
-    publisher: "WSOY 2022",
-    description: "Helppolukuisessa Tietopalat-kirjassa kaverukset Ro ja Botti pohtivat, missä kaikkialla robotteihin voi törmätä nyt ja tulevaisuudessa."
   }
 ];
 
 const FamilyBooks = [
+  {
+    name: "Tietopalat: Mikä on robotti?",
+    image: MikaOnRobotti,
+    illustrator: "Aapo Ravantti",
+    extLink:" https://www.wsoy.fi/kirja/aapo-ravantti/tietopalat:-mika-on-robotti/9789510479162",
+    publisher: "WSOY 2022",
+    description: "Helppolukuisessa Tietopalat-kirjassa kaverukset Ro ja Botti pohtivat, missä kaikkialla robotteihin voi törmätä nyt ja tulevaisuudessa."
+  },
   {
     name:"Lumotun Maan kartasto",
     image:LumottuImage,
