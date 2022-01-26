@@ -60,6 +60,7 @@ export default {
 
         &:focus {
           outline: none;
+          box-shadow: none;
         }
 
         @media screen and (min-width: 640px) {
