@@ -7,6 +7,12 @@
 <script>
 const content = [
   {
+      category: 'Palkinto',
+      title: 'Tieto-Lauri-palkinto 2022 haastattelu',
+      text: "Suhtaudun tietoon vakavasti, mutta se miten tiedosta tulee kirja... on leikkiä.",
+      link: 'https://youtu.be/5Xo3K2Q-ByI'
+  },
+  {
         category: 'Kirja-arvostelu',
         title: 'Miten kertoa lapsille luonnon tuhosta? ',
         text: '"Laura Ertimon ja Mari Ahokoivun kirja vastaa vaikeaan kysymykseen erinomaisesti (...) Edeltäjänsä tavoin Aika matka! on onnistunut valitsemaan oikeat esimerkit, jotka sopivat monenikäisille lukijoille."',

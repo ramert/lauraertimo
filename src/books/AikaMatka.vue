@@ -19,6 +19,12 @@ import AikaMatkaImage from '@/assets/aikamatka/aika-matkakansi.jpeg';
 
 const news = [
     {
+        category: 'Palkinto',
+        title: 'Tieto-Lauri-palkinto Laura Ertimolle ja Mari Ahokoivulle.',
+        text: '"Laura Ertimon ja Mari Ahokoivun kirja Aika matka! Lotta, Kasper ja luontokadon arvoitus (Into Kustannus) on kerronnaltaan lempeä ja tietopohjaltaan järkälemäinen teos luonnon monimuotoisuuden merkityksestä ja pelastamisesta."', 
+        link: "https://www.laurijantinsaatio.fi/palkitut/tieto-lauri-palkinto-laura-ertimolle-ja-mari-ahokoivulle"
+    },
+    {
         category: 'Ehdokkuus',
         title: 'Aika matka! Finlandia-palkintoehdokkaana',
         text: 'Laura Ertimon ja Mari Ahokoivun Aika matka! Lotta, Kasper ja luontokadon arvoitus oli ehdolla 2021 Lasten- ja nuortenkirjallisuuden Finlandia-palkinnon saajaksi. "Kokonaisuus on eloisa runsaudensarvi, joka houkuttelee tutkimaan, palaamaan ja vaikuttamaan."',

@@ -29,6 +29,12 @@ Vue.component('vNews', News);
 
 const news = [
     {
+        category: 'Palkinto',
+        title: 'Tieto-Lauri-palkinto Laura Ertimolle ja Mari Ahokoivulle.',
+        text: '"Laura Ertimon ja Mari Ahokoivun kirja Aika matka! Lotta, Kasper ja luontokadon arvoitus (Into Kustannus) on kerronnaltaan lempeä ja tietopohjaltaan järkälemäinen teos luonnon monimuotoisuuden merkityksestä ja pelastamisesta."', 
+        link: "https://www.laurijantinsaatio.fi/palkitut/tieto-lauri-palkinto-laura-ertimolle-ja-mari-ahokoivulle"
+    },
+    {
         category: 'Mediassa',
         title: 'Teatteri Ilmi Ö. ja tietokirjailija Ihme ilmat -kiertueella',
         text: '"Vaati monen monta puoli-improvisoitua kierrosta ja simultaani-käsikirjoittamista, jotta Ihme ilmat -kirjan sisällöstä kuoriutuivat esiin ilmastonmuutoksen kokonaisuutta kuvaavat Ihme ilmat -kohtaukset."  Lue Lauran raportti tietokirjan teatterillistamisesta ja lavakokemuksista Assitej lasten- ja nuortenteatterijärjestön jäsenlehdestä sivulta 8. ',
