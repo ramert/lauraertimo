@@ -32,7 +32,10 @@ const news = [
     {
         category: 'Vierailut',
         title: "Kirjailijavierailut Lukukeskuksen kautta",
-        text: "Kirjoitustyön ohella teen kirjailijavierailuja. Vierailuni suuntautuvat kouluille, kirjastoihin ja kirja-alan tapahtumiin. Myös virtuaalivierailut ovat mahdollisia.",
+        text: [
+          "Kirjoitustyön ohella teen kirjailijavierailuja. Vierailuni suuntautuvat kouluille, kirjastoihin ja kirja-alan tapahtumiin. Myös virtuaalivierailut ovat mahdollisia.",
+          "Työpajoissa voidaan tarttua niin karttaan kuin kynäänkin. Lumotun Maan kartastoon perustuva Lumotun paikan kartta on hauska kaikenikäisille sopiva työpaja, joka kannustaa pohtimaan lähiympäristöä sana- ja kuvataiteen keinoin. Kouluille suunnattu tietokirjoittamisen työpaja on kaksiosainen Lukukeskuksen kautta tilattava kokonaisuus.",
+        ],
         link: "https://kirjailijavierailut.lukukeskus.fi/kirjailijat/ertimo-laura/"
     },
     {

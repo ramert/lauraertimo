@@ -27,7 +27,19 @@ import Laura from '@/assets/Laura-home.jpg';
 Vue.component("vNaviBar", Navibar);
 Vue.component('vNews', News);
 
-const news = [
+const news = [  
+    {
+        category: 'Mediassa',
+        title: 'Luontokato, ylikulutus ja lastentietokirjallisuus puhututtavat.',
+        text: 'Kurkkaa mediassa-linkistä viime aikojen haastatteluja ja keskusteluja, joihin olen osallistunut. Muun muassa Taideyliopiston ylikulutuskeskustelu ja Aamu-tv-vierailuni löytyvät tallenteina eri nettilähteistä.', 
+        link: "/media"
+    },
+    {
+        category: 'Vierailut',
+        title: 'Teen kirjailijavierailuja ja ohjaan työpajoja kouluissa ja tapahtumissa.',
+        text: 'Lumotun Maan kartastoon perustuva Lumotun paikan kartta on hauska kaikenikäisille sopiva työpaja, joka kannustaa pohtimaan lähiympäristöä sana- ja kuvataiteen keinoin. Kouluille suunnattu tietokirjoittamisen työpaja on kaksiosainen Lukukeskuksen kautta tilattava kokonaisuus.', 
+        link: "/author"
+    },
     {
         category: 'Palkinto',
         title: 'Tieto-Lauri-palkinto Laura Ertimolle ja Mari Ahokoivulle.',
@@ -46,7 +58,7 @@ const news = [
         text: 'Mitä robotit oikein ovat ja mitä kaikkea ne pystyvät tekemään? Hauskasti kuvitetussa Tietopalat-kirjassa kaverukset Ro ja Botti pohtivat, missä kaikkialla robotteihin voi törmätä nyt ja tulevaisuudessa.',
         link: '/books'
     },
-    {    
+/*     {    
         category: 'Ehdokkuus',
         title: 'Aika matka! Finlandia-palkintoehdokkaana',
         text: 'Laura Ertimon ja Mari Ahokoivun Aika matka! Lotta, Kasper ja luontokadon arvoitus oli ehdolla 2021 Lasten- ja nuortenkirjallisuuden Finlandia-palkinnon saajaksi. "Kokonaisuus on eloisa runsaudensarvi, joka houkuttelee tutkimaan, palaamaan ja vaikuttamaan."',
@@ -57,7 +69,7 @@ const news = [
         title: 'Tietopöllö-palkinto 2020',
         text: "Laura Ertimon kirjat avaavat polkuja tärkeiden ja ajankohtaisten aiheiden äärelle. Suomen tietokirjailijoiden yhdistys myönsi Lauralle vuoden 2020 Tietopöllö-palkinnon.",
         link: 'https://www.suomentietokirjailijat.fi/ajankohtaista/vuoden-2020-tietopollo-palkinto-laura-ertimolle.html'
-    }
+    } */
 ]
 
 export default {

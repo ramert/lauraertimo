@@ -7,11 +7,38 @@
 <script>
 const content = [
   {
+      category: 'Keskustelu',
+      title: 'Ylikulutuksesta uudenlaiseen olemisen tapaan',
+      text: "Taideyliopisto järjesti keskustelun ylikulutuksesta. Riikka Suomisen johdolla keskustellaan monitahoisesta aiheesta ja mahdollisista muutoksista tarinassa. Youtubesta löytyvässä keskustelussa näkökulmia avaavat tanssipedagogiikan professori Eeva Anttila, filosofi Ville Lähde, tietokirjailija ja maantieteilijä Laura Ertimo ja toimitusjohtaja ja yhteiskunnallinen vaikuttaja Leo Stranius.",
+      link: 'https://youtu.be/yGakEpviK3M',
+      linkText: "Katso video"
+  },
+  {
+      category: 'Mediassa',
+      title: 'Miten kertoa lapselle luonnon pelastamisesta?',
+      text: "Monista luontokadosta ja ilmastokriisistä kirjoittamiseen liittyvistä kysymyksistä  keskusteltiin Sanna Savikon kanssa Ylen aamussa.",
+      link: 'https://areena.yle.fi/1-61828340',
+      linkText: "Katso video"
+  },
+  {
+      category: 'Blogi',
+      title: '"Kirjoitan lastentietokirjaa, koska haluan osallistua elämän ylläpitämiseen."',
+      text: "Kirjoitin blogitekstin Helsingin yliopiston hankkeelle Kirjallisuus ja lukeminen ilmastokriisin aikaudella. Teksti on aikamatkaharjoitus: millaisia tuokiokuvia tietokirjailijan päässä muodostuu 200 vuoden aikajanalla.",
+      link: 'https://kirjallisuusjailmastokriisi.fi/2022/08/19/aikajanalla/',
+  },
+  {
+      category: 'Haastattelu',
+      title: '"En usko ylettömään helppouteen"',
+      text: "Opinahjoni äänenkannattaja julkaisi haastattelun, jossa jutellaan maantieteilijän tiestä lastentietokirjailijaksi.",
+      link: 'https://www.helsinki.fi/fi/uutiset/kulttuuri/asiat-voi-kertoa-lapsille-niin-kuin-ne-oikeasti-ovat-palkittu-tietokirjailija-sanoo-en-usko-ylettomaan-helppouteen',
+  },
+  {
       category: 'Palkinto',
       title: 'Tieto-Lauri-palkinto 2022 haastattelu',
       text: "Suhtaudun tietoon vakavasti, mutta se miten tiedosta tulee kirja... on leikkiä.",
       link: 'https://youtu.be/5Xo3K2Q-ByI'
   },
+
   {
         category: 'Kirja-arvostelu',
         title: 'Miten kertoa lapsille luonnon tuhosta? ',

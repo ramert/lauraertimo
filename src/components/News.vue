@@ -4,7 +4,11 @@
             <div class="list-item__content">
                 <span class="h1 decoration-text" :class="className()">{{news.category}}</span>
                 <span class="h3 list-item__title">{{news.title}} </span>
-                <vParagraph noMargin="true">{{news.text}}</vParagraph>
+                <div v-if="Array.isArray(news.text)">
+                    <vParagraph v-for="(text, index) in news.text" :key="news.title+index" noMargin="true">{{text}}</vParagraph>
+                </div>
+                <vParagraph v-else noMargin="true">{{news.text}}</vParagraph>
+
                 <span v-if="news.quoter">-{{news.quoter}}</span>
                 <div v-if="news.link">
                     <ul v-if="Array.isArray(news.link)">
