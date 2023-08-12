@@ -44,8 +44,19 @@ import PikkuTietoMennaan from '@/assets/mennaan-piiloon.jpeg';
 import Maapallotieto from '@/assets/Maapallo_etukansi.jpg';
 import IlmastonMuutosSelko from '@/assets/IlmastonMuutosSelko.jpeg';
 import MikaOnRobotti from '@/assets/mikaonrobotti.png';
+import MikaMahti from '@/assets/mikamahti/mika-mahtikansi.jpeg';
+
  
 const ComicBooks = [
+    {
+    name: "Mikä mahti!",
+    image: MikaMahti,
+    illustrator: "Mari Ahokoivu",
+    toLink:"/mikamahti",
+    publisher: "Into Kustannus 2023",
+    publisherLink: "https://kauppa.intokustannus.fi/",
+    description: "Mikä mahti! Lotta ja Kasper luonnon puolella jatkaa ihmisen ja ympäristön suhdetta käsittelevää kirjasarjaa. Nyt pureudutaan vallankäytön kiemuroihin niin koulussa, metsässä kuin maailmallakin."
+  },
   {
     name: "Aika matka!",
     image: AikamatkaImage,

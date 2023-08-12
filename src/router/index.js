@@ -20,6 +20,7 @@ import SelkoIlmastonMuutos from '@/books/SelkoIlmastonMuutos';
 import AikaMatka from '@/books/AikaMatka';
 import PikkuTietoMissaOlet from '@/books/PikkuTietoMissaOlet';
 import PikkuTietoMennaanPiiloon from '@/books/PikkuTietoMennaanPiiloon';
+import MikaMahti from '@/books/MikaMahti';
 
 
 Vue.use(Router);
@@ -156,6 +157,14 @@ const routes = [
     component: SelkoIlmastonMuutos,
     meta: {
       title: 'Ilmastonmuutos selkokielellä',
+    },
+  },
+  {
+    path: '/mikamahti',
+    name: 'Mikä Mahti!',
+    component: MikaMahti,
+    meta: {
+      title: 'Mikä Mahti!',
     },
   }
 ];

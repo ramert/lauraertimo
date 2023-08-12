@@ -28,6 +28,12 @@ Vue.component("vNaviBar", Navibar);
 Vue.component('vNews', News);
 
 const news = [  
+   {
+        category: 'Kirjat',
+        title: 'Mikä Mahti!',
+        text: 'Mikä Mahti! - Lotta ja Kasper luonnon puolella jatkaa ihmisen ja ympäristön suhdetta käsittelevää kirjasarjaa. Nyt pureudutaan vallankäytön kiemuroihin niin koulussa, metsässä kuin maailmallakin.',
+        link: '/mikamahti'
+    },
     {
         category: 'Mediassa',
         title: 'Luontokato, ylikulutus ja lastentietokirjallisuus puhututtavat.',
@@ -52,13 +58,13 @@ const news = [
         text: '"Vaati monen monta puoli-improvisoitua kierrosta ja simultaani-käsikirjoittamista, jotta Ihme ilmat -kirjan sisällöstä kuoriutuivat esiin ilmastonmuutoksen kokonaisuutta kuvaavat Ihme ilmat -kohtaukset."  Lue Lauran raportti tietokirjan teatterillistamisesta ja lavakokemuksista Assitej lasten- ja nuortenteatterijärjestön jäsenlehdestä sivulta 8. ',
         link: 'http://files.yg.fi/f6/71/f6716327-c5b0-42d3-a46a-ed8afde2e221.pdf'
     },
-    {
+ /*   {
         category: 'Kirjat',
         title: 'Mikä on robotti WSOY:n Tietopalat-sarjassa',
         text: 'Mitä robotit oikein ovat ja mitä kaikkea ne pystyvät tekemään? Hauskasti kuvitetussa Tietopalat-kirjassa kaverukset Ro ja Botti pohtivat, missä kaikkialla robotteihin voi törmätä nyt ja tulevaisuudessa.',
         link: '/books'
     },
-/*     {    
+    {    
         category: 'Ehdokkuus',
         title: 'Aika matka! Finlandia-palkintoehdokkaana',
         text: 'Laura Ertimon ja Mari Ahokoivun Aika matka! Lotta, Kasper ja luontokadon arvoitus oli ehdolla 2021 Lasten- ja nuortenkirjallisuuden Finlandia-palkinnon saajaksi. "Kokonaisuus on eloisa runsaudensarvi, joka houkuttelee tutkimaan, palaamaan ja vaikuttamaan."',
