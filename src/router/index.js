@@ -175,10 +175,23 @@ const router = new Router({
 });
 
 router.afterEach((to, from, next) => {
+  window.scrollTo({
+    top: 0,
+  });
   setTimeout(() => {
-    window.scrollTo({
-      top: 0,
-    });
-  }, 200);
+    if ( to.hash) {
+      window.scrollTo({
+        top: 0,
+      });
+      const elementToScrollTo = document.getElementById(to.hash.slice(1));
+      if ( elementToScrollTo) {
+        elementToScrollTo.scrollIntoView({ behavior: 'smooth'})
+      }
+    } else {
+      window.scrollTo({
+        top: 0,
+      });
+    }
+  }, 210);
 });
 export default router;

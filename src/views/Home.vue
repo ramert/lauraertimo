@@ -38,7 +38,7 @@ const news = [
         category: 'Kirjat',
         title: 'Tietopalat: Kaikenkirjavat linnut',
         text: 'Kaikenkirjavat linnut on Laura Ertimon kirjoittama ja Kaisu Sandbergin kuvittama helppolukuinen ja jännä tietokirja lintujen värikkäästä maailmasta.',
-        link: '/books'
+        link: '/books#small'
     },
     {
         category: 'Mediassa',
