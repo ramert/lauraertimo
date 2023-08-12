@@ -34,6 +34,12 @@ const news = [
         text: 'Mikä Mahti! - Lotta ja Kasper luonnon puolella jatkaa ihmisen ja ympäristön suhdetta käsittelevää kirjasarjaa. Nyt pureudutaan vallankäytön kiemuroihin niin koulussa, metsässä kuin maailmallakin.',
         link: '/mikamahti'
     },
+       {
+        category: 'Kirjat',
+        title: 'Tietopalat: Kaikenkirjavat linnut',
+        text: 'Kaikenkirjavat linnut on Laura Ertimon kirjoittama ja Kaisu Sandbergin kuvittama helppolukuinen ja jännä tietokirja lintujen värikkäästä maailmasta.',
+        link: '/books'
+    },
     {
         category: 'Mediassa',
         title: 'Luontokato, ylikulutus ja lastentietokirjallisuus puhututtavat.',
@@ -52,13 +58,13 @@ const news = [
         text: '"Laura Ertimon ja Mari Ahokoivun kirja Aika matka! Lotta, Kasper ja luontokadon arvoitus (Into Kustannus) on kerronnaltaan lempeä ja tietopohjaltaan järkälemäinen teos luonnon monimuotoisuuden merkityksestä ja pelastamisesta."', 
         link: "https://www.laurijantinsaatio.fi/palkitut/tieto-lauri-palkinto-laura-ertimolle-ja-mari-ahokoivulle"
     },
-    {
+ /*   {
         category: 'Mediassa',
         title: 'Teatteri Ilmi Ö. ja tietokirjailija Ihme ilmat -kiertueella',
         text: '"Vaati monen monta puoli-improvisoitua kierrosta ja simultaani-käsikirjoittamista, jotta Ihme ilmat -kirjan sisällöstä kuoriutuivat esiin ilmastonmuutoksen kokonaisuutta kuvaavat Ihme ilmat -kohtaukset."  Lue Lauran raportti tietokirjan teatterillistamisesta ja lavakokemuksista Assitej lasten- ja nuortenteatterijärjestön jäsenlehdestä sivulta 8. ',
         link: 'http://files.yg.fi/f6/71/f6716327-c5b0-42d3-a46a-ed8afde2e221.pdf'
     },
- /*   {
+   {
         category: 'Kirjat',
         title: 'Mikä on robotti WSOY:n Tietopalat-sarjassa',
         text: 'Mitä robotit oikein ovat ja mitä kaikkea ne pystyvät tekemään? Hauskasti kuvitetussa Tietopalat-kirjassa kaverukset Ro ja Botti pohtivat, missä kaikkialla robotteihin voi törmätä nyt ja tulevaisuudessa.',
@@ -99,6 +105,7 @@ export default {
 .hero {
   position: relative;
   max-height: calc(100vh - 200px);
+  min-height: 320px;
   overflow: hidden;
   background: var(--color-lightblue);
   max-width: 100%;

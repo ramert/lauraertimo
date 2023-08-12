@@ -1,6 +1,6 @@
 <template>
   <vPage>
-    <div class="book-section" v-for="bookList in AllBooks" :key="bookList.title">
+    <div class="book-section" v-for="bookList in AllBooks" :key="bookList.title" :id="bookList.anchor">
       <h2>{{bookList.title}}</h2>
       <ul>
         <book v-for="book in bookList.books" :key="book.name"
@@ -41,10 +41,12 @@ import IhmeIlmatPuuhaImage from '@/assets/ihme-ilmat-puuha.jpeg';
 import LumottuImage from '@/assets/lumotunmaankartasto/lumotun-maan-kartasto.jpg';
 import PikkuTietoMissa from '@/assets/missa-sina-olet.jpg';
 import PikkuTietoMennaan from '@/assets/mennaan-piiloon.jpeg';
+import PikkiTietoKiivetaan from '@/assets/kiivetaanpuuhun.jpeg';
 import Maapallotieto from '@/assets/Maapallo_etukansi.jpg';
 import IlmastonMuutosSelko from '@/assets/IlmastonMuutosSelko.jpeg';
 import MikaOnRobotti from '@/assets/mikaonrobotti.png';
 import MikaMahti from '@/assets/mikamahti/mika-mahtikansi.jpeg';
+import Linnut from '@/assets/tietopalat-linnut.jpeg';
 
  
 const ComicBooks = [
@@ -83,6 +85,15 @@ const ComicBooks = [
     publisher: "Into Kustannus 2021",
     publisherLink: "https://kauppa.intokustannus.fi/",
     description: "Tehtäviä, jotka auttavat ymmärtämään maailman muutosta ja muuttamaan maailmaa."
+  },
+  {
+    name: "Tietopalat: Kaikenkirjavat linnut",
+    image: Linnut,
+    illustrator: "Kaisu Sandberg",
+    publisher: 'WSOY 2023',
+    publisherLink: "https://www.wsoy.fi",
+    extLink: "https://www.wsoy.fi/kirja/laura-ertimo/tietopalat:-kaikenkirjavat-linnut/9789510499085",
+    description: "Linnut eivät ole mitä tahansa siivekkäitä, vaan dinosaurusten jalon sukuhaaran jatke. Helppolukuinen Kaikenkirjavat linnut avaa lukijalle huimia näköaloja niin kotipihan sirkuttajien kuin muinaisten suuruuksienkin elämään."
   },
   {
     name: "Tietopalat: Mikä on robotti?",
@@ -124,7 +135,16 @@ const FamilyBooks = [
   }
 ];
 
-const SmallChildrenBooks = [  
+const SmallChildrenBooks = [
+  {
+
+    name: "Pikkutieto: Kiivetään puuhun",
+    image: PikkiTietoKiivetaan,
+    illustrator: "Sanna Pelliccioni",
+    publisher: "Karisto 2022",
+    extLink: "https://www.karisto.fi/sivu/tuote/kiivetaan-puuhun/4154632",
+    description: "Voiko puu olla yksinäinen? Tule mukaan seikkailuun, joka valottaa kasvien elämää ja sitä, kuinka monenlaisia ystävyyksiä eliöt solmivat.",
+  },
   {
     name:"Pikkutieto: Missä sinä olet?",
     image: PikkuTietoMissa,
@@ -168,19 +188,23 @@ const WorldClearText = [
 const AllBooks = [
   {
     title: 'Sarjakuva-tietokirjat',
-    books: ComicBooks
+    books: ComicBooks,
+    anchor: 'comic'
   },
   {
     title: 'Koko perheen kuvitetut tietokirjat',
-    books: FamilyBooks
+    books: FamilyBooks,
+    anchor: 'family'
   },
   {
     title: 'Tietoseikkailut perheen pienimmille',
-    books: SmallChildrenBooks
+    books: SmallChildrenBooks,
+    anchor: 'small'
   },
   { 
     title: 'Maapallotieto selkokielellä',
-    books: WorldClearText
+    books: WorldClearText,
+    anchor: 'clear'
   }
 ];
 

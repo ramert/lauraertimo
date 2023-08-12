@@ -66,9 +66,13 @@ const news = [
             name: "Kustantamo S&S",
             link: "https://kustantamo.sets.fi/media/"
           },
-         {
+          {
             name: "Oppimateriaalikeskus Opike",
             link: "https://opike.fi/"
+          },
+          {
+            name: "WSOY",
+            link: "https://www.wsoy.fi/yhteystiedot"
           }
         ]
     },

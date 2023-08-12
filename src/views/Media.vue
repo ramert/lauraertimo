@@ -7,6 +7,13 @@
 <script>
 const content = [
   {
+    category: 'Artikkeli',
+    title: 'Typpeä sinileville',
+    text: "Kirjoitin lasten- ja nuortenkirjallisuuden ystävien järjestön Ibby Finlandin sivuille aikuisille suunnatun tekstin kiertokuluista ja tulevaisuuteen kurottavasta lastentietokirjoittamisesta. Kuvittelen elämää, joka kannattelee elämää. Kuvittelen aineiden kiertoa, jossa erilaiset ruumiit erilaisine toimintoineen yhdistelevät ja purkavat alkuaineista yhdisteitä – minunkin ruumiini.",
+    link: "https://ibbyfinland.fi/artikkelit/typpea-sinileville/",
+    linkText: "Lue lisää",
+  },
+  {
       category: 'Keskustelu',
       title: 'Ylikulutuksesta uudenlaiseen olemisen tapaan',
       text: "Taideyliopisto järjesti keskustelun ylikulutuksesta. Riikka Suomisen johdolla keskustellaan monitahoisesta aiheesta ja mahdollisista muutoksista tarinassa. Youtubesta löytyvässä keskustelussa näkökulmia avaavat tanssipedagogiikan professori Eeva Anttila, filosofi Ville Lähde, tietokirjailija ja maantieteilijä Laura Ertimo ja toimitusjohtaja ja yhteiskunnallinen vaikuttaja Leo Stranius.",
