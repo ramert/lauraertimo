@@ -20,7 +20,7 @@ import SelkoIlmastonMuutos from '@/books/SelkoIlmastonMuutos';
 import AikaMatka from '@/books/AikaMatka';
 import PikkuTietoMissaOlet from '@/books/PikkuTietoMissaOlet';
 import PikkuTietoMennaanPiiloon from '@/books/PikkuTietoMennaanPiiloon';
-import MikaMahti from '@/books/MikaMahti';
+import MikaMahti from '@/books/Mikamahti';
 
 
 Vue.use(Router);
