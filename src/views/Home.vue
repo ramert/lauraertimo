@@ -32,13 +32,13 @@ const news = [
         category: 'Kirjat',
         title: 'Mikä Mahti!',
         text: 'Mikä Mahti! - Lotta ja Kasper luonnon puolella jatkaa ihmisen ja ympäristön suhdetta käsittelevää kirjasarjaa. Nyt pureudutaan vallankäytön kiemuroihin niin koulussa, metsässä kuin maailmallakin.',
-        link: '/mikamahti'
+        link: '/books#mikaMahti'
     },
        {
         category: 'Kirjat',
         title: 'Tietopalat: Kaikenkirjavat linnut',
         text: 'Kaikenkirjavat linnut on Laura Ertimon kirjoittama ja Kaisu Sandbergin kuvittama helppolukuinen ja jännä tietokirja lintujen värikkäästä maailmasta.',
-        link: '/books#small'
+        link: '/books#linnut'
     },
     {
         category: 'Mediassa',

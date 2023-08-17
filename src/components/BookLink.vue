@@ -1,5 +1,5 @@
 <template>
-  <li>
+  <li :id="id">
     <router-link v-if="toLink" :to="toLink" class="book-link">
       <book-content
         :name="name"
@@ -45,7 +45,7 @@ import BookContent from "@/components/BookContent";
 Vue.component("bookContent", BookContent);
 export default {
   name: "book",
-  props: ["name", "image", "altText", "toLink", "extLink", "publisher", "publisherLink", "illustrator", "description", "loadingColor", "flag"],
+  props: ["name", "image", "altText", "toLink", "id", "extLink", "publisher", "publisherLink", "illustrator", "description", "loadingColor", "flag"],
   methods: {
     routeTransition() {
       this.$router.push(this.link);

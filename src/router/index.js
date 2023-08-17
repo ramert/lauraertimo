@@ -179,6 +179,9 @@ router.afterEach((to, from, next) => {
     if ( to.hash ) {
       const elementToScrollTo = document.getElementById(to.hash.slice(1));
       if ( elementToScrollTo) {
+        window.scrollTo({
+          top: 0,
+        });
         const y = elementToScrollTo.getBoundingClientRect().top + window.scrollY;
         window.scroll({
           top: y,

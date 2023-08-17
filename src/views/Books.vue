@@ -5,6 +5,7 @@
       <ul>
         <book v-for="book in bookList.books" :key="book.name"
           :name="book.name"
+          :id="book.id"
           :image="book.image"
           :toLink="book.toLink"
           :extLink="book.extLink"
@@ -54,7 +55,8 @@ const ComicBooks = [
     name: "Mikä mahti!",
     image: MikaMahti,
     illustrator: "Mari Ahokoivu",
-    toLink:"/mikamahti",
+    id:"mikaMahti",
+    extLink:"https://intokustannus.fi/kirja/mika-mahti/",
     publisher: "Into Kustannus 2023",
     publisherLink: "https://kauppa.intokustannus.fi/",
     description: "Mikä mahti! Lotta ja Kasper luonnon puolella jatkaa ihmisen ja ympäristön suhdetta käsittelevää kirjasarjaa. Nyt pureudutaan vallankäytön kiemuroihin niin koulussa, metsässä kuin maailmallakin."
@@ -81,7 +83,7 @@ const ComicBooks = [
     name: "Ihme ilmat! Koko perheen puuhakirja",
     image:  IhmeIlmatPuuhaImage,
     illustrator: "Mari Ahokoivu",
-    extLink:"https://kauppa.intokustannus.fi/kirja/ihme-ilmat-puuhakirja-ilmaston-pelastajille/",
+    extLink: "https://kauppa.intokustannus.fi/kirja/ihme-ilmat-puuhakirja-ilmaston-pelastajille/",
     publisher: "Into Kustannus 2021",
     publisherLink: "https://kauppa.intokustannus.fi/",
     description: "Tehtäviä, jotka auttavat ymmärtämään maailman muutosta ja muuttamaan maailmaa."
@@ -89,6 +91,7 @@ const ComicBooks = [
   {
     name: "Tietopalat: Kaikenkirjavat linnut",
     image: Linnut,
+    id: "linnut",
     illustrator: "Kaisu Sandberg",
     publisher: 'WSOY 2023',
     publisherLink: "https://www.wsoy.fi",
@@ -99,7 +102,7 @@ const ComicBooks = [
     name: "Tietopalat: Mikä on robotti?",
     image: MikaOnRobotti,
     illustrator: "Aapo Ravantti",
-    extLink:" https://www.wsoy.fi/kirja/aapo-ravantti/tietopalat:-mika-on-robotti/9789510479162",
+    extLink: "https://www.wsoy.fi/kirja/aapo-ravantti/tietopalat:-mika-on-robotti/9789510479162",
     publisher: "WSOY 2022",
     description: "Helppolukuisessa Tietopalat-kirjassa kaverukset Ro ja Botti pohtivat, missä kaikkialla robotteihin voi törmätä nyt ja tulevaisuudessa."
   },
