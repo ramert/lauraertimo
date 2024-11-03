@@ -7,6 +7,20 @@
 <script>
 const content = [
   {
+    category: 'Haastattelu',
+    title: "Mari Ahokoivu ja Laura Ertimo tekevät kirjoja ympäristökriiseistä lasten kielellä",
+    text: "Maailman kuvalehdessä ilmestyi yhteishaastattelu, jossa kerromme Marin kanssa kuvitettujen lastentietokirjojen tekemisestä.",
+    link: "https://maailmankuvalehti.fi/2024/1/pitkat/mari-ahokoivu-ja-laura-ertimo-tekevat-kirjoja-ymparistokriiseista-lasten-kielella-en-hyvaksy-tiedon-kutistamista-lapsille-sisasiistiksi-pakkaukseksi/",
+    linkText: "Lue lisää",
+  },
+  {
+    category: 'Haastattelu',
+    title: 'Tietokirjafanit',
+    text: "Heurekan tuottamalla videolla jutellaan kepeästi tietokirjoittamisesta - ja kouluruokailusta!",
+    link: "https://vimeo.com/heurekafinland/review/1005391600/dc9cd8b85e",
+    linkText: "Katso video:"
+  },
+  {
     category: 'Artikkeli',
     title: 'Typpeä sinileville',
     text: "Kirjoitin lasten- ja nuortenkirjallisuuden ystävien järjestön Ibby Finlandin sivuille aikuisille suunnatun tekstin kiertokuluista ja tulevaisuuteen kurottavasta lastentietokirjoittamisesta. Kuvittelen elämää, joka kannattelee elämää. Kuvittelen aineiden kiertoa, jossa erilaiset ruumiit erilaisine toimintoineen yhdistelevät ja purkavat alkuaineista yhdisteitä – minunkin ruumiini.",
