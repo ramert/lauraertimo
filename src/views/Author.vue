@@ -35,9 +35,19 @@ const news = [
         text: [
           "Kirjoitustyön ohella teen kirjailijavierailuja. Vierailuni suuntautuvat kouluille, kirjastoihin ja kirja-alan tapahtumiin. Myös virtuaalivierailut ovat mahdollisia.",
           "Työpajoissa voidaan tarttua niin karttaan kuin kynäänkin. Lumotun Maan kartastoon perustuva Lumotun paikan kartta on hauska kaikenikäisille sopiva työpaja, joka kannustaa pohtimaan lähiympäristöä sana- ja kuvataiteen keinoin. Kouluille suunnattu tietokirjoittamisen työpaja on kaksiosainen Lukukeskuksen kautta tilattava kokonaisuus.",
+          "Talvella 2024-25 osallistun Heurekan koordinoimaan Tietokirjafanit-hankkeeseen. Aikajana-työpajassa tutkitaan, mitä maailmassa ehtii tapahtua 100, 10 000 ja 100 miljoonan vuoden aikana."
         ],
-        link: "https://kirjailijavierailut.lukukeskus.fi/kirjailijat/ertimo-laura/"
-    },
+        link: [
+          { 
+            name: 'Lukukeskus', 
+            link: "https://kirjailijavierailut.lukukeskus.fi/kirjailijat/ertimo-laura/"
+          },
+          { 
+            name: 'Tietokirjafanit', 
+            link: "https://kirjailijavierailut.lukukeskus.fi/tietokirjafanit/"
+          },
+        ]
+        },
     {
         category: 'Mediassa',
         title: "Kirjailijasivut sosiaalisessa mediassa",
