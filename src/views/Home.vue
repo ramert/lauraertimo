@@ -30,26 +30,27 @@ Vue.component('vNews', News);
 const news = [  
    {
         category: 'Kirjat',
+        title: 'Mitä on olla minä',
+        text: 'Uimahalli-ilottelu kyselyikäsille! Uudessa kuvakirjassa tapaat Ruskan ja mummin. Tavallisella uimahalliretkellä voi tietenkin kohdata vesilohikäärmeitä ja saada koko altaan kiehumaan.',
+        link: '/books#mitaOnOllaMina'
+    },
+   {
+        category: 'Kirjat',
         title: 'Mikä Mahti!',
         text: 'Mikä Mahti! - Lotta ja Kasper luonnon puolella jatkaa ihmisen ja ympäristön suhdetta käsittelevää kirjasarjaa. Nyt pureudutaan vallankäytön kiemuroihin niin koulussa, metsässä kuin maailmallakin.',
         link: '/books#mikaMahti'
     },
-       {
-        category: 'Kirjat',
-        title: 'Tietopalat: Kaikenkirjavat linnut',
-        text: 'Kaikenkirjavat linnut on Laura Ertimon kirjoittama ja Kaisu Sandbergin kuvittama helppolukuinen ja jännä tietokirja lintujen värikkäästä maailmasta.',
-        link: '/books#linnut'
-    },
+
     {
         category: 'Mediassa',
         title: 'Luontokato, ylikulutus ja lastentietokirjallisuus puhututtavat.',
         text: 'Kurkkaa mediassa-linkistä viime aikojen haastatteluja ja keskusteluja, joihin olen osallistunut. Muun muassa Taideyliopiston ylikulutuskeskustelu ja Aamu-tv-vierailuni löytyvät tallenteina eri nettilähteistä.', 
         link: "/media"
     },
-    {
+        {
         category: 'Vierailut',
-        title: 'Teen kirjailijavierailuja ja ohjaan työpajoja kouluissa ja tapahtumissa.',
-        text: 'Lumotun Maan kartastoon perustuva Lumotun paikan kartta on hauska kaikenikäisille sopiva työpaja, joka kannustaa pohtimaan lähiympäristöä sana- ja kuvataiteen keinoin. Kouluille suunnattu tietokirjoittamisen työpaja on kaksiosainen Lukukeskuksen kautta tilattava kokonaisuus.', 
+        title: 'Tietokirjafanit - vierailuja talvella 2024-25',
+        text: 'Teen kirjailijavierailuja ja työpajoja Lukukeskuksen kautta. Talvella 2024-25 osallistun Heurekan koordinoimaan Tietokirjafanit-hankkeeseen. Aikajana-työpajassa tutkitaan, mitä maailmassa ehtii tapahtua 100, 10 000 ja 100 miljoonan vuoden aikana.', 
         link: "/author"
     },
     {
