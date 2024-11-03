@@ -48,6 +48,7 @@ import IlmastonMuutosSelko from '@/assets/IlmastonMuutosSelko.jpeg';
 import MikaOnRobotti from '@/assets/mikaonrobotti.png';
 import MikaMahti from '@/assets/mikamahti/mika-mahtikansi.jpeg';
 import Linnut from '@/assets/tietopalat-linnut.jpeg';
+import MitaOnOllaMina from '@/assets/mitaonollamina.jpg';
 
  
 const ComicBooks = [
@@ -140,7 +141,15 @@ const FamilyBooks = [
 
 const SmallChildrenBooks = [
   {
-
+    name: "Mitä on olla minä",
+    image: MitaOnOllaMina,
+    id: "mitaOnOllaMina",
+    publisher:"S&S 2024",
+    illustrator: "Sanna Pelliccioni",
+    extLink: "https://kustantamo.sets.fi/kirja/mita-on-olla-mina/?attribute_pa_format=kovakantinen",
+    description:"Uimahalli-ilottelu kyselyikäsille! Uudessa kuvakirjassa tapaat Ruskan ja mummin. Tavallisella uimahalliretkellä voi tietenkin kohdata vesilohikäärmeitä ja saada koko altaan kiehumaan.",
+  },
+  {
     name: "Pikkutieto: Kiivetään puuhun",
     image: PikkiTietoKiivetaan,
     illustrator: "Sanna Pelliccioni",
@@ -200,7 +209,7 @@ const AllBooks = [
     anchor: 'family'
   },
   {
-    title: 'Tietoseikkailut perheen pienimmille',
+    title: 'Kuvakirjoja perheen pienimmille',
     books: SmallChildrenBooks,
     anchor: 'small'
   },
